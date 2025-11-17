@@ -1,10 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { Shield, Cloud, Lock, Network, Layers, Smartphone, Radio, ShieldAlert } from 'lucide-react';
-// Simple fallback image component
-function ImageWithFallback({ src, alt, ...props }: React.ImgHTMLAttributes<HTMLImageElement>) {
-  return <img src={src} alt={alt} {...props} />;
-}
 
 export function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -206,7 +202,7 @@ export function HeroSection() {
                 }}
               />
                 <div className="relative bg-white/70 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-white/30">
-                <ImageWithFallback
+                <img
                   src="/src/assets/image/professor.jpg"
                   alt="Professor Dr. Noor Zaman Jhanjhi"
                   className="w-72 h-80 object-cover rounded-2xl"

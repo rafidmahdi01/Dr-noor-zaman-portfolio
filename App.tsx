@@ -82,7 +82,7 @@ if (isLoading) {
           }}
         >
           <img 
-            src="src/assets/image/logo.png"
+            src="/src/assets/image/logo.png"
             alt="Logo"
             className="w-full h-full object-contain"
           />
