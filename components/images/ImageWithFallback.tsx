@@ -35,8 +35,8 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
       style={style} 
       {...rest} 
       onError={handleError}
-      crossOrigin="anonymous"
       loading="lazy"
+      referrerPolicy="no-referrer"
     />
   )
 }
