@@ -1,4 +1,7 @@
-ï»¿// Publications data extracted from ContentSection.tsx
+// Publications data extracted from ContentSection.tsx
+
+// Import local book cover images
+import commingSoonBookImage from '../src/assets/image/comming soon book image.png';
 
 // Military AI book cover - CRC Press book cover image
 const militaryAIBookCover = 'https://images.routledge.com/common/jackets/crclarge/978103271/9781032712703.jpg';
@@ -11,7 +14,7 @@ export const books = [
       year: "2026",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15821_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15821_1.png"
     },
     {
@@ -20,7 +23,7 @@ export const books = [
       year: "2026",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15821_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15822_1.png"
     },
     // 2025
@@ -30,7 +33,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-8497-8",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15816_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://www.igi-global.com/book/computer-vision-edge-computing-technologies/336861"
     },
     {
@@ -39,7 +42,7 @@ export const books = [
       year: "2025",
       isbn: "978-1-6684-6361-1",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15817_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://www.igi-global.com/book/challenges-solutions-using-quantum-security/336860"
     },
     {
@@ -48,7 +51,7 @@ export const books = [
       year: "2025",
       isbn: "979-8337304793",
       impact: "Authored Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15818_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15818_1.png"
     },
     {
@@ -57,7 +60,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-9132-7",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15819_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-9132-7"
     },
     {
@@ -66,7 +69,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-6250-1",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_13338_2.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-6250-1"
     },
     {
@@ -102,7 +105,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-5415-5",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_13337_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-5415-5"
     },
     // 2024
@@ -112,7 +115,7 @@ export const books = [
       year: "2024",
       isbn: "978-3031751698",
       impact: "Edited Book - Communications in Computer and Information Science",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15077_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15077_1.png"
     },
     {
@@ -121,7 +124,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-6361-1",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11419_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-6361-1"
     },
     {
@@ -130,7 +133,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-7625-3",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11421_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-7625-3"
     },
     {
@@ -139,7 +142,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-1363-3",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_12861_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-1363-3"
     },
     {
@@ -148,7 +151,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-3816-2",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_12863_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-3816-2"
     },
     {
@@ -157,7 +160,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-5375-2",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_13335_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-5375-2"
     },
     {
@@ -175,7 +178,7 @@ export const books = [
       year: "2024",
       isbn: "978-1394204267",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_13613_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.1002/9781394204472"
     },
     {
@@ -193,7 +196,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-9823-1",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11420_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-9823-1"
     },
     // 2023
@@ -212,7 +215,7 @@ export const books = [
       year: "2023",
       isbn: "",
       impact: "Edited Book - Proceedings of ICRTITA 2022",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11418_1.jpg",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://link.springer.com/book/10.1007/978-3-031-32484-5"
     },
     {
@@ -221,7 +224,7 @@ export const books = [
       year: "2023",
       isbn: "978-3-031-10550-0",
       impact: "Edited Book - Revised Selected Papers",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11417_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.1007/978-3-031-10551-7"
     },
     {
@@ -230,7 +233,7 @@ export const books = [
       year: "2023",
       isbn: "978-1-6684-5284-4",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9215_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-5284-4"
     },
     // 2022
@@ -240,7 +243,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-119-76226-3",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9216_1.pdf",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://www.wiley.com/en-us/Artificial+Intelligence+for+Cyber+Security%3A+Methods%2C+Issues+and+Possible+Horizons+or+Opportunities-p-9781119762263"
     },
     {
@@ -249,7 +252,7 @@ export const books = [
       year: "2022",
       isbn: "",
       impact: "Edited Book - Conference Proceedings",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10901_1.jfif",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://link.springer.com/book/10.1007/978-3-031-10551-7"
     },
     {
@@ -258,7 +261,7 @@ export const books = [
       year: "2022",
       isbn: "978-3-030-98167-9",
       impact: "Edited Book - Challenges and Opportunities",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9920_1.jfif",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.1007/978-3-030-98167-9"
     },
     {
@@ -267,7 +270,7 @@ export const books = [
       year: "2022",
       isbn: "978-1119836193",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8932_1.jpg",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://www.wiley.com/en-us/Cyber+Physical+System%3A+Emerging+Technologies+and+Applications-p-9781119836193"
     },
     {
@@ -276,7 +279,7 @@ export const books = [
       year: "2022",
       isbn: "978-1032066202",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9914_1.png",
+      imageUrl: commingSoonBookImage,
       pdfUrl: "https://doi.org/10.1201/9781003203087"
     },
     {
@@ -285,7 +288,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-9624-1",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9138_2.png"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Approaches and Applications of Deep Learning in Virtual Medical Care",
@@ -293,7 +296,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-8929-8",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9136_1.png"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Empowering Sustainable Industrial 4.0 Systems With Machine Intelligence",
@@ -301,7 +304,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-9201-4",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9137_1.png"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Information Security: Handbook",
@@ -309,7 +312,7 @@ export const books = [
       year: "2022",
       isbn: "978-0367365721",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8931_1.tif"
+      imageUrl: commingSoonBookImage
     },
     // 2021
     {
@@ -318,7 +321,7 @@ export const books = [
       year: "2021",
       isbn: "978-1-7998-6709-8",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7715_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Deep Learning in Data Analytics Recent Techniques, Practices and Applications",
@@ -326,7 +329,7 @@ export const books = [
       year: "2021",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8846_1.jfif"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Advanced AI Techniques and Applications in Bioinformatics",
@@ -334,7 +337,7 @@ export const books = [
       year: "2021",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8847_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Industrial Internet of Things (IIoT): Intelligent Analytics for Predictive Maintenance",
@@ -342,7 +345,7 @@ export const books = [
       year: "2021",
       isbn: "978-1119768777",
       impact: "Edited Book - 1st Edition",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8848_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Securing Images Using 2D Logistic Maps Elliptic Curves Cryptography",
@@ -350,7 +353,7 @@ export const books = [
       year: "2021",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9140_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Securing Users of Long-Term Evolution (LTE)",
@@ -358,7 +361,7 @@ export const books = [
       year: "2021",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9141_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     // 2020
     {
@@ -367,7 +370,7 @@ export const books = [
       year: "2020",
       isbn: "",
       impact: "Book Series",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4857_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Employing Recent Technologies for Improved Digital Governance",
@@ -375,7 +378,7 @@ export const books = [
       year: "2020",
       isbn: "978-1-7998-1851-9",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_5636_1.png"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "A Smart Agriculture Land Suitability Detection Model Using Machine Learning with Google Earth Engine",
@@ -383,7 +386,7 @@ export const books = [
       year: "2020",
       isbn: "978-1636480128",
       impact: "Authored Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7718_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "A Methodology of Bi-Directional Data Transformation in Emerging Research and Opportunities",
@@ -391,7 +394,7 @@ export const books = [
       year: "2020",
       isbn: "978-1952751776",
       impact: "Authored Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7717_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "A Smart Assessment Methodology to Measure and Analyze Google Play Store",
@@ -399,7 +402,7 @@ export const books = [
       year: "2020",
       isbn: "978-1952751691",
       impact: "Authored Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7716_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Blockchain Technology: Fundamentals, Applications, and Case Studies",
@@ -407,7 +410,7 @@ export const books = [
       year: "2020",
       isbn: "978-0367431372",
       impact: "Edited Book - Internet of Everything (IoE) 1st Edition",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7714_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     // 2018
     {
@@ -416,7 +419,7 @@ export const books = [
       year: "2018",
       isbn: "978-1138571303",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4848_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     // 2016
     {
@@ -425,7 +428,7 @@ export const books = [
       year: "2016",
       isbn: "978-953-51-2502-0",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4851_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Biologically-Inspired Energy Harvesting through Wireless Sensor Technologies",
@@ -433,7 +436,7 @@ export const books = [
       year: "2016",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4852_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     // 2015
     {
@@ -442,7 +445,7 @@ export const books = [
       year: "2015",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4853_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     // 2013
     {
@@ -451,7 +454,7 @@ export const books = [
       year: "2013",
       isbn: "980-953-307-645-9",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4854_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Software Development Techniques for Constructive Information Systems Design",
@@ -459,7 +462,7 @@ export const books = [
       year: "2013",
       isbn: "978-1466636798",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4855_1.jpg"
+      imageUrl: commingSoonBookImage
     },
     // 2012
     {
@@ -468,7 +471,7 @@ export const books = [
       year: "2012",
       isbn: "978-1466601019",
       impact: "Edited Book",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_4856_1.jpg"
+      imageUrl: commingSoonBookImage
     }
   ];
 
@@ -1211,7 +1214,7 @@ export const books = [
       year: "2023",
       pages: "1-19",
       impact: "Chapter 1",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10762_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "The Role of the IoT and Digital Twin in the Healthcare Digitalization Process: IoT and Digital Twin in the Healthcare Digitalization Process",
@@ -1220,7 +1223,7 @@ export const books = [
       year: "2023",
       pages: "20-34",
       impact: "Chapter 2",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10765_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Use Cases for Digital Twin",
@@ -1229,7 +1232,7 @@ export const books = [
       year: "2023",
       pages: "102-118",
       impact: "Chapter 7",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10766_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     // 2022
     {
@@ -1239,7 +1242,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9220_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Ransomware Attack: Threats & Different Detection Technique",
@@ -1248,7 +1251,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9221_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Security in Big Data",
@@ -1257,7 +1260,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9219_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Optimized Hybrid Prediction Method for Lung Metastases",
@@ -1266,7 +1269,7 @@ export const books = [
       year: "2022",
       pages: "202-221",
       impact: "Chapter 8",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9368_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "A Systematic Mapping Study of Low-Grade Tumor of Brain Cancer and CSF Fluid Detecting Approaches and Parameters",
@@ -1275,7 +1278,7 @@ export const books = [
       year: "2022",
       pages: "236-259",
       impact: "Chapter 10",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9366_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Optimized Breast Cancer Premature Detection Method With Computational Segmentation: A Systematic Review Mapping",
@@ -1284,7 +1287,7 @@ export const books = [
       year: "2022",
       pages: "24-51",
       impact: "Chapter 2",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9367_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "A Systematic Mapping Study of Low-Grade Tumor of Brain Cancer and CSF Fluid Detecting in MRI Images Through Multi-Algorithm Techniques",
@@ -1293,7 +1296,7 @@ export const books = [
       year: "2022",
       pages: "168-201",
       impact: "Chapter 7",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9365_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Deep Learning Techniques for Creation of DeepFakes",
@@ -1302,7 +1305,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9888_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Introduction to DeepFake Technologies",
@@ -1311,7 +1314,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9887_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Impact of COVID-19 on Higher and Post-secondary Education Systems",
@@ -1320,16 +1323,16 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter 5",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9918_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
-      title: "Treatment of Novel Coronavirus (2019-nCoV) Using Hinokitiol (Î²-thujaplicin) Copper Chelate",
+      title: "Treatment of Novel Coronavirus (2019-nCoV) Using Hinokitiol (ß-thujaplicin) Copper Chelate",
       book: "How COVID-19 is Accelerating the Digital Revolution",
       publisher: "Springer",
       year: "2022",
       pages: "",
       impact: "Chapter 10",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9919_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Health Care Digital Revolution During COVID-19",
@@ -1338,7 +1341,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter 2",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_9917_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Emerging Industry Revolution IR 4.0 Issues and Challenges",
@@ -1347,7 +1350,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10232_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Analytical Approach for Security of Sensitive Business Cloud",
@@ -1356,7 +1359,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter 15",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8850_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "The Role of Cybersecurity in Smart Cities",
@@ -1365,7 +1368,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10230_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "The Role of Cutting-Edge Technologies in Industry 4.0",
@@ -1374,7 +1377,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10231_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Cost Optimization of Software Quality Assurance",
@@ -1383,7 +1386,7 @@ export const books = [
       year: "2022",
       pages: "",
       impact: "Chapter 14",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_8849_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     // 2021
     {
@@ -1393,7 +1396,7 @@ export const books = [
       year: "2021",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7723_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Comparison Analysis of Multidimensional Segmentation",
@@ -1402,7 +1405,7 @@ export const books = [
       year: "2021",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7725_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Effects of Cell Phone usage on Human health specifically on the Brain",
@@ -1411,7 +1414,7 @@ export const books = [
       year: "2021",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7722_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Machine learning in healthcare: review, opportunities and challenges",
@@ -1429,7 +1432,7 @@ export const books = [
       year: "2021",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7724_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     // 2020
     {
@@ -1439,7 +1442,7 @@ export const books = [
       year: "2020",
       pages: "237-255",
       impact: "Chapter 12",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6555_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Emerging use of UAV's: secure communication protocol issues and challenges",
@@ -1448,7 +1451,7 @@ export const books = [
       year: "2020",
       pages: "",
       impact: "Chapter",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6556_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Analysis of Climate Prediction and Climate Change in Pakistan Using Data Mining Techniques",
@@ -1457,7 +1460,7 @@ export const books = [
       year: "2020",
       pages: "321-338",
       impact: "Chapter 16",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7726_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Analyzing the Performance and Efficiency of IT-Compliant Audit Module Using Clustering Methods",
@@ -1466,7 +1469,7 @@ export const books = [
       year: "2020",
       pages: "351-376",
       impact: "Chapter 18",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_7727_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Digital Curriculum Importance for New Era Education",
@@ -1475,7 +1478,7 @@ export const books = [
       year: "2020",
       pages: "1-18",
       impact: "Chapter 1",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6550_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Success Stories of ICT Implementation in Saudi Arabia",
@@ -1484,7 +1487,7 @@ export const books = [
       year: "2020",
       pages: "151-163",
       impact: "Chapter 8",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6554_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Digital Governance for Developing Countries Opportunities, Issues, and Challenges in Pakistan",
@@ -1493,7 +1496,7 @@ export const books = [
       year: "2020",
       pages: "36-58",
       impact: "Chapter 3",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6551_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "Smart Cities and Digital Governance",
@@ -1502,7 +1505,7 @@ export const books = [
       year: "2020",
       pages: "87-106",
       impact: "Chapter 5",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6552_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     {
       title: "The Role of IoT in Digital Governance",
@@ -1511,7 +1514,7 @@ export const books = [
       year: "2020",
       pages: "128-150",
       impact: "Chapter 7",
-      imageUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_6553_1.pdf"
+      imageUrl: commingSoonBookImage
     },
     // 2016
     {
@@ -1864,12 +1867,12 @@ export const books = [
       imageUrl: "Secured and Privacy-Preserving Multi-Authority Access Control System for Cloud-Based Healthcare Data Sharing"
     },
     {
-      title: "A novel machine learningâ€“based hand gesture recognition using hci on iot assisted cloud platform",
+      title: "A novel machine learning–based hand gesture recognition using hci on iot assisted cloud platform",
       journal: "Computer Systems Science and Engineering",
       year: "2023",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10238_1.pdf",
-      imageUrl: "A novel machine learningâ€“based hand gesture recognition using hci on iot assisted cloud platform"
+      imageUrl: "A novel machine learning–based hand gesture recognition using hci on iot assisted cloud platform"
     },
     {
       title: "Alpha fusion adversarial attack analysis using deep learning",
@@ -3644,12 +3647,12 @@ export const books = [
     },
     // 2019
     {
-      title: "The Coin Passcode â€“ A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices",
+      title: "The Coin Passcode – A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices",
       journal: "International Journal of Advanced Computer Science and Applications",
       year: "2019",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10954_1.pdf",
-      imageUrl: "The Coin Passcode â€“ A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices"
+      imageUrl: "The Coin Passcode – A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices"
     },
     {
       title: "Survey on Isomorphic Graph Algorithms for Graph Analytics",
@@ -3756,12 +3759,12 @@ export const books = [
       imageUrl: "Ensemble and Deep-Learning Methods for Two-Class and Multi-Attack Anomaly Intrusion Detection: An Empirical Study"
     },
     {
-      title: "Comprehensive Review: Privacy Protection of User in Locationâ€‘Aware Services of Mobile Cloud Computing",
+      title: "Comprehensive Review: Privacy Protection of User in Location-Aware Services of Mobile Cloud Computing",
       journal: "Wireless Personal Communications",
       year: "2019",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10972_1.pdf",
-      imageUrl: "Comprehensive Review: Privacy Protection of User in Locationâ€‘Aware Services of Mobile Cloud Computing"
+      imageUrl: "Comprehensive Review: Privacy Protection of User in Location-Aware Services of Mobile Cloud Computing"
     },
     {
       title: "A New Model for Predicting Component-Based Software Reliability Using Soft Computing",
@@ -4439,7 +4442,7 @@ export const books = [
     },
     // 2021
     {
-      title: "Honeypot Coupled Machine Learning Model for Botnet Detection and Classification in IoT Smart Factory â€“ An Investigation",
+      title: "Honeypot Coupled Machine Learning Model for Botnet Detection and Classification in IoT Smart Factory – An Investigation",
       conference: "MATEC Web Conference",
       year: "2021",
       impact: "ISI-Indexed",
@@ -4898,5 +4901,6 @@ export const books = [
       imageUrl: "Role and Development of a Successful E-Government"
     }
   ];
+
 
 
