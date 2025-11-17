@@ -1,0 +1,18 @@
+{
+  "name": "Dr. Noor Zaman Jhanjhi - Academic Portfolio",
+  "short_name": "Dr. Noor Zaman",
+  "description": "Academic portfolio of Professor Dr. Noor Zaman Jhanjhi at Taylor's University",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#dc2626",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
