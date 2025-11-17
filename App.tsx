@@ -6,6 +6,7 @@ import { ContentSection } from './components/ContentSection';
 import { Footer } from './components/Footer';
 import { Sidebar } from './components/Sidebar';
 import { Menu, X } from 'lucide-react';
+import logoImg from './src/assets/image/logo.png';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState(() => {
@@ -82,7 +83,7 @@ if (isLoading) {
           }}
         >
           <img 
-            src="/src/assets/image/logo.png"
+            src={logoImg}
             alt="Logo"
             className="w-full h-full object-contain"
           />
