@@ -369,7 +369,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                       <div className="space-y-4">
                         {[
                           { label: "Full Name", value: "Professor Dr. Noor Zaman Jhanjhi", icon: "👤" },
-                          { label: "Position", value: "Professor", icon: "🎓" },
+                          { label: "Position", value: "Professor | Director for Research Center (CII) | Program Director for PG Research Degree Programmes", icon: "🎓" },
                           { label: "School", value: "School of Computer Science", icon: "🏫" },
                           { label: "Faculty", value: "Faculty of Innovation & Technology", icon: "🏛️" },
                           { label: "LinkedIn", value: "linkedin.com/in/noorzaman", icon: "🔗", isLink: true, href: "https://www.linkedin.com/in/noorzaman/" }

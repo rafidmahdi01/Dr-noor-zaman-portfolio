@@ -7,6 +7,7 @@ import aumLogo from '@/assets/image/AUM (American University of Malta) logo.png'
 import iumakLogo from '@/assets/image/IUMAK University logo.png';
 import marwadiLogo from '@/assets/image/Marwadi University logo.png';
 import srLogo from '@/assets/image/SR University logo.png';
+import asiaLogo from '@/assets/image/asia university logo.png';
 
 export const partnerOrganizations = [
   { name: "Taylor's University", logo: taylorsLogo, alt: "Taylor's University Logo", url: "https://university.taylors.edu.my/" },
@@ -16,7 +17,8 @@ export const partnerOrganizations = [
   { name: "American University of Malta", logo: aumLogo, alt: "American University of Malta Logo", url: "https://www.aum.edu.mt/" },
   { name: "IUMAK University", logo: iumakLogo, alt: "IUMAK University Logo", url: "https://www.umak.edu.ph/" },
   { name: "Marwadi University", logo: marwadiLogo, alt: "Marwadi University Logo", url: "https://www.marwadiuniversity.ac.in/" },
-  { name: "SR University", logo: srLogo, alt: "SR University Logo", url: "https://www.sru.edu.in/" }
+  { name: "SR University", logo: srLogo, alt: "SR University Logo", url: "https://www.sru.edu.in/" },
+  { name: "Asia University", logo: asiaLogo, alt: "Asia University Logo", url: "https://www.asia.edu.tw/" }
 ];
 
 export const awardsData = [
