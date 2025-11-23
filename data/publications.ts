@@ -26,6 +26,15 @@ import book9781799867098 from '../src/assets/image/books/9781799867098.webp';
 import book9781799818519 from '../src/assets/image/books/9781799818519.webp';
 import book9780367431372 from '../src/assets/image/books/9780367431372.jpg';
 import militaryAIBookCover from '../src/assets/image/books/9781032712703.jpg';
+import book9781032484105 from '../src/assets/image/books/9781032484105.jpg';
+import book9789819936113 from '../src/assets/image/books/9789819936113.jpg';
+import book9783031405648 from '../src/assets/image/books/9783031405648.jpg';
+import book9783031105517 from '../src/assets/image/books/9783031105517.jpg';
+import book9781138571303 from '../src/assets/image/books/9781138571303.jpg';
+import book9781032066202 from '../src/assets/image/books/9781032066202.jpg';
+import book9783030981679 from '../src/assets/image/books/9783030981679.jpg';
+import book9783030758554 from '../src/assets/image/books/9783030758554.jpg';
+import book9780367641696 from '../src/assets/image/books/9780367641696.jpg';
 
 export const books = [
     // 2026
@@ -232,21 +241,39 @@ export const books = [
     },
     {
       title: "Recent Trends in Computational Intelligence and Its Application",
-      publisher: "Springer",
+      publisher: "CRC Press, Routledge, Taylor & Francis Group",
       year: "2023",
-      isbn: "",
+      isbn: "978-1032484105",
       impact: "Edited Book - Proceedings of ICRTITA 2022",
-      imageUrl: commingSoonBookImage,
-      pdfUrl: "https://link.springer.com/book/10.1007/978-3-031-32484-5"
+      imageUrl: book9781032484105,
+      pdfUrl: "https://www.routledge.com/Recent-Trends-in-Computational-Intelligence-and-Its-Application-Proceedings/D-Pal-Le-Jhanjhi/p/book/9781032484105"
     },
     {
       title: "Computing Science, Communication and Security: Third International Conference, COMS2 2022",
       publisher: "Springer Nature",
-      year: "2023",
-      isbn: "978-3-031-10550-0",
-      impact: "Edited Book - Revised Selected Papers",
-      imageUrl: commingSoonBookImage,
+      year: "2022",
+      isbn: "978-3-031-10551-7",
+      impact: "Edited Book - Revised Selected Papers, Communications in Computer and Information Science Vol 1604",
+      imageUrl: book9783031105517,
       pdfUrl: "https://doi.org/10.1007/978-3-031-10551-7"
+    },
+    {
+      title: "Proceedings of the 3rd International Conference on Mathematical Modeling and Computational Science (ICMMCS 2023)",
+      publisher: "Springer",
+      year: "2023",
+      isbn: "978-9819936113",
+      impact: "Edited Book - Advances in Intelligent Systems and Computing Vol 1450",
+      imageUrl: book9789819936113,
+      pdfUrl: "https://www.amazon.com/Proceedings-International-Mathematical-Computational-Intelligent-ebook/dp/B0C9SHCFS3"
+    },
+    {
+      title: "Computing Science, Communication and Security: 4th International Conference, COMS2 2023",
+      publisher: "Springer Nature",
+      year: "2023",
+      isbn: "978-3-031-40564-8",
+      impact: "Edited Book - Revised Selected Papers, Communications in Computer and Information Science Vol 1861",
+      imageUrl: book9783031405648,
+      pdfUrl: "https://www.amazon.com/Computing-Science-Communication-Security-Communications-ebook/dp/B0CBT78M9J"
     },
     {
       title: "Cybersecurity Issues and Challenges for Business and FinTech Applications",
@@ -282,17 +309,17 @@ export const books = [
       year: "2022",
       isbn: "978-3-030-98167-9",
       impact: "Edited Book - Challenges and Opportunities",
-      imageUrl: commingSoonBookImage,
+      imageUrl: book9783030981679,
       pdfUrl: "https://doi.org/10.1007/978-3-030-98167-9"
     },
     {
-      title: "Cyber Physical System: Emerging Technologies and Applications",
+      title: "Cyber-Physical Systems: Foundations and Techniques",
       publisher: "Wiley-Scrivener",
       year: "2022",
-      isbn: "978-1119836193",
+      isbn: "978-1-119-83619-3",
       impact: "Edited Book",
       imageUrl: commingSoonBookImage,
-      pdfUrl: "https://www.wiley.com/en-us/Cyber+Physical+System%3A+Emerging+Technologies+and+Applications-p-9781119836193"
+      pdfUrl: "https://www.wiley.com/en-au/Cyber+Physical+Systems:+Foundations+and+Techniques-p-9781119836193"
     },
     {
       title: "Cyber Security Applications for Industry 4.0",
@@ -300,7 +327,7 @@ export const books = [
       year: "2022",
       isbn: "978-1032066202",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: book9781032066202,
       pdfUrl: "https://doi.org/10.1201/9781003203087"
     },
     {
@@ -337,6 +364,15 @@ export const books = [
     },
     // 2021
     {
+      title: "AI Techniques for Personalized E-Learning Systems",
+      publisher: "Scrivener Publishing, Wiley",
+      year: "2021",
+      isbn: "",
+      impact: "Edited Book",
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.wiley.com/en-us/AI+Techniques+for+Personalized+E+Learning+Systems-p-9781119762263"
+    },
+    {
       title: "Role of IoT in Green Energy Systems",
       publisher: "IGI Global",
       year: "2021",
@@ -348,46 +384,60 @@ export const books = [
       title: "Deep Learning in Data Analytics Recent Techniques, Practices and Applications",
       publisher: "Springer",
       year: "2021",
-      isbn: "",
+      isbn: "978-3-030-75855-4",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: book9783030758554,
+      pdfUrl: "https://doi.org/10.1007/978-3-030-75855-4"
     },
     {
       title: "Advanced AI Techniques and Applications in Bioinformatics",
-      publisher: "Springer",
+      publisher: "CRC Press",
       year: "2021",
-      isbn: "",
+      isbn: "978-0367641696",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: book9780367641696,
+      pdfUrl: "https://amzn.to/3FlE1g3"
     },
     {
       title: "Industrial Internet of Things (IIoT): Intelligent Analytics for Predictive Maintenance",
-      publisher: "Wiley Publishers",
-      year: "2021",
-      isbn: "978-1119768777",
+      publisher: "Scrivener Publishing, Wiley",
+      year: "2022",
+      isbn: "978-1119768772",
       impact: "Edited Book - 1st Edition",
-      imageUrl: commingSoonBookImage
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.amazon.com/Industrial-Internet-Things-IIoT-Intelligent/dp/1119768772"
     },
     {
       title: "Securing Images Using 2D Logistic Maps Elliptic Curves Cryptography",
       publisher: "Scholar's Press Europe",
       year: "2021",
-      isbn: "",
+      isbn: "978-613-8-96270-0",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.morebooks.shop/store/gb/book/securing-images-using-2d-logistic-maps-elliptic-curves-cryptography/isbn/978-613-8-96270-0"
     },
     {
       title: "Securing Users of Long-Term Evolution (LTE)",
-      publisher: "Scholar's Press Europe",
+      publisher: "Amazon.com Services LLC",
       year: "2021",
-      isbn: "",
-      impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      isbn: "979-8759699880",
+      impact: "Authored Book",
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.amazon.com/Securing-Users-Long-Term-Evolution-LTE/dp/B09KY9Z2ZD"
     },
     // 2020
     {
+      title: "MODERN MATHEMATICS IN COMPUTER SCIENCE",
+      publisher: "Scrivener Publishing, Wiley",
+      year: "2020",
+      isbn: "",
+      impact: "Book Series",
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.wiley.com/en-us"
+    },
+    {
       title: "Biomedical Engineering Techniques and Applications",
-      publisher: "CRC Press, Taylor & Francis Group",
+      publisher: "Apple Academic Press, CRC Press, Taylor & Francis Group",
       year: "2020",
       isbn: "",
       impact: "Book Series",
@@ -440,7 +490,8 @@ export const books = [
       year: "2018",
       isbn: "978-1138571303",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: book9781138571303,
+      pdfUrl: "https://www.crcpress.com/Handbook-of-e-Business-Security/Tavares-Mishra-Kumar-Zaman-Khari/p/book/9781138571303"
     },
     // 2016
     {
@@ -470,20 +521,30 @@ export const books = [
     },
     // 2013
     {
+      title: "Information – Made easy",
+      publisher: "Self-Published",
+      year: "2013",
+      isbn: "978-969-9152",
+      impact: "Authored Book",
+      imageUrl: commingSoonBookImage
+    },
+    {
       title: "Digital Filters and Signal Processing",
       publisher: "INTECH Open Science | Open Minds",
-      year: "2013",
-      isbn: "980-953-307-645-9",
+      year: "2012",
+      isbn: "978-953-307-645-9",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "http://www.intechopen.com/books/digital-filters-and-signal-processing"
     },
     {
       title: "Software Development Techniques for Constructive Information Systems Design",
       publisher: "IGI Global USA",
       year: "2013",
-      isbn: "978-1466636798",
-      impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      isbn: "978-1466636793",
+      impact: "Edited Book - Indexed in ACM Digital Library & Scopus",
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "http://www.igi-global.com/book/software-development-techniques-constructive-information/72159"
     },
     // 2012
     {
@@ -492,7 +553,8 @@ export const books = [
       year: "2012",
       isbn: "978-1466601019",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "http://www.igi-global.com/book/wireless-sensor-networks-energy-efficiency/56036"
     }
   ];
 
