@@ -1658,6 +1658,34 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
               >
                 <h2 className="text-2xl font-medium text-primary border-b border-border pb-4 mb-8">PUBLICATIONS</h2>
                 
+                {/* Statistics Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{books.length + bookChapters.length + journalArticles.length + proceedingsArticles.length}</p>
+                      <p className="text-sm text-muted-foreground">Total Publications</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{books.length}</p>
+                      <p className="text-sm text-muted-foreground">Books</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{journalArticles.length}</p>
+                      <p className="text-sm text-muted-foreground">Journal Articles</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{bookChapters.length}</p>
+                      <p className="text-sm text-muted-foreground">Book Chapters</p>
+                    </CardContent>
+                  </Card>
+                </div>
+                
                 {/* Filter Buttons */}
                 <motion.div 
                   className="flex flex-wrap gap-4 mb-8 justify-center"
@@ -2359,6 +2387,29 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 </div>
 
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">AWARDS AND STEWARDSHIP</h2>
+                
+                {/* Statistics Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{awardsData.length}</p>
+                      <p className="text-sm text-muted-foreground">Total Awards</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{awardsData.filter(a => a.year && parseInt(a.year) >= 2020).length}</p>
+                      <p className="text-sm text-muted-foreground">Recent (2020+)</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{awardsData.filter(a => a.name.toLowerCase().includes('best') || a.name.toLowerCase().includes('outstanding') || a.name.toLowerCase().includes('top')).length}</p>
+                      <p className="text-sm text-muted-foreground">Excellence Awards</p>
+                    </CardContent>
+                  </Card>
+                </div>
+                
                 <div className="space-y-4">
                   {awardsData.map((award, index) => (
                     <ScrollReveal key={index} delay={index * 0.03}>
@@ -2406,6 +2457,29 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 className="max-w-6xl mx-auto"
               >
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">PROFESSIONAL MEMBERSHIPS</h2>
+                
+                {/* Statistics Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{membershipsData.length}</p>
+                      <p className="text-sm text-muted-foreground">Total Memberships</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{membershipsData.filter(m => m.organisation.includes('Fellow') || m.role.includes('Fellow')).length}</p>
+                      <p className="text-sm text-muted-foreground">Fellowships</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{membershipsData.filter(m => m.organisation.includes('Senior') || m.role.includes('Senior')).length}</p>
+                      <p className="text-sm text-muted-foreground">Senior Memberships</p>
+                    </CardContent>
+                  </Card>
+                </div>
+                
                 <div className="space-y-4">
                   {membershipsData.map((membership, index) => (
                     <ScrollReveal key={index} delay={index * 0.05}>
@@ -2595,6 +2669,34 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
               >
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">EVALUATION ACTIVITIES</h2>
                 
+                {/* Statistics Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Total Evaluations</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Journal').length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Journal Reviews</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Thesis').length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Thesis Evaluations</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Promotion').length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Promotions</p>
+                    </CardContent>
+                  </Card>
+                </div>
+                
                 {!evaluationActivities ? (
                   <div className="text-center py-12">
                     <p className="text-muted-foreground">Loading evaluation data...</p>
@@ -2769,6 +2871,34 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
               >
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">STUDENT SUPERVISION</h2>
                 
+                {/* Statistics Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{(ongoingSupervisions?.length || 0) + (completedSupervisions?.length || 0)}</p>
+                      <p className="text-sm text-muted-foreground">Total Students</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{completedSupervisions?.length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Completed</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{ongoingSupervisions?.length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Ongoing</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{completedSupervisions?.filter(s => s.level === 'PhD').length || 0}</p>
+                      <p className="text-sm text-muted-foreground">PhD Graduated</p>
+                    </CardContent>
+                  </Card>
+                </div>
+                
                 {!ongoingSupervisions && !completedSupervisions ? (
                   <div className="text-center py-12">
                     <p className="text-muted-foreground">Loading supervision data...</p>
@@ -2902,6 +3032,34 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 className="max-w-6xl mx-auto"
               >
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">KEYNOTE PRESENTATIONS & CONFERENCES</h2>
+                
+                {/* Statistics Cards */}
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{(keynoteData?.length || 0) + (invitedSpeakerData?.length || 0) + (eventOrganiserData?.length || 0) + (oralPresenterData?.length || 0)}</p>
+                      <p className="text-sm text-muted-foreground">Total Presentations</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{keynoteData?.length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Keynote Speaker</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{invitedSpeakerData?.length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Invited Speaker</p>
+                    </CardContent>
+                  </Card>
+                  <Card className="text-center p-6">
+                    <CardContent className="space-y-2">
+                      <p className="text-3xl font-medium text-primary">{eventOrganiserData?.length || 0}</p>
+                      <p className="text-sm text-muted-foreground">Event Organiser</p>
+                    </CardContent>
+                  </Card>
+                </div>
                 
                 {!keynoteData && !invitedSpeakerData && !eventOrganiserData && !oralPresenterData ? (
                   <div className="text-center py-12">
