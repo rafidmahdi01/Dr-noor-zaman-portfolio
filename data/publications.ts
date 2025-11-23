@@ -3,8 +3,29 @@
 // Import local book cover images
 import commingSoonBookImage from '../src/assets/image/comming soon book image.png';
 
-// Military AI book cover - CRC Press book cover image
-const militaryAIBookCover = 'https://images.routledge.com/common/jackets/crclarge/978103271/9781032712703.jpg';
+// Import downloaded book covers
+import book9798369389447 from '../src/assets/image/books/9798369389447.webp';
+import book9798369389393 from '../src/assets/image/books/9798369389393.webp';
+import book9798369337035 from '../src/assets/image/books/9798369337035.webp';
+import book9798369354155 from '../src/assets/image/books/9798369354155.webp';
+import book9781668463611 from '../src/assets/image/books/9781668463611.webp';
+import book9781668476253 from '../src/assets/image/books/9781668476253.webp';
+import book9798369313633 from '../src/assets/image/books/9798369313633.webp';
+import book9798369338162 from '../src/assets/image/books/9798369338162.webp';
+import book9798369353752 from '../src/assets/image/books/9798369353752.webp';
+import book9798369307748 from '../src/assets/image/books/9798369307748.webp';
+import bookPBSE0250 from '../src/assets/image/books/PBSE0250.jpg';
+import book9781668498231 from '../src/assets/image/books/9781668498231.webp';
+import book9781668459256 from '../src/assets/image/books/9781668459256.webp';
+import book9781668452844 from '../src/assets/image/books/9781668452844.webp';
+import book9781799896241 from '../src/assets/image/books/9781799896241.webp';
+import book9781799889298 from '../src/assets/image/books/9781799889298.webp';
+import book9781799892014 from '../src/assets/image/books/9781799892014.webp';
+import book9780367365721 from '../src/assets/image/books/9780367365721.jpg';
+import book9781799867098 from '../src/assets/image/books/9781799867098.webp';
+import book9781799818519 from '../src/assets/image/books/9781799818519.webp';
+import book9780367431372 from '../src/assets/image/books/9780367431372.jpg';
+import militaryAIBookCover from '../src/assets/image/books/9781032712703.jpg';
 
 export const books = [
     // 2026
@@ -78,7 +99,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-8944-7",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369389447.webp",
+      imageUrl: book9798369389447,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-8944-7"
     },
     {
@@ -87,7 +108,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-8939-3",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369389393.webp",
+      imageUrl: book9798369389393,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-8939-3"
     },
     {
@@ -96,7 +117,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-3703-5",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369337035.webp",
+      imageUrl: book9798369337035,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-3703-5"
     },
     {
@@ -105,7 +126,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-5415-5",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369354155.webp",
+      imageUrl: book9798369354155,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-5415-5"
     },
     // 2024
@@ -124,7 +145,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-6361-1",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668463611.webp",
+      imageUrl: book9781668463611,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-6361-1"
     },
     {
@@ -133,7 +154,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-7625-3",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668476253.webp",
+      imageUrl: book9781668476253,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-7625-3"
     },
     {
@@ -142,7 +163,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-1363-3",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369313633.webp",
+      imageUrl: book9798369313633,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-1363-3"
     },
     {
@@ -151,7 +172,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-3816-2",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369338162.webp",
+      imageUrl: book9798369338162,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-3816-2"
     },
     {
@@ -160,7 +181,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-5375-2",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369353752.webp",
+      imageUrl: book9798369353752,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-5375-2"
     },
     {
@@ -169,7 +190,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-0774-8",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369307748.webp",
+      imageUrl: book9798369307748,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-0774-8"
     },
     {
@@ -187,7 +208,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-83953-945-9",
       impact: "Edited Book - Concepts, frameworks, applications and case studies",
-      imageUrl: "https://shop.theiet.org/Media/Default/Products/PBSE0250.jpg",
+      imageUrl: bookPBSE0250,
       pdfUrl: "https://shop.theiet.org/split-federated-learning-for-secure-iot-applications"
     },
     {
@@ -196,7 +217,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-9823-1",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668498231.webp",
+      imageUrl: book9781668498231,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-9823-1"
     },
     // 2023
@@ -206,7 +227,7 @@ export const books = [
       year: "2023",
       isbn: "978-1-6684-5925-6",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668459256.webp",
+      imageUrl: book9781668459256,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-5925-6"
     },
     {
@@ -233,7 +254,7 @@ export const books = [
       year: "2023",
       isbn: "978-1-6684-5284-4",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668452844.webp",
+      imageUrl: book9781668452844,
       pdfUrl: "https://doi.org/10.4018/978-1-6684-5284-4"
     },
     // 2022
@@ -288,7 +309,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-9624-1",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799896241.webp"
+      imageUrl: book9781799896241
     },
     {
       title: "Approaches and Applications of Deep Learning in Virtual Medical Care",
@@ -296,7 +317,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-8929-8",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799889298.webp"
+      imageUrl: book9781799889298
     },
     {
       title: "Empowering Sustainable Industrial 4.0 Systems With Machine Intelligence",
@@ -304,7 +325,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-9201-4",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799892014.webp"
+      imageUrl: book9781799892014
     },
     {
       title: "Information Security: Handbook",
@@ -312,7 +333,7 @@ export const books = [
       year: "2022",
       isbn: "978-0367365721",
       impact: "Edited Book",
-      imageUrl: "https://images.routledge.com/common/jackets/crclarge/978036736/9780367365721.jpg"
+      imageUrl: book9780367365721
     },
     // 2021
     {
@@ -321,7 +342,7 @@ export const books = [
       year: "2021",
       isbn: "978-1-7998-6709-8",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799867098.webp"
+      imageUrl: book9781799867098
     },
     {
       title: "Deep Learning in Data Analytics Recent Techniques, Practices and Applications",
@@ -378,7 +399,7 @@ export const books = [
       year: "2020",
       isbn: "978-1-7998-1851-9",
       impact: "Edited Book",
-      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799818519.webp"
+      imageUrl: book9781799818519
     },
     {
       title: "A Smart Agriculture Land Suitability Detection Model Using Machine Learning with Google Earth Engine",
@@ -410,7 +431,7 @@ export const books = [
       year: "2020",
       isbn: "978-0367431372",
       impact: "Edited Book - Internet of Everything (IoE) 1st Edition",
-      imageUrl: "https://images.routledge.com/common/jackets/crclarge/978036743/9780367431372.jpg"
+      imageUrl: book9780367431372
     },
     // 2018
     {
