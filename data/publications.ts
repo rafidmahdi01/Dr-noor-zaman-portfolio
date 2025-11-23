@@ -105,7 +105,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-5415-5",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369354155.webp",
       pdfUrl: "https://doi.org/10.4018/979-8-3693-5415-5"
     },
     // 2024
@@ -124,7 +124,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-6361-1",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668463611.webp",
       pdfUrl: "https://doi.org/10.4018/978-1-6684-6361-1"
     },
     {
@@ -133,7 +133,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-7625-3",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668476253.webp",
       pdfUrl: "https://doi.org/10.4018/978-1-6684-7625-3"
     },
     {
@@ -142,7 +142,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-1363-3",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369313633.webp",
       pdfUrl: "https://doi.org/10.4018/979-8-3693-1363-3"
     },
     {
@@ -151,7 +151,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-3816-2",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369338162.webp",
       pdfUrl: "https://doi.org/10.4018/979-8-3693-3816-2"
     },
     {
@@ -160,7 +160,7 @@ export const books = [
       year: "2024",
       isbn: "979-8-3693-5375-2",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9798369353752.webp",
       pdfUrl: "https://doi.org/10.4018/979-8-3693-5375-2"
     },
     {
@@ -196,7 +196,7 @@ export const books = [
       year: "2024",
       isbn: "978-1-6684-9823-1",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668498231.webp",
       pdfUrl: "https://doi.org/10.4018/978-1-6684-9823-1"
     },
     // 2023
@@ -233,7 +233,7 @@ export const books = [
       year: "2023",
       isbn: "978-1-6684-5284-4",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781668452844.webp",
       pdfUrl: "https://doi.org/10.4018/978-1-6684-5284-4"
     },
     // 2022
@@ -288,7 +288,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-9624-1",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799896241.webp"
     },
     {
       title: "Approaches and Applications of Deep Learning in Virtual Medical Care",
@@ -296,7 +296,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-8929-8",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799889298.webp"
     },
     {
       title: "Empowering Sustainable Industrial 4.0 Systems With Machine Intelligence",
@@ -304,7 +304,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-7998-9201-4",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799892014.webp"
     },
     {
       title: "Information Security: Handbook",
@@ -312,7 +312,7 @@ export const books = [
       year: "2022",
       isbn: "978-0367365721",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://images.routledge.com/common/jackets/crclarge/978036736/9780367365721.jpg"
     },
     // 2021
     {
@@ -321,7 +321,7 @@ export const books = [
       year: "2021",
       isbn: "978-1-7998-6709-8",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799867098.webp"
     },
     {
       title: "Deep Learning in Data Analytics Recent Techniques, Practices and Applications",
@@ -378,7 +378,7 @@ export const books = [
       year: "2020",
       isbn: "978-1-7998-1851-9",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://coverimages.igi-global.com/cover-images/covers/9781799818519.webp"
     },
     {
       title: "A Smart Agriculture Land Suitability Detection Model Using Machine Learning with Google Earth Engine",
@@ -410,7 +410,7 @@ export const books = [
       year: "2020",
       isbn: "978-0367431372",
       impact: "Edited Book - Internet of Everything (IoE) 1st Edition",
-      imageUrl: commingSoonBookImage
+      imageUrl: "https://images.routledge.com/common/jackets/crclarge/978036743/9780367431372.jpg"
     },
     // 2018
     {
@@ -1326,7 +1326,7 @@ export const books = [
       imageUrl: commingSoonBookImage
     },
     {
-      title: "Treatment of Novel Coronavirus (2019-nCoV) Using Hinokitiol (ß-thujaplicin) Copper Chelate",
+      title: "Treatment of Novel Coronavirus (2019-nCoV) Using Hinokitiol (ï¿½-thujaplicin) Copper Chelate",
       book: "How COVID-19 is Accelerating the Digital Revolution",
       publisher: "Springer",
       year: "2022",
@@ -1867,12 +1867,12 @@ export const books = [
       imageUrl: "Secured and Privacy-Preserving Multi-Authority Access Control System for Cloud-Based Healthcare Data Sharing"
     },
     {
-      title: "A novel machine learning–based hand gesture recognition using hci on iot assisted cloud platform",
+      title: "A novel machine learningï¿½based hand gesture recognition using hci on iot assisted cloud platform",
       journal: "Computer Systems Science and Engineering",
       year: "2023",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10238_1.pdf",
-      imageUrl: "A novel machine learning–based hand gesture recognition using hci on iot assisted cloud platform"
+      imageUrl: "A novel machine learningï¿½based hand gesture recognition using hci on iot assisted cloud platform"
     },
     {
       title: "Alpha fusion adversarial attack analysis using deep learning",
@@ -3647,12 +3647,12 @@ export const books = [
     },
     // 2019
     {
-      title: "The Coin Passcode – A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices",
+      title: "The Coin Passcode ï¿½ A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices",
       journal: "International Journal of Advanced Computer Science and Applications",
       year: "2019",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10954_1.pdf",
-      imageUrl: "The Coin Passcode – A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices"
+      imageUrl: "The Coin Passcode ï¿½ A Shoulder-Surfing Proof Graphical Password Authentication Model for Mobile Devices"
     },
     {
       title: "Survey on Isomorphic Graph Algorithms for Graph Analytics",
@@ -4442,7 +4442,7 @@ export const books = [
     },
     // 2021
     {
-      title: "Honeypot Coupled Machine Learning Model for Botnet Detection and Classification in IoT Smart Factory – An Investigation",
+      title: "Honeypot Coupled Machine Learning Model for Botnet Detection and Classification in IoT Smart Factory ï¿½ An Investigation",
       conference: "MATEC Web Conference",
       year: "2021",
       impact: "ISI-Indexed",

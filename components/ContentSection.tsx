@@ -467,8 +467,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                         {[
                           { label: "Extension", value: "5277", icon: "📞", isLink: false },
                           { label: "Email", value: "noorzaman.jhanjhi@taylors.edu.my", icon: "📧", isLink: true },
-                          { label: "ResearcherID", value: "P-5063-2017", icon: "🔬", isLink: true },
-                          { label: "Scopus ID", value: "56634885400", icon: "📊", isLink: true },
+                          { label: "ResearcherID", value: "F-3051-2011", icon: "🔬", isLink: true, href: "http://www.researcherid.com/rid/F-3051-2011" },
+                          { label: "Scopus ID", value: "36088700700", icon: "📊", isLink: true, href: "http://www.scopus.com/authid/detail.url?authorId=36088700700" },
+                          { label: "Personal Homepage", value: "noorzaman.com", icon: "🌐", isLink: true, href: "https://noorzaman.com/profile/" },
                           { label: "Google Scholar", value: "View Profile", icon: "🔍", isLink: true, href: "https://scholar.google.com/citations?hl=en&user=J6QVIncAAAAJ&view_op=list_works" }
                         ].map((item, index) => (
                           <motion.div
