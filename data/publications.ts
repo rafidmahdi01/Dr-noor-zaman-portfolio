@@ -364,6 +364,15 @@ export const books = [
     },
     // 2021
     {
+      title: "ICT Solutions for Improving Smart Communities in Asia",
+      publisher: "IGI Global",
+      year: "2021",
+      isbn: "978-1-7998-5151-6",
+      impact: "Edited Book",
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.igi-global.com/book/ict-solutions-improving-smart-communities/260159"
+    },
+    {
       title: "AI Techniques for Personalized E-Learning Systems",
       publisher: "Scrivener Publishing, Wiley",
       year: "2021",
@@ -397,6 +406,15 @@ export const books = [
       impact: "Edited Book",
       imageUrl: book9780367641696,
       pdfUrl: "https://amzn.to/3FlE1g3"
+    },
+    {
+      title: "Secure IoT: Advance in Cryptography and Authentication",
+      publisher: "CRC Press, Taylor & Francis",
+      year: "2021",
+      isbn: "",
+      impact: "Edited Book",
+      imageUrl: commingSoonBookImage,
+      pdfUrl: "https://www.taylorfrancis.com/"
     },
     {
       title: "Industrial Internet of Things (IIoT): Intelligent Analytics for Predictive Maintenance",
