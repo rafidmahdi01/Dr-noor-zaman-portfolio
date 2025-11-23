@@ -35,6 +35,7 @@ import book9781032066202 from '../src/assets/image/books/9781032066202.jpg';
 import book9783030981679 from '../src/assets/image/books/9783030981679.jpg';
 import book9783030758554 from '../src/assets/image/books/9783030758554.jpg';
 import book9780367641696 from '../src/assets/image/books/9780367641696.jpg';
+import book9783031751698 from '../src/assets/image/books/9783031751698.jpg';
 
 export const books = [
     // 2026
@@ -145,7 +146,7 @@ export const books = [
       year: "2024",
       isbn: "978-3031751698",
       impact: "Edited Book - Communications in Computer and Information Science",
-      imageUrl: commingSoonBookImage,
+      imageUrl: book9783031751698,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15077_1.png"
     },
     {
@@ -293,15 +294,6 @@ export const books = [
       impact: "Edited Book",
       imageUrl: commingSoonBookImage,
       pdfUrl: "https://www.wiley.com/en-us/Artificial+Intelligence+for+Cyber+Security%3A+Methods%2C+Issues+and+Possible+Horizons+or+Opportunities-p-9781119762263"
-    },
-    {
-      title: "Computing Science, Communication and Security: COMS2 2022",
-      publisher: "Springer Nature",
-      year: "2022",
-      isbn: "",
-      impact: "Edited Book - Conference Proceedings",
-      imageUrl: commingSoonBookImage,
-      pdfUrl: "https://link.springer.com/book/10.1007/978-3-031-10551-7"
     },
     {
       title: "How COVID-19 is Accelerating the Digital Revolution",
