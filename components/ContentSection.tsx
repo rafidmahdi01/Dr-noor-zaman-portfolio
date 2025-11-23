@@ -4320,16 +4320,20 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                       <h3 className="text-lg font-medium text-foreground">Academic Profiles</h3>
                       <div className="space-y-3">
                         <div>
+                          <p className="text-sm font-medium text-foreground">Google Scholar</p>
+                          <a href="https://scholar.google.com/citations?hl=en&user=J6QVIncAAAAJ&view_op=list_works" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">View Publications</a>
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-foreground">LinkedIn</p>
+                          <a href="https://www.linkedin.com/in/noorzaman/" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">Connect on LinkedIn</a>
+                        </div>
+                        <div>
                           <p className="text-sm font-medium text-foreground">ResearcherID</p>
                           <a href="#" className="text-primary text-sm hover:underline">P-5063-2017</a>
                         </div>
                         <div>
                           <p className="text-sm font-medium text-foreground">Scopus Author ID</p>
                           <a href="#" className="text-primary text-sm hover:underline">56634885400</a>
-                        </div>
-                        <div>
-                          <p className="text-sm font-medium text-foreground">Personal Homepage</p>
-                          <a href="#" className="text-primary text-sm hover:underline">View Profile</a>
                         </div>
                       </div>
                     </div>

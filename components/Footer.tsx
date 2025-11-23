@@ -32,7 +32,7 @@ export function Footer() {
     },
     {
       name: 'LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/noorzaman/',
       icon: <Linkedin className="w-5 h-5" />
     },
     {
@@ -77,6 +77,8 @@ export function Footer() {
                 <motion.a
                   key={link.name}
                   href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   className="p-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200 text-muted-foreground hover:text-primary border border-border"
