@@ -2468,14 +2468,14 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">{membershipsData.filter(m => m.organisation.includes('Fellow') || m.role.includes('Fellow')).length}</p>
-                      <p className="text-sm text-muted-foreground">Fellowships</p>
+                      <p className="text-3xl font-medium text-primary">{membershipsData.filter(m => m.role.includes('Professional')).length}</p>
+                      <p className="text-sm text-muted-foreground">Professional Members</p>
                     </CardContent>
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">{membershipsData.filter(m => m.organisation.includes('Senior') || m.role.includes('Senior')).length}</p>
-                      <p className="text-sm text-muted-foreground">Senior Memberships</p>
+                      <p className="text-3xl font-medium text-primary">{membershipsData.filter(m => m.organisation === 'IEEE' || m.organisation === 'ACM').length}</p>
+                      <p className="text-sm text-muted-foreground">IEEE/ACM Members</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -2679,7 +2679,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Journal').length || 0}</p>
+                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Article in Journal').length || 0}</p>
                       <p className="text-sm text-muted-foreground">Journal Reviews</p>
                     </CardContent>
                   </Card>
@@ -2691,7 +2691,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Promotion').length || 0}</p>
+                      <p className="text-3xl font-medium text-primary">{evaluationActivities?.filter(e => e.category === 'Academic Promotion Evaluator').length || 0}</p>
                       <p className="text-sm text-muted-foreground">Promotions</p>
                     </CardContent>
                   </Card>
@@ -2893,7 +2893,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">{completedSupervisions?.filter(s => s.level === 'PhD').length || 0}</p>
+                      <p className="text-3xl font-medium text-primary">{completedSupervisions?.filter(s => s.level === 'PhD/Doctoral').length || 0}</p>
                       <p className="text-sm text-muted-foreground">PhD Graduated</p>
                     </CardContent>
                   </Card>
