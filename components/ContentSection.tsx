@@ -29,6 +29,9 @@ import { partnerOrganizations, awardsData, membershipsData } from '../data/award
 // Import publications data
 import { books, bookChapters, journalArticles, proceedingsArticles } from '../data/publications';
 
+// Import research projects data
+import { researchProjects } from '../data/research-projects';
+
 import { 
   Award, 
   BookOpen, 
@@ -368,7 +371,8 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           { label: "Full Name", value: "Professor Dr. Noor Zaman Jhanjhi", icon: "👤" },
                           { label: "Position", value: "Professor", icon: "🎓" },
                           { label: "School", value: "School of Computer Science", icon: "🏫" },
-                          { label: "Faculty", value: "Faculty of Innovation & Technology", icon: "🏛️" }
+                          { label: "Faculty", value: "Faculty of Innovation & Technology", icon: "🏛️" },
+                          { label: "LinkedIn", value: "linkedin.com/in/noorzaman", icon: "🔗", isLink: true, href: "https://www.linkedin.com/in/noorzaman/" }
                         ].map((item, index) => (
                           <motion.div
                             key={item.label}
@@ -391,6 +395,11 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             style={{ 
                               transformStyle: "preserve-3d",
                               perspective: "1000px"
+                            }}
+                            onClick={() => {
+                              if (item.href) {
+                                window.open(item.href, '_blank', 'noopener,noreferrer');
+                              }
                             }}
                           >
                             {/* Faster shine effect with red tint */}
@@ -459,7 +468,8 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           { label: "Extension", value: "5277", icon: "📞", isLink: false },
                           { label: "Email", value: "noorzaman.jhanjhi@taylors.edu.my", icon: "📧", isLink: true },
                           { label: "ResearcherID", value: "P-5063-2017", icon: "🔬", isLink: true },
-                          { label: "Scopus ID", value: "56634885400", icon: "📊", isLink: true }
+                          { label: "Scopus ID", value: "56634885400", icon: "📊", isLink: true },
+                          { label: "Google Scholar", value: "View Profile", icon: "🔍", isLink: true, href: "https://scholar.google.com/citations?hl=en&user=J6QVIncAAAAJ&view_op=list_works" }
                         ].map((item, index) => (
                           <motion.div
                             key={item.label}
@@ -482,6 +492,11 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             style={{ 
                               transformStyle: "preserve-3d",
                               perspective: "1000px"
+                            }}
+                            onClick={() => {
+                              if (item.href) {
+                                window.open(item.href, '_blank', 'noopener,noreferrer');
+                              }
                             }}
                           >
                             {/* Faster shine effect with red tint */}
@@ -561,8 +576,23 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">BIOGRAPHY</h2>
                 <div className="space-y-6 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Professor Dr Noor Zaman Jhanjhi is currently working as a <strong>Professor | Director for Research Center CII | Programme Director</strong> of Postgraduate Research Programmes [Computing] at the 
-                    School of Computer Science, Faculty of Innovation and Technology, Taylor's University, Malaysia. Highlights of the research profile summary are as follows:
+                    Prof. Dr. Noor Zaman Jhanjhi is a highly esteemed Senior Professor of Computer Science, specializing in Artificial Intelligence and Cybersecurity. He currently holds the position of Professor at the School of Computer Science at Taylor's University, Malaysia. He serves as the Director of Research Center, Center for Intelligent Innovations CII, Program Director for Postgraduate Research Degree Programmes as well as the Director of the Research Center. With a career marked by academic leadership and groundbreaking research, Prof. Jhanjhi has been pivotal in advancing research and education in computer science.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    Recognized globally, Prof. Jhanjhi has been ranked among the world's top 2% research scientists for four consecutive years (2022, 2023, 2024, and 2025). In Malaysia, he is ranked the No. 1 Best Computer Science researcher (AD Scientific Index) and was honored with the Outstanding Faculty Member award by MDEC Malaysia in 2022, as well as the Vice Chancellor's Best Research Citations Award from Taylor's University in 2023.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    His impressive academic portfolio includes over 80 research books edited or authored with prestigious publishers such as Springer, Elsevier, Taylor & Francis, Wiley, IET, Bentham, CRC, and IGI Global USA. His research has garnered more than 1000 points in impact factor, reflecting the depth and breadth of his contributions to the field. A dedicated mentor, Prof. Jhanjhi has supervised and co-supervised 45 postgraduate students to successful graduation and has served as an external examiner for over 70 Ph.D. and Master's theses globally.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    In addition to his academic accomplishments, Prof. Jhanjhi holds Editor in Chief, Associate Editor and EAB positions with several high-ranking journals, including PeerJ Computer Science, CMC Computers, Materials & Continua, and Frontiers in Communication and Networks. He was also recognized as an Outstanding Associate Editor for IEEE ACCESS. His contributions to research and innovation are further demonstrated by his successful management of approx. 40 internationally funded research grants.
+                  </p>
+
+                  <p className="leading-relaxed">
+                    A sought-after keynote speaker, Prof. Jhanjhi has delivered over 90 invited Keynote talks at international conferences and has chaired numerous conferences and sessions. His commitment to academic excellence and accreditation extends to his involvement with ABET, NCAAA, and NCEAC over the past decade.
                   </p>
                   
                   <h3 className="text-xl font-medium text-primary mt-8">Highlights of Profile Summary</h3>
@@ -841,396 +871,62 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
               >
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">RESEARCH PROJECTS</h2>
                 
-                <div className="grid md:grid-cols-4 gap-6 mb-8">
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">19</p>
+                      <p className="text-3xl font-medium text-primary">36+</p>
                       <p className="text-sm text-muted-foreground">Total Projects</p>
                     </CardContent>
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">7</p>
-                      <p className="text-sm text-muted-foreground">Project Leader</p>
+                      <p className="text-3xl font-medium text-primary">~5M</p>
+                      <p className="text-sm text-muted-foreground">Total Funding (SAR)</p>
                     </CardContent>
                   </Card>
                   <Card className="text-center p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">9</p>
-                      <p className="text-sm text-muted-foreground">Sub-Project Leader</p>
-                    </CardContent>
-                  </Card>
-                  <Card className="text-center p-6">
-                    <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">3</p>
-                      <p className="text-sm text-muted-foreground">Co-Researcher</p>
+                      <p className="text-3xl font-medium text-primary">15+</p>
+                      <p className="text-sm text-muted-foreground">Years of Research</p>
                     </CardContent>
                   </Card>
                 </div>
 
                 <div className="space-y-4">
-                  <ScrollReveal delay={0.05}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Proposing Machine Learning Model to Detect the Colon Cancer Cells</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2023 to 2025</span>
+                  {researchProjects.map((project, index) => (
+                    <ScrollReveal key={project.id} delay={0.05 * (index + 1)}>
+                      <Card className="p-5 hover:shadow-md transition-all">
+                        <div className="flex justify-between items-start">
+                          <div className="flex-1">
+                            <h4 className="font-medium text-foreground">{project.title}</h4>
+                            {project.description && (
+                              <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+                            )}
+                            <div className="flex items-center text-sm text-muted-foreground mt-2">
+                              <Calendar className="w-4 h-4 text-primary mr-2" />
+                              <span>{project.period}</span>
+                            </div>
+                            {project.grantNumber && (
+                              <p className="text-xs text-muted-foreground mt-1">Grant No: {project.grantNumber}</p>
+                            )}
+                            {project.funding && (
+                              <p className="text-xs text-muted-foreground">Funding: {project.funding}</p>
+                            )}
+                            <div className="flex items-center space-x-2 mt-3">
+                              <Badge variant={project.role === 'Project Leader' ? 'default' : 'outline'}>
+                                {project.role}
+                              </Badge>
+                              <Badge variant={project.type === 'International' ? 'default' : 'secondary'}>
+                                {project.type}
+                              </Badge>
+                              <Badge variant="secondary">{project.institution}</Badge>
+                            </div>
                           </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Co-researcher</Badge>
-                            <Badge variant="secondary">Taylor's University</Badge>
-                          </div>
+                          <Search className="w-5 h-5 text-primary ml-4" />
                         </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.1}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Environmental Monitoring in Underground Mines Using Sensor-enabled Internet of Things</h4>
-                          <p className="text-sm text-muted-foreground mt-2">ASEAN-India Collaborative R&D scheme under ASEAN-India S&T Development Fund (AISTDF). International level project in collaboration with Malaysia, India and Vietnam, 2021-22, INR 10,00000 (CRD/2020/000284)</p>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2021 to 2023</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Co-researcher</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.15}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Knowledge exchange on the opportunities and challenges of implementing UK-based smart city governance initiative in Malaysia</h4>
-                          <p className="text-sm text-muted-foreground mt-2">International level project with collaboration with UK 2019-20, RM 20,000 (HEPP/1/2019/SOCIT/001)</p>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2019 to 2021</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="default">Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.2}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Knowledge exchange on the opportunities and challenges of implementing UK-based smart city governance initiative in Malaysia</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2019 to 2020</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Co-researcher</Badge>
-                            <Badge variant="secondary">National</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.25}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Knowledge exchange on the opportunities and challenges of implementing UK-based smart city governance initiative in Malaysia</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2019 to 2020</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="default">Project Leader</Badge>
-                            <Badge variant="secondary">National</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.3}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">The Global Software Development (GSD) and Latest Software Development Trends in Gulf region</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2018 to 2019</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.35}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Enhancing ovarian cancer identification in ovarian imaging analysis</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2015 to 2016</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.4}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Three Factor Smart Phone Authentication Protocol for Command & Control</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2015 to 2016</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="default">Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.45}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">A Novel Optimization to Medical Image Enhancement for Saudi Hospitals</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2013 to 2014</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.5}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Intelligent Cloud-Based Collaborative Multi-Modal Disease Diagnostic System</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2013 to 2014</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="default">Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.55}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">An Improved Software Development Process for Small and Medium Software Development Enterprises</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2013 to 2014</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.6}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Simulation of Crowds at Jamarat</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2012 to 2013</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.65}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Proposing a Reliable Solution to Assist the Blind Community based on Wireless Sensor Networks and Global Positioning System</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2012 to 2013</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.7}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Proposing Secured & Reliable Wireless Sensor Network (WSN) Based System for Critical Pipeline Infrastructure</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2011 to 2012</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.75}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Development of Distance Parallel Computing Infrastructure for on-line High Performance Computing Applications</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2011 to 2012</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Co-researcher</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.8}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Designing Secure Routing in Wireless Sensor Networks for increasing Reliability and scalability of (WSN)</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2010 to 2011</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="default">Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.85}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">New Characterizations of Two Dimensional Cellular Automata and its Applications in Image Analysis</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2010 to 2011</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Co-researcher</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.9}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Designing of energy aware Quality of Service (QoS) based routing protocol for efficiency improvement in Wireless Sensor Network (WSN)</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2010 to 2011</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="default">Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
-
-                  <ScrollReveal delay={0.95}>
-                    <Card className="p-5 hover:shadow-md transition-all">
-                      <div className="flex justify-between items-start">
-                        <div className="flex-1">
-                          <h4 className="font-medium text-foreground">Designing of Energy Efficient Routing Protocol for improving life cycle and Efficiency Enhancement of Wireless Sensor Network (WSN)</h4>
-                          <div className="flex items-center text-sm text-muted-foreground mt-2">
-                            <Calendar className="w-4 h-4 text-primary mr-2" />
-                            <span>2009</span>
-                          </div>
-                          <div className="flex items-center space-x-2 mt-3">
-                            <Badge variant="outline">Sub-Project Leader</Badge>
-                            <Badge variant="default">International</Badge>
-                          </div>
-                        </div>
-                        <Search className="w-5 h-5 text-primary ml-4" />
-                      </div>
-                    </Card>
-                  </ScrollReveal>
+                      </Card>
+                    </ScrollReveal>
+                  ))}
                 </div>
               </motion.div>
             </TabsContent>
@@ -2626,7 +2322,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 transition={{ duration: 0.6 }}
                 className="max-w-6xl mx-auto"
               >
-                <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">PARTNER ORGANIZATIONS & AFFILIATIONS</h2>
+                <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">Adjunct Professor / Visiting Professor</h2>
                 
                 <div className="mb-16">
                   <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
