@@ -36,6 +36,15 @@ import book9783030981679 from '../src/assets/image/books/9783030981679.jpg';
 import book9783030758554 from '../src/assets/image/books/9783030758554.jpg';
 import book9780367641696 from '../src/assets/image/books/9780367641696.jpg';
 import book9783031751698 from '../src/assets/image/books/9783031751698.jpg';
+import book9798369384978 from '../src/assets/image/books/9798369384978.webp';
+import aiCybersecurityIoT from '../src/assets/image/books/ai-cybersecurity-iot.pdf';
+import book9781799871149 from '../src/assets/image/books/9781799871149.webp';
+import securingLTE from '../src/assets/image/books/securing-lte.jpg';
+import biomedicalEngineering from '../src/assets/image/books/biomedical-engineering.jpg';
+import elivaDataTransform from '../src/assets/image/books/eliva-data-transform.jpg';
+import elivaAssessment from '../src/assets/image/books/eliva-assessment.jpg';
+import book9781466697928 from '../src/assets/image/books/9781466697928.webp';
+import book9781466601017 from '../src/assets/image/books/9781466601017.webp';
 
 export const books = [
     // 2026
@@ -64,7 +73,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-8497-8",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: book9798369384978,
       pdfUrl: "https://www.igi-global.com/book/computer-vision-edge-computing-technologies/336861"
     },
     {
@@ -292,7 +301,7 @@ export const books = [
       year: "2022",
       isbn: "978-1-119-76226-3",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: aiCybersecurityIoT,
       pdfUrl: "https://www.wiley.com/en-us/Artificial+Intelligence+for+Cyber+Security%3A+Methods%2C+Issues+and+Possible+Horizons+or+Opportunities-p-9781119762263"
     },
     {
@@ -361,7 +370,7 @@ export const books = [
       year: "2021",
       isbn: "978-1-7998-5151-6",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: book9781799871149,
       pdfUrl: "https://www.igi-global.com/book/ict-solutions-improving-smart-communities/260159"
     },
     {
@@ -432,7 +441,7 @@ export const books = [
       year: "2021",
       isbn: "979-8759699880",
       impact: "Authored Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: securingLTE,
       pdfUrl: "https://www.amazon.com/Securing-Users-Long-Term-Evolution-LTE/dp/B09KY9Z2ZD"
     },
     // 2020
@@ -451,7 +460,7 @@ export const books = [
       year: "2020",
       isbn: "",
       impact: "Book Series",
-      imageUrl: commingSoonBookImage
+      imageUrl: biomedicalEngineering
     },
     {
       title: "Employing Recent Technologies for Improved Digital Governance",
@@ -475,7 +484,7 @@ export const books = [
       year: "2020",
       isbn: "978-1952751776",
       impact: "Authored Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: elivaDataTransform
     },
     {
       title: "A Smart Assessment Methodology to Measure and Analyze Google Play Store",
@@ -483,7 +492,7 @@ export const books = [
       year: "2020",
       isbn: "978-1952751691",
       impact: "Authored Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: elivaAssessment
     },
     {
       title: "Blockchain Technology: Fundamentals, Applications, and Case Studies",
@@ -518,7 +527,7 @@ export const books = [
       year: "2016",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: book9781466697928
     },
     // 2015
     {
@@ -563,7 +572,7 @@ export const books = [
       year: "2012",
       isbn: "978-1466601019",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: book9781466601017,
       pdfUrl: "http://www.igi-global.com/book/wireless-sensor-networks-energy-efficiency/56036"
     }
   ];
