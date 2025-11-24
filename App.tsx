@@ -1,12 +1,16 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
-import { ContentSection } from './components/ContentSection';
 import { Footer } from './components/Footer';
 import { Sidebar } from './components/Sidebar';
 import { Menu, X } from 'lucide-react';
 import logoImg from './src/assets/image/logo.png';
+
+// Lazy load ContentSection for better performance
+const ContentSection = lazy(() => import('./components/ContentSection').then(module => ({
+  default: module.ContentSection
+})));
 
 export default function App() {
   const [activeSection, setActiveSection] = useState(() => {
@@ -398,7 +402,17 @@ if (isLoading) {
                 ease: [0.25, 0.1, 0.25, 1]
               }}
             >
-              <ContentSection activeSection={activeSection} onSectionChange={setActiveSection} />
+              <Suspense fallback={
+                <div className="min-h-screen flex items-center justify-center">
+                  <motion.div
+                    animate={{ rotate: 360 }}
+                    transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
+                    className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full"
+                  />
+                </div>
+              }>
+                <ContentSection activeSection={activeSection} onSectionChange={setActiveSection} />
+              </Suspense>
             </motion.div>
           </main>
           

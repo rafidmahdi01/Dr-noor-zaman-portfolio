@@ -52,7 +52,7 @@ import climateChangeAI from '../src/assets/image/books/climate-change-ai.jpg';
 import quantumSecurityIoT from '../src/assets/image/books/quantum-security-iot.jpg';
 import gamificationCybersecurity from '../src/assets/image/books/gamification-cybersecurity.jpg';
 import cyberThreatsSoftware from '../src/assets/image/books/cyber-threats-software.jpg';
-import coms2024Cover from '../src/assets/image/books/coms2-2024.png';
+import coms2024Cover from '../src/assets/image/books/coms2-2024.webp';
 import cybersecurityTransportation from '../src/assets/image/books/cybersecurity-transportation.jpg';
 import digitalFiltersSignal from '../src/assets/image/books/digital-filters-signal.jpg';
 import bigdataWebIntelligence from '../src/assets/image/books/bigdata-web-intelligence.jpg';
