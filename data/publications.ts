@@ -35,7 +35,6 @@ import book9781032066202 from '../src/assets/image/books/9781032066202.jpg';
 import book9783030981679 from '../src/assets/image/books/9783030981679.jpg';
 import book9783030758554 from '../src/assets/image/books/9783030758554.jpg';
 import book9780367641696 from '../src/assets/image/books/9780367641696.jpg';
-import book9783031751698 from '../src/assets/image/books/9783031751698.jpg';
 import book9798369384978 from '../src/assets/image/books/9798369384978.webp';
 import aiCybersecurityIoT from '../src/assets/image/books/ai-cybersecurity-iot.pdf';
 import book9781799871149 from '../src/assets/image/books/9781799871149.webp';
@@ -53,6 +52,7 @@ import climateChangeAI from '../src/assets/image/books/climate-change-ai.jpg';
 import quantumSecurityIoT from '../src/assets/image/books/quantum-security-iot.jpg';
 import gamificationCybersecurity from '../src/assets/image/books/gamification-cybersecurity.jpg';
 import cyberThreatsSoftware from '../src/assets/image/books/cyber-threats-software.jpg';
+import coms2024Cover from '../src/assets/image/books/coms2-2024.png';
 
 export const books = [
     // 2026
@@ -163,7 +163,7 @@ export const books = [
       year: "2024",
       isbn: "978-3031751698",
       impact: "Edited Book - Communications in Computer and Information Science",
-      imageUrl: book9783031751698,
+      imageUrl: coms2024Cover,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15077_1.png"
     },
     {
