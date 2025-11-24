@@ -49,6 +49,10 @@ import smartAgricultureCover from '../src/assets/image/books/smart-agriculture-m
 import aiELearningCover from '../src/assets/image/books/ai-elearning-systems.jpg';
 import informationMadeEasyCover from '../src/assets/image/books/information-made-easy.jpg';
 import nonDestructiveTestingCover from '../src/assets/image/books/non-destructive-testing.jpg';
+import climateChangeAI from '../src/assets/image/books/climate-change-ai.jpg';
+import quantumSecurityIoT from '../src/assets/image/books/quantum-security-iot.jpg';
+import gamificationCybersecurity from '../src/assets/image/books/gamification-cybersecurity.jpg';
+import cyberThreatsSoftware from '../src/assets/image/books/cyber-threats-software.jpg';
 
 export const books = [
     // 2026
@@ -86,7 +90,7 @@ export const books = [
       year: "2025",
       isbn: "978-1-6684-6361-1",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: quantumSecurityIoT,
       pdfUrl: "https://www.igi-global.com/book/challenges-solutions-using-quantum-security/336860"
     },
     {
@@ -95,7 +99,7 @@ export const books = [
       year: "2025",
       isbn: "979-8337304793",
       impact: "Authored Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: gamificationCybersecurity,
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15818_1.png"
     },
     {
@@ -104,7 +108,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-9132-7",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: climateChangeAI,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-9132-7"
     },
     {
@@ -113,7 +117,7 @@ export const books = [
       year: "2025",
       isbn: "979-8-3693-6250-1",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: cyberThreatsSoftware,
       pdfUrl: "https://doi.org/10.4018/979-8-3693-6250-1"
     },
     {
