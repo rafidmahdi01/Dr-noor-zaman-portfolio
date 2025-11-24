@@ -45,6 +45,10 @@ import elivaDataTransform from '../src/assets/image/books/eliva-data-transform.j
 import elivaAssessment from '../src/assets/image/books/eliva-assessment.jpg';
 import book9781466697928 from '../src/assets/image/books/9781466697928.webp';
 import book9781466601017 from '../src/assets/image/books/9781466601017.webp';
+import smartAgricultureCover from '../src/assets/image/books/smart-agriculture-ml.jpg';
+import aiELearningCover from '../src/assets/image/books/ai-elearning-systems.jpg';
+import informationMadeEasyCover from '../src/assets/image/books/information-made-easy.jpg';
+import nonDestructiveTestingCover from '../src/assets/image/books/non-destructive-testing.jpg';
 
 export const books = [
     // 2026
@@ -379,7 +383,7 @@ export const books = [
       year: "2021",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: aiELearningCover,
       pdfUrl: "https://www.wiley.com/en-us/AI+Techniques+for+Personalized+E+Learning+Systems-p-9781119762263"
     },
     {
@@ -476,7 +480,7 @@ export const books = [
       year: "2020",
       isbn: "978-1636480128",
       impact: "Authored Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: smartAgricultureCover
     },
     {
       title: "A Methodology of Bi-Directional Data Transformation in Emerging Research and Opportunities",
@@ -519,7 +523,7 @@ export const books = [
       year: "2016",
       isbn: "978-953-51-2502-0",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: nonDestructiveTestingCover
     },
     {
       title: "Biologically-Inspired Energy Harvesting through Wireless Sensor Technologies",
@@ -545,7 +549,7 @@ export const books = [
       year: "2013",
       isbn: "978-969-9152",
       impact: "Authored Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: informationMadeEasyCover
     },
     {
       title: "Digital Filters and Signal Processing",
