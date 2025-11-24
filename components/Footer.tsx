@@ -9,17 +9,17 @@ export function Footer() {
   const links = [
     {
       name: 'ResearcherID',
-      href: '#',
+      href: 'http://www.researcherid.com/rid/F-3051-2011',
       icon: <ExternalLink className="w-4 h-4" />
     },
     {
       name: 'Scopus Profile',
-      href: '#',
+      href: 'http://www.scopus.com/authid/detail.url?authorId=36088700700',
       icon: <ExternalLink className="w-4 h-4" />
     },
     {
       name: 'Personal Homepage',
-      href: '#',
+      href: 'https://noorzaman.com/profile/',
       icon: <ExternalLink className="w-4 h-4" />
     }
   ];
