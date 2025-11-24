@@ -53,6 +53,12 @@ import quantumSecurityIoT from '../src/assets/image/books/quantum-security-iot.j
 import gamificationCybersecurity from '../src/assets/image/books/gamification-cybersecurity.jpg';
 import cyberThreatsSoftware from '../src/assets/image/books/cyber-threats-software.jpg';
 import coms2024Cover from '../src/assets/image/books/coms2-2024.png';
+import cybersecurityTransportation from '../src/assets/image/books/cybersecurity-transportation.jpg';
+import digitalFiltersSignal from '../src/assets/image/books/digital-filters-signal.jpg';
+import bigdataWebIntelligence from '../src/assets/image/books/bigdata-web-intelligence.jpg';
+import iiotPredictiveMaintenance from '../src/assets/image/books/iiot-predictive-maintenance.jpg';
+import securingImagesCryptography from '../src/assets/image/books/securing-images-cryptography.jpg';
+import softwareDevInfoSystems from '../src/assets/image/books/software-dev-info-systems.jpg';
 
 export const books = [
     // 2026
@@ -226,7 +232,7 @@ export const books = [
       year: "2024",
       isbn: "978-1394204267",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: cybersecurityTransportation,
       pdfUrl: "https://doi.org/10.1002/9781394204472"
     },
     {
@@ -431,7 +437,7 @@ export const books = [
       year: "2022",
       isbn: "978-1119768772",
       impact: "Edited Book - 1st Edition",
-      imageUrl: commingSoonBookImage,
+      imageUrl: iiotPredictiveMaintenance,
       pdfUrl: "https://www.amazon.com/Industrial-Internet-Things-IIoT-Intelligent/dp/1119768772"
     },
     {
@@ -440,7 +446,7 @@ export const books = [
       year: "2021",
       isbn: "978-613-8-96270-0",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: securingImagesCryptography,
       pdfUrl: "https://www.morebooks.shop/store/gb/book/securing-images-using-2d-logistic-maps-elliptic-curves-cryptography/isbn/978-613-8-96270-0"
     },
     {
@@ -544,7 +550,7 @@ export const books = [
       year: "2015",
       isbn: "",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage
+      imageUrl: bigdataWebIntelligence
     },
     // 2013
     {
@@ -561,7 +567,7 @@ export const books = [
       year: "2012",
       isbn: "978-953-307-645-9",
       impact: "Edited Book",
-      imageUrl: commingSoonBookImage,
+      imageUrl: digitalFiltersSignal,
       pdfUrl: "http://www.intechopen.com/books/digital-filters-and-signal-processing"
     },
     {
@@ -570,7 +576,7 @@ export const books = [
       year: "2013",
       isbn: "978-1466636793",
       impact: "Edited Book - Indexed in ACM Digital Library & Scopus",
-      imageUrl: commingSoonBookImage,
+      imageUrl: softwareDevInfoSystems,
       pdfUrl: "http://www.igi-global.com/book/software-development-techniques-constructive-information/72159"
     },
     // 2012
