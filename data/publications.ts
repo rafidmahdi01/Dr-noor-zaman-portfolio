@@ -39,7 +39,7 @@ import book9798369384978 from '../src/assets/image/books/9798369384978.webp';
 import aiCybersecurityIoT from '../src/assets/image/books/ai-cybersecurity-iot.pdf';
 import book9781799871149 from '../src/assets/image/books/9781799871149.webp';
 import securingLTE from '../src/assets/image/books/securing-lte.jpg';
-import biomedicalEngineering from '../src/assets/image/books/biomedical-engineering.jpg';
+import biomedicalEngineering from '../src/assets/image/books/biomedical-engineering-series.jpg';
 import elivaDataTransform from '../src/assets/image/books/eliva-data-transform.jpg';
 import elivaAssessment from '../src/assets/image/books/eliva-assessment.jpg';
 import book9781466697928 from '../src/assets/image/books/9781466697928.webp';
@@ -170,7 +170,7 @@ export const books = [
       isbn: "978-3031751698",
       impact: "Edited Book - Communications in Computer and Information Science",
       imageUrl: coms2024Cover,
-      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15077_1.png"
+      pdfUrl: "https://www.amazon.com/Computing-Science-Communication-Security-Communications/dp/3031751698"
     },
     {
       title: "Advances in Explainable AI Applications for Smart Cities",
@@ -474,7 +474,8 @@ export const books = [
       year: "2020",
       isbn: "",
       impact: "Book Series",
-      imageUrl: biomedicalEngineering
+      imageUrl: biomedicalEngineering,
+      pdfUrl: "https://www.appleacademicpress.com/Biomedical-Engineering:-Techniques-and-Applications-Book-Series"
     },
     {
       title: "Employing Recent Technologies for Improved Digital Governance",
