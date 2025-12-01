@@ -9,6 +9,9 @@ import marwadiLogo from '@/assets/image/Marwadi University logo.png';
 import srLogo from '@/assets/image/SR University logo.png';
 import asiaLogo from '@/assets/image/asia university logo.png';
 
+// Import certificate images
+import cert1 from '@/assets/image/certificates/cert1.jpg';
+
 export const partnerOrganizations = [
   { name: "Taylor's University", logo: taylorsLogo, alt: "Taylor's University Logo", url: "https://university.taylors.edu.my/" },
   { name: "MDEC Malaysia", logo: mdecLogo, alt: "MDEC Malaysia Logo", url: "https://mdec.my/" },
@@ -28,7 +31,7 @@ export const awardsData = [
     institution: "Research Chef Association United States",
     year: "2025",
     type: "Top Cited Researcher",
-    certificateImage: "/src/assets/image/certificates/cert1.jpg"
+    certificateImage: cert1
   },
   {
     name: "World's top 2% Researcher",
