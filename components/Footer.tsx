@@ -129,7 +129,7 @@ export function Footer() {
           className="mt-12 pt-8 border-t border-border text-center"
         >
           <p className="text-sm text-muted-foreground">
-            © 2024 Professor Dr. Noor Zaman Jhanjhi - Taylor's University. All rights reserved.
+            © 2024-2025 Professor Dr. Noor Zaman Jhanjhi - Taylor's University. All rights reserved.
           </p>
         </motion.div>
       </div>

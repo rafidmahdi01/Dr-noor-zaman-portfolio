@@ -58,12 +58,121 @@ import {
   Radio,
   Network,
   Lock,
-  ShieldCheck
+  ShieldCheck,
+  Eye
 } from 'lucide-react';
 
 interface ContentSectionProps {
   activeSection: string;
   onSectionChange?: (section: string) => void;
+}
+
+// Certificate Preview Component
+function CertificatePreview({ image, awardName }: { image: string; awardName: string }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="flex-shrink-0 ml-4">
+      <div className="w-48 space-y-2">
+        <motion.div 
+          className="aspect-[4/3] rounded-lg overflow-hidden border border-border bg-muted relative group cursor-pointer" 
+          onClick={() => setIsOpen(true)}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+        >
+          <motion.img 
+            src={image} 
+            alt={`${awardName} certificate`}
+            className="w-full h-full object-cover"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          />
+          {/* Hover overlay with eye icon */}
+          <motion.div 
+            className="absolute inset-0 bg-black/60 flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            whileHover={{ opacity: 1 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Eye className="w-8 h-8 text-white" />
+          </motion.div>
+        </motion.div>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="w-full py-2 px-4 text-sm font-medium text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors duration-200"
+        >
+          View Certificate
+        </button>
+      </div>
+
+      <AnimatePresence>
+        {isOpen && (
+          <Dialog open={isOpen} onOpenChange={setIsOpen}>
+            <DialogContent 
+              className="max-w-4xl border-0 p-0 overflow-hidden rounded-3xl [&>button]:hidden"
+              style={{
+                background: 'linear-gradient(145deg, rgba(40, 20, 20, 0.98) 0%, rgba(20, 10, 10, 0.98) 100%)',
+                backdropFilter: 'blur(40px)',
+                WebkitBackdropFilter: 'blur(40px)',
+                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 60px rgba(220, 38, 38, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.05)'
+              }}
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0.96 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.96 }}
+                transition={{ 
+                  delay: isOpen ? 0.1 : 0,
+                  duration: 0.3
+                }}
+                className="p-6"
+              >
+                
+                <DialogHeader className="relative z-10">
+                  <DialogTitle className="text-base font-medium text-white mb-3 tracking-wide drop-shadow-lg">{awardName}</DialogTitle>
+                  <DialogDescription className="text-sm text-white/95 leading-relaxed">Award Certificate</DialogDescription>
+                </DialogHeader>
+                <div className="mt-4 relative z-10 group">
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{
+                    background: 'rgba(0, 0, 0, 0.3)',
+                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.05)'
+                  }}>
+                    <img 
+                      src={image} 
+                      alt={`${awardName} certificate`}
+                      className="w-full h-auto object-contain max-h-[60vh]"
+                    />
+                  </div>
+                </div>
+                
+                {/* Action Buttons */}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.35, duration: 0.4 }}
+                  className="flex justify-center mt-8 space-x-4"
+                >
+                  <button
+                    onClick={() => setIsOpen(false)}
+                    className="bg-white/5 text-white border border-white/10 hover:bg-white/10 backdrop-blur-sm transition-all duration-300 px-6 py-3 text-base rounded-lg font-medium"
+                  >
+                    Close
+                  </button>
+                  <button
+                    onClick={() => window.open(image, '_blank')}
+                    className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] px-6 py-3 text-base rounded-lg font-medium flex items-center"
+                  >
+                    <Eye className="w-5 h-5 mr-2" />
+                    Open in New Tab
+                  </button>
+                </motion.div>
+              </motion.div>
+            </DialogContent>
+          </Dialog>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 }
 
 // Enhanced Apple-style scroll reveal component
@@ -2441,6 +2550,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 </div>
                               </div>
                             </div>
+                            {award.certificateImage && (
+                              <CertificatePreview 
+                                image={award.certificateImage} 
+                                awardName={award.name}
+                              />
+                            )}
                           </div>
                         </CardContent>
                       </Card>

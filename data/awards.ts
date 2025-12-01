@@ -27,147 +27,168 @@ export const awardsData = [
     category: "Special",
     institution: "Research Chef Association United States",
     year: "2025",
-    type: "Top Cited Researcher"
+    type: "Top Cited Researcher",
+    certificateImage: "/src/assets/image/certificates/cert1.jpg"
   },
   {
     name: "World's top 2% Researcher",
     category: "Special",
     institution: "Stanford University, Stanford",
     year: "2024",
-    type: "Top Cited Researcher"
+    type: "Top Cited Researcher",
+    certificateImage: "" // Add certificate path here when available
   },
   {
     name: "world's top 2%",
     category: "Special",
     institution: "Stanford University, Stanford",
     year: "2023",
-    type: "Top Cited Researcher"
+    type: "Top Cited Researcher",
+    certificateImage: "" // Add certificate path here when available
   },
   {
     name: "EAB Board member for Intelligent Automation and Soft Computing IASC",
     category: "Services",
     institution: "Research Chef Association United States",
     year: "2023",
-    type: "Editorial Board Member Of Prestigious Journals"
+    type: "Editorial Board Member Of Prestigious Journals",
+    certificateImage: ""
   },
   {
     name: "EAB Board member for Computer Systems Science and Engineering CSSE",
     category: "Services",
     institution: "Research Chef Association United States",
     year: "2023",
-    type: "Editorial Board Member Of Prestigious Journals"
+    type: "Editorial Board Member Of Prestigious Journals",
+    certificateImage: ""
   },
   {
     name: "EAB member for Computers, Materials & Continua CMC",
     category: "Services",
     institution: "Research Chef Association United States",
     year: "2023",
-    type: "Editorial Board Member Of Prestigious Journals"
+    type: "Editorial Board Member Of Prestigious Journals",
+    certificateImage: ""
   },
   {
     name: "MDEC Best Faculty Award 2022",
     category: "Competition",
     institution: "Ministry of Higher Education",
     year: "2023",
-    type: "MDEC Best Faculty Award 2022"
+    type: "MDEC Best Faculty Award 2022",
+    certificateImage: "" // Add certificate path here when available
   },
   {
     name: "World's top 2%",
     category: "Special",
     institution: "Stanford University, Stanford",
     year: "2022",
-    type: "Top Cited Researcher"
+    type: "Top Cited Researcher",
+    certificateImage: ""
   },
   {
     name: "MBOT",
     category: "Education",
     institution: "Malaysian Certified Secretary",
     year: "2022",
-    type: "MBOT"
+    type: "MBOT",
+    certificateImage: ""
   },
   {
     name: "World's Top 2% Scientist 2022",
     category: "Competition",
     institution: "Stanford University, Stanford",
     year: "2022",
-    type: "Top Cited Researcher"
+    type: "Top Cited Researcher",
+    certificateImage: ""
   },
   {
     name: "Senior Member European Alliance for Innovation (EAI) Research and Innovation Award",
     category: "Services",
     institution: "European Aeronautic Defence and Space Company",
     year: "2022",
-    type: "Research and Innovation"
+    type: "Research and Innovation",
+    certificateImage: ""
   },
   {
     name: "Academic Editor PEERJ Computer Science",
     category: "Services",
     institution: "Research Chef Association United States",
     year: "2021",
-    type: "Editorial Board Member Of Prestigious Journals"
+    type: "Editorial Board Member Of Prestigious Journals",
+    certificateImage: ""
   },
   {
     name: "Outstanding Associate Editor IEEE ACCESS",
     category: "Services",
     institution: "Institute of Elect. Engineers, England",
     year: "2021",
-    type: "Editorial Board Member Of Prestigious Journals"
+    type: "Editorial Board Member Of Prestigious Journals",
+    certificateImage: ""
   },
   {
     name: "Top Peer Reviewer 1% Globally award by Web of Science WoS/ ISI, Publons",
     category: "Services",
     institution: "Clarivate Analytics",
     year: "2019",
-    type: "Best Reviewer Award"
+    type: "Best Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "Journal of Experimental and Theoretical Artificial Intelligence",
     category: "Services",
     institution: "Taylor & Francis Group",
     year: "2019",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "Springer",
     category: "Services",
     institution: "Elsevier",
     year: "2019",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "The Computer Journal",
     category: "Services",
     institution: "Oxford University, Oxford, UK",
     year: "2018",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "Digital Signal Processing",
     category: "Services",
     institution: "Elsevier",
     year: "2016",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "Measurement",
     category: "Services",
     institution: "Elsevier",
     year: "2016",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "Computers and Electrical Engineering",
     category: "Services",
     institution: "Elsevier",
     year: "2013",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   },
   {
     name: "Journal of Network and Computer Applications",
     category: "Services",
     institution: "Elsevier",
     year: "2011",
-    type: "Journal Reviewer Award"
+    type: "Journal Reviewer Award",
+    certificateImage: ""
   }
 ];
 

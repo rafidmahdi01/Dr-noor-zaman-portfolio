@@ -63,10 +63,9 @@ export function HeroSection() {
                   duration: 0.8,
                   ease: [0.25, 0.1, 0.25, 1]
                 }}
-                className="text-4xl lg:text-5xl font-medium text-foreground leading-tight"
+                className="text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight whitespace-nowrap"
               >
-                Professor Dr. Noor Zaman
-                <span className="text-primary block">Jhanjhi</span>
+                Professor Dr. Noor Zaman Jhanjhi
               </motion.h1>
               
               <motion.div
@@ -79,7 +78,7 @@ export function HeroSection() {
                 }}
                 className="space-y-2"
               >
-                <p className="text-xl text-foreground font-medium">Professor</p>
+                <p className="text-lg text-muted-foreground font-medium" style={{ height: '80px', width: '757px' }}>Professor | Director for Research Center (CII) | Program Director for PG Research Degree Programmes</p>
                 <p className="text-lg text-muted-foreground">School of Computer Science</p>
                 <p className="text-lg text-muted-foreground">Faculty of Innovation & Technology</p>
               </motion.div>
