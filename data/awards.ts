@@ -10,7 +10,7 @@ import srLogo from '@/assets/image/SR University logo.png';
 import asiaLogo from '@/assets/image/asia university logo.png';
 
 // Import certificate images
-import cert1 from '@/assets/image/certificates/cert1.jpg';
+import cert1 from '@/assets/image/certificates/cert1.png';
 
 export const partnerOrganizations = [
   { name: "Taylor's University", logo: taylorsLogo, alt: "Taylor's University Logo", url: "https://university.taylors.edu.my/" },
