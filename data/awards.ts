@@ -8,6 +8,7 @@ import iumakLogo from '@/assets/image/IUMAK University logo.png';
 import marwadiLogo from '@/assets/image/Marwadi University logo.png';
 import srLogo from '@/assets/image/SR University logo.png';
 import asiaLogo from '@/assets/image/asia university logo.png';
+import whitecliffeLogo from '@/assets/image/Whitecliffe-Vertical-logo.png';
 
 // Import certificate images
 import cert1 from '@/assets/image/certificates/cert1.png';
@@ -21,7 +22,8 @@ export const partnerOrganizations = [
   { name: "IUMAK University", logo: iumakLogo, alt: "IUMAK University Logo", url: "https://www.umak.edu.ph/" },
   { name: "Marwadi University", logo: marwadiLogo, alt: "Marwadi University Logo", url: "https://www.marwadiuniversity.ac.in/" },
   { name: "SR University", logo: srLogo, alt: "SR University Logo", url: "https://www.sru.edu.in/" },
-  { name: "Asia University", logo: asiaLogo, alt: "Asia University Logo", url: "https://www.asia.edu.tw/" }
+  { name: "Asia University", logo: asiaLogo, alt: "Asia University Logo", url: "https://www.asia.edu.tw/" },
+  { name: "Whitecliffe", logo: whitecliffeLogo, alt: "Whitecliffe Logo", url: "https://www.whitecliffe.ac.nz" }
 ];
 
 export const awardsData = [

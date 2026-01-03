@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { Shield, Cloud, Lock, Network, Layers, Smartphone, Radio, ShieldAlert } from 'lucide-react';
+import { Shield, Cloud, Lock, Brain, ShieldCheck, Code } from 'lucide-react';
 import professorImg from '../src/assets/image/professor.jpg';
 
 export function HeroSection() {
@@ -97,7 +97,7 @@ export function HeroSection() {
               <div className="space-y-4 text-muted-foreground">
                 <div className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  <span>Extension: 5277</span>
+                  <span className="text-red-600">profjhanjhi@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-primary rounded-full"></span>
@@ -113,7 +113,35 @@ export function HeroSection() {
                     className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
                     <Shield className="w-4 h-4" />
-                    Security Protocols
+                    Cybersecurity
+                  </motion.span>
+                  <motion.span
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                  >
+                    <Brain className="w-4 h-4" />
+                    AI
+                  </motion.span>
+                  <motion.span
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                  >
+                    <ShieldCheck className="w-4 h-4" />
+                    Security and Privacy
+                  </motion.span>
+                  <motion.span
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                  >
+                    <Brain className="w-4 h-4" />
+                    Agentic AI
+                  </motion.span>
+                  <motion.span
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                  >
+                    <Code className="w-4 h-4" />
+                    Software Engineering
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
@@ -128,41 +156,6 @@ export function HeroSection() {
                   >
                     <Lock className="w-4 h-4" />
                     Data Security
-                  </motion.span>
-                  <motion.span
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
-                  >
-                    <Network className="w-4 h-4" />
-                    Ad-Hoc Computing
-                  </motion.span>
-                  <motion.span
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
-                  >
-                    <Layers className="w-4 h-4" />
-                    Middleware Technology
-                  </motion.span>
-                  <motion.span
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
-                  >
-                    <Smartphone className="w-4 h-4" />
-                    Mobile Computing
-                  </motion.span>
-                  <motion.span
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
-                  >
-                    <Radio className="w-4 h-4" />
-                    Pervasive Computing
-                  </motion.span>
-                  <motion.span
-                    whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
-                  >
-                    <ShieldAlert className="w-4 h-4" />
-                    Intrusion Detection System
                   </motion.span>
                 </div>
               </div>

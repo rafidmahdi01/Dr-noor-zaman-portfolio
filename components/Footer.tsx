@@ -21,13 +21,18 @@ export function Footer() {
       name: 'Personal Homepage',
       href: 'https://noorzaman.com/profile/',
       icon: <ExternalLink className="w-4 h-4" />
-    }
-  ];
+      },
+      {
+        name: 'ResearchGate',
+        href: 'https://www.researchgate.net/profile/Noor-Jhanjhi?ev=hdr_xprf',
+        icon: <ExternalLink className="w-4 h-4" />
+      }
+    ];
 
   const socialLinks = [
     {
       name: 'Email',
-      href: 'mailto:noorzaman.jhanjhi@taylors.edu.my',
+      href: 'mailto:noorzaman.jhanjhi@taylors.edu.my,profjhanjhi@gmail.com',
       icon: <Mail className="w-5 h-5" />
     },
     {
@@ -37,7 +42,7 @@ export function Footer() {
     },
     {
       name: 'ResearchGate',
-      href: '#',
+        href: 'https://www.researchgate.net/profile/Noor-Jhanjhi?ev=hdr_xprf',
       icon: <ExternalLink className="w-5 h-5" />
     }
   ];
@@ -67,8 +72,8 @@ export function Footer() {
             </div>
             
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              Leading researcher in cybersecurity, IoT security, and wireless networks. 
-              World's Top 2% Scientist for 2022, 2023, and 2024.
+              Leading researcher in AI, cybersecurity, IoT security, and wireless networks. 
+              World's Top 2% Scientist for 2022, 2023, 2024, and 2025.
             </p>
 
             {/* Social Links */}
@@ -114,6 +119,34 @@ export function Footer() {
                 </motion.div>
               ))}
             </div>
+
+            {/* Designed by section */}
+            <div className="mt-8 pt-6 border-t border-border">
+              <p className="text-xs text-muted-foreground flex items-center gap-2 flex-wrap">
+                Designed by
+                <motion.a
+                  href="https://www.linkedin.com/in/abdullah-al-mahdi-rafid-094418259"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="text-primary hover:underline font-medium"
+                >
+                  ABDULLAH AL MAHDI RAFID
+                </motion.a>
+                and
+                <motion.a
+                  href="https://www.linkedin.com/in/yasheer-sumun-33a2a82b1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="text-primary hover:underline font-medium"
+                >
+                  YASHEER SUMUN
+                </motion.a>
+              </p>
+            </div>
           </div>
         </motion.div>
 
@@ -128,8 +161,9 @@ export function Footer() {
           }}
           className="mt-12 pt-8 border-t border-border text-center"
         >
+          {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2024-2025 Professor Dr. Noor Zaman Jhanjhi - Taylor's University. All rights reserved.
+            © 2025-2026 Professor Dr. Noor Zaman Jhanjhi - Taylor's University. All rights reserved.
           </p>
         </motion.div>
       </div>

@@ -304,11 +304,26 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
   };
 
   const researchAreas = [
-    {
-      title: "Software Engineering",
-      description: "Advanced software development methodologies, processes, and quality assurance for modern applications.",
-      icon: <Code className="w-6 h-6" />
-    },
+      {
+        title: "Agentic AI",
+        description: "Research on agent-based artificial intelligence, autonomous systems, and intelligent agents for adaptive and collaborative problem-solving.",
+        icon: <Brain className="w-6 h-6" />
+      },
+      {
+        title: "AI",
+        description: "Artificial Intelligence: Developing intelligent systems, machine learning models, and advanced analytics for real-world applications.",
+        icon: <Cpu className="w-6 h-6" />
+      },
+      {
+        title: "Cybersecurity",
+        description: "Advanced security frameworks, threat intelligence, and protection mechanisms for modern computing environments.",
+        icon: <Shield className="w-6 h-6" />
+      },
+      {
+        title: "Software Engineering",
+        description: "Advanced software development methodologies, processes, and quality assurance for modern applications.",
+        icon: <Code className="w-6 h-6" />
+      },
     {
       title: "Remote Process Automation",
       description: "Automating business processes and workflows using intelligent automation technologies and RPA platforms.",
@@ -344,11 +359,6 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
       description: "Developing secure frameworks, authentication protocols, and threat detection systems for IoT ecosystems.",
       icon: <ShieldCheck className="w-6 h-6" />
     },
-    {
-      title: "Cybersecurity",
-      description: "Advanced security frameworks, threat intelligence, and protection mechanisms for modern computing environments.",
-      icon: <Shield className="w-6 h-6" />
-    }
   ];
 
   return (
@@ -434,20 +444,20 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 <motion.div 
                   className="bg-white/20 backdrop-blur-2xl border border-white/30 rounded-3xl p-8 shadow-2xl shadow-black/10 relative overflow-hidden"
                   whileHover={{ 
-                    boxShadow: "0 32px 64px rgba(220,38,38,0.2), 0 0 0 2px rgba(220,38,38,0.1)",
+                    boxShadow: "0 32px 64px rgba(96,165,250,0.2), 0 0 0 2px rgba(96,165,250,0.1)",
                     backdropFilter: "blur(24px)",
                     scale: 1.01
                   }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                 >
-                  {/* Animated Red Gradient Border Glow */}
+                  {/* Animated Light Blue Gradient Border Glow */}
                   <motion.div 
                     className="absolute inset-0 rounded-3xl pointer-events-none"
                     animate={{
                       background: [
-                        "linear-gradient(45deg, rgba(220,38,38,0) 0%, rgba(220,38,38,0) 100%)",
-                        "linear-gradient(45deg, rgba(220,38,38,0.1) 0%, rgba(220,38,38,0) 50%, rgba(220,38,38,0.1) 100%)",
-                        "linear-gradient(45deg, rgba(220,38,38,0) 0%, rgba(220,38,38,0) 100%)",
+                        "linear-gradient(45deg, rgba(96,165,250,0) 0%, rgba(96,165,250,0) 100%)",
+                        "linear-gradient(45deg, rgba(96,165,250,0.1) 0%, rgba(96,165,250,0) 50%, rgba(96,165,250,0.1) 100%)",
+                        "linear-gradient(45deg, rgba(96,165,250,0) 0%, rgba(96,165,250,0) 100%)",
                       ]
                     }}
                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
@@ -458,7 +468,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                   
                   <div className="relative z-10">
                     <motion.h2 
-                      className="text-2xl font-medium text-primary mb-8 border-b border-white/20 pb-4 relative"
+                      className="text-2xl font-medium text-blue-400 mb-8 border-b border-white/20 pb-4 relative"
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.1, duration: 0.2 }}
@@ -466,7 +476,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                       PERSONAL DETAILS
                       {/* Animated underline */}
                       <motion.div
-                        className="absolute bottom-0 left-0 h-0.5 bg-primary"
+                        className="absolute bottom-0 left-0 h-0.5 bg-blue-400"
                         initial={{ width: 0 }}
                         animate={{ width: "100%" }}
                         transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
@@ -480,8 +490,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           { label: "Full Name", value: "Professor Dr. Noor Zaman Jhanjhi", icon: "👤" },
                           { label: "Position", value: "Professor | Director for Research Center (CII) | Program Director for PG Research Degree Programmes", icon: "🎓" },
                           { label: "School", value: "School of Computer Science", icon: "🏫" },
-                          { label: "Faculty", value: "Faculty of Innovation & Technology", icon: "🏛️" },
-                          { label: "LinkedIn", value: "linkedin.com/in/noorzaman", icon: "🔗", isLink: true, href: "https://www.linkedin.com/in/noorzaman/" }
+                          { label: "Faculty", value: "Faculty of Innovation & Technology, Taylor's University", icon: "🏛️" },
+                          { label: "LinkedIn", value: "linkedin.com/in/noorzaman", icon: "🔗", isLink: true, href: "https://www.linkedin.com/in/noorzaman/" },
+                          { label: "ResearchGate", value: "View Profile", icon: "🔬", isLink: true, href: "https://www.researchgate.net/profile/Noor-Jhanjhi" }
                         ].map((item, index) => (
                           <motion.div
                             key={item.label}
@@ -495,12 +506,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             whileHover={{ 
                               scale: 1.04, 
                               rotateY: 5,
-                              boxShadow: "0 20px 40px rgba(220,38,38,0.15), 0 0 0 1px rgba(220,38,38,0.2)",
+                              boxShadow: "0 20px 40px rgba(96,165,250,0.15), 0 0 0 1px rgba(96,165,250,0.2)",
                               backdropFilter: "blur(20px)",
-                              borderColor: "rgba(220,38,38,0.3)"
+                              borderColor: "rgba(96,165,250,0.3)"
                             }}
                             whileTap={{ scale: 0.97 }}
-                            className="group relative bg-white/30 backdrop-blur-lg border-2 border-white/40 rounded-2xl p-5 cursor-pointer transition-all duration-150 hover:bg-white/50 hover:border-primary/30"
+                            className="group relative bg-white/30 backdrop-blur-lg border-2 border-white/40 rounded-2xl p-5 cursor-pointer transition-all duration-150 hover:bg-white/50 hover:border-blue-400/30"
                             style={{ 
                               transformStyle: "preserve-3d",
                               perspective: "1000px"
@@ -511,17 +522,17 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               }
                             }}
                           >
-                            {/* Faster shine effect with red tint */}
+                            {/* Faster shine effect with blue tint */}
                             <motion.div 
-                              className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100"
+                              className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-400/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100"
                               initial={{ x: "-100%" }}
                               whileHover={{ x: "100%" }}
                               transition={{ duration: 0.4 }}
                             />
                             
-                            {/* Red glow pulse on hover */}
+                            {/* Blue glow pulse on hover */}
                             <motion.div 
-                              className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100"
+                              className="absolute inset-0 rounded-2xl bg-blue-400/5 opacity-0 group-hover:opacity-100"
                               animate={{
                                 opacity: [0, 0.3, 0]
                               }}
@@ -546,7 +557,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </motion.div>
                               <div className="flex-1">
                                 <motion.h3 
-                                  className="font-medium text-foreground mb-1 group-hover:text-primary transition-colors duration-150"
+                                  className="font-medium text-foreground mb-1 group-hover:text-blue-400 transition-colors duration-150"
                                   whileHover={{ x: 3 }}
                                   transition={{ duration: 0.1 }}
                                 >
@@ -561,9 +572,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 </motion.p>
                               </div>
                               
-                              {/* Red corner accent */}
+                              {/* Blue corner accent */}
                               <motion.div
-                                className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-primary/0 to-primary/20 rounded-tr-2xl rounded-bl-full opacity-0 group-hover:opacity-100"
+                                className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-br from-blue-400/0 to-blue-400/20 rounded-tr-2xl rounded-bl-full opacity-0 group-hover:opacity-100"
                                 transition={{ duration: 0.2 }}
                               />
                             </div>
@@ -575,7 +586,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                       <div className="space-y-4">
                         {[
                           { label: "Extension", value: "5277", icon: "📞", isLink: false },
-                          { label: "Email", value: "noorzaman.jhanjhi@taylors.edu.my", icon: "📧", isLink: true },
+                          { label: "Email", value: "noorzaman.jhanjhi@taylors.edu.my | profjhanjhi@gmail.com", icon: "📧", isLink: true },
                           { label: "ResearcherID", value: "F-3051-2011", icon: "🔬", isLink: true, href: "http://www.researcherid.com/rid/F-3051-2011" },
                           { label: "Scopus ID", value: "36088700700", icon: "📊", isLink: true, href: "http://www.scopus.com/authid/detail.url?authorId=36088700700" },
                           { label: "Personal Homepage", value: "noorzaman.com", icon: "🌐", isLink: true, href: "https://noorzaman.com/profile/" },
@@ -593,12 +604,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             whileHover={{ 
                               scale: 1.04, 
                               rotateY: -5,
-                              boxShadow: "0 20px 40px rgba(220,38,38,0.15), 0 0 0 1px rgba(220,38,38,0.2)",
+                              boxShadow: "0 20px 40px rgba(96,165,250,0.15), 0 0 0 1px rgba(96,165,250,0.2)",
                               backdropFilter: "blur(20px)",
-                              borderColor: "rgba(220,38,38,0.3)"
+                              borderColor: "rgba(96,165,250,0.3)"
                             }}
                             whileTap={{ scale: 0.97 }}
-                            className="group relative bg-white/30 backdrop-blur-lg border-2 border-white/40 rounded-2xl p-5 cursor-pointer transition-all duration-150 hover:bg-white/50 hover:border-primary/30"
+                            className="group relative bg-white/30 backdrop-blur-lg border-2 border-white/40 rounded-2xl p-5 cursor-pointer transition-all duration-150 hover:bg-white/50 hover:border-blue-400/30"
                             style={{ 
                               transformStyle: "preserve-3d",
                               perspective: "1000px"
@@ -609,17 +620,17 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               }
                             }}
                           >
-                            {/* Faster shine effect with red tint */}
+                            {/* Faster shine effect with blue tint */}
                             <motion.div 
-                              className="absolute inset-0 bg-gradient-to-l from-transparent via-primary/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100"
+                              className="absolute inset-0 bg-gradient-to-l from-transparent via-blue-400/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100"
                               initial={{ x: "100%" }}
                               whileHover={{ x: "-100%" }}
                               transition={{ duration: 0.4 }}
                             />
                             
-                            {/* Red glow pulse on hover */}
+                            {/* Blue glow pulse on hover */}
                             <motion.div 
-                              className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100"
+                              className="absolute inset-0 rounded-2xl bg-blue-400/5 opacity-0 group-hover:opacity-100"
                               animate={{
                                 opacity: [0, 0.3, 0]
                               }}
@@ -644,7 +655,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </motion.div>
                               <div className="flex-1">
                                 <motion.h3 
-                                  className="font-medium text-foreground mb-1 group-hover:text-primary transition-colors duration-150"
+                                  className="font-medium text-foreground mb-1 group-hover:text-blue-400 transition-colors duration-150"
                                   whileHover={{ x: -3 }}
                                   transition={{ duration: 0.1 }}
                                 >
@@ -652,7 +663,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 </motion.h3>
                                 <motion.p 
                                   className={`text-sm transition-colors duration-150 ${
-                                    item.isLink ? 'text-primary hover:underline cursor-pointer font-medium' : 'text-muted-foreground group-hover:text-foreground'
+                                    item.isLink ? 'text-blue-400 hover:underline cursor-pointer font-medium' : 'text-muted-foreground group-hover:text-foreground'
                                   }`}
                                   whileHover={{ x: -3 }}
                                   transition={{ duration: 0.1 }}
@@ -661,9 +672,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 </motion.p>
                               </div>
                               
-                              {/* Red corner accent */}
+                              {/* Blue corner accent */}
                               <motion.div
-                                className="absolute top-0 left-0 w-12 h-12 bg-gradient-to-bl from-primary/0 to-primary/20 rounded-tl-2xl rounded-br-full opacity-0 group-hover:opacity-100"
+                                className="absolute top-0 left-0 w-12 h-12 bg-gradient-to-bl from-blue-400/0 to-blue-400/20 rounded-tl-2xl rounded-br-full opacity-0 group-hover:opacity-100"
                                 transition={{ duration: 0.2 }}
                               />
                             </div>
@@ -686,25 +697,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">BIOGRAPHY</h2>
                 <div className="space-y-6 text-muted-foreground">
                   <p className="leading-relaxed">
-                    Prof. Dr. Noor Zaman Jhanjhi is a highly esteemed Senior Professor of Computer Science, specializing in Artificial Intelligence and Cybersecurity. He currently holds the position of Professor at the School of Computer Science at Taylor's University, Malaysia. He serves as the Director of Research Center, Center for Intelligent Innovations CII, Program Director for Postgraduate Research Degree Programmes as well as the Director of the Research Center. With a career marked by academic leadership and groundbreaking research, Prof. Jhanjhi has been pivotal in advancing research and education in computer science.
+                    Professor Dr Noor Zaman Jhanjhi is currently working as a Professor | Director for Research Center CII | Programme Director - of Postgraduate Research Programmes [Computing] at the School of Computer Science, Faculty of Innovation and Technology, Taylor's University, Malaysia. Highlights of the research profile summary are as follows:
                   </p>
 
-                  <p className="leading-relaxed">
-                    Recognized globally, Prof. Jhanjhi has been ranked among the world's top 2% research scientists for four consecutive years (2022, 2023, 2024, and 2025). In Malaysia, he is ranked the No. 1 Best Computer Science researcher (AD Scientific Index) and was honored with the Outstanding Faculty Member award by MDEC Malaysia in 2022, as well as the Vice Chancellor's Best Research Citations Award from Taylor's University in 2023.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    His impressive academic portfolio includes over 80 research books edited or authored with prestigious publishers such as Springer, Elsevier, Taylor & Francis, Wiley, IET, Bentham, CRC, and IGI Global USA. His research has garnered more than 1000 points in impact factor, reflecting the depth and breadth of his contributions to the field. A dedicated mentor, Prof. Jhanjhi has supervised and co-supervised 45 postgraduate students to successful graduation and has served as an external examiner for over 70 Ph.D. and Master's theses globally.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    In addition to his academic accomplishments, Prof. Jhanjhi holds Editor in Chief, Associate Editor and EAB positions with several high-ranking journals, including PeerJ Computer Science, CMC Computers, Materials & Continua, and Frontiers in Communication and Networks. He was also recognized as an Outstanding Associate Editor for IEEE ACCESS. His contributions to research and innovation are further demonstrated by his successful management of approx. 40 internationally funded research grants.
-                  </p>
-
-                  <p className="leading-relaxed">
-                    A sought-after keynote speaker, Prof. Jhanjhi has delivered over 90 invited Keynote talks at international conferences and has chaired numerous conferences and sessions. His commitment to academic excellence and accreditation extends to his involvement with ABET, NCAAA, and NCEAC over the past decade.
-                  </p>
-                  
                   <h3 className="text-xl font-medium text-primary mt-8">Highlights of Profile Summary</h3>
                   
                   <div className="space-y-4">
@@ -724,169 +719,169 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     </div>
                     
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">3.</span>
+                      <span className="font-medium text-primary min-w-fit">4.</span>
                       <p><strong>Top One Computer Science Researchers/Scientists in Malaysia</strong> based on AD Scientific Index data <strong>2025</strong></p>
                     </div>
                     
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">4.</span>
+                      <span className="font-medium text-primary min-w-fit">5.</span>
                       <p><strong>24 years of Teaching, Research, and development Experience</strong> in the fields of Cybersecurity, Security, Internet of Things (IoT) security, Wireless Networks, 
                       Wireless Sensor Networks, Ad hoc Networks, Machine Learning, and Software Engineering at Taylor's University, Malaysia, King Faisal University, Saudi Arabia, 
                       ILMA University, British University Vietnam.</p>
                     </div>
                     
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">5.</span>
+                      <span className="font-medium text-primary min-w-fit">6.</span>
                       <p><strong>More than 24 years of experience in academics, research, and the IT industry</strong> in different academic and management positions such as Professor., Director Research Center, 
                       Center for Intelligent Innovation, Director CSS5, Cluster Head Cybersecurity, Dean's Coordinator, Head of IT, etc.</p>
                     </div>
                     
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">6.</span>
-                      <p><strong>Google Scholar H-Index Ninety (90)</strong> and <strong>(415) I-10 Index</strong>, with <strong>24400 plus citations</strong>.</p>
-                    </div>
-
-                    <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">7.</span>
-                      <p><strong>Scopus H-Index Sixty Nine (69)</strong> and <strong>(260) I-10 Index</strong>, with <strong>14100 plus citations</strong>.</p>
+                      <p><strong>Google Scholar H-Index Hundred (100)</strong> and <strong>(462) I-10 Index</strong>, with <strong>26800 plus citations</strong>.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">8.</span>
-                      <p><strong>Research Gate H-Index Eighty One (81)</strong>, with <strong>19300 plus citations</strong>.</p>
+                      <p><strong>Scopus H-Index Seventy Five (75)</strong> and <strong>(260) I-10 Index</strong>, with <strong>15400 plus citations</strong>.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">9.</span>
-                      <p><strong>Seventy (80) plus Keynotes/Invited talks</strong> around the globe, including Europe, Malaysia, China, Indonesia, India, Pakistan, UK, Singapore, etc.</p>
+                      <p><strong>Research Gate H-Index Eighty Three (83)</strong>, with <strong>20800 plus citations</strong>.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">10.</span>
-                      <p><strong>Fifteen (15) plus International Patents</strong>, including Australian, German, Japanese, UK, etc., on his account.</p>
+                      <p><strong>Ninety (90) plus Keynotes/Invited talks</strong> around the globe, including Europe, Malaysia, China, Indonesia, India, Pakistan, UK, Singapore, etc.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">11.</span>
-                      <p><strong>Forty (40) plus International/National research grants/funds</strong> achieved as PI and Co-PI</p>
+                      <p><strong>Fifteen (15) plus International Patents</strong>, including Australian, German, Japanese, UK, etc., on his account.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">12.</span>
-                      <p><strong>Seventy (80) plus edited/authored research books</strong> with highly reputed publishers, including Springer, Elsevier, IGI Global USA, Willeys, Taylor's & Frances, Intech Open, Eliva Press, IET, Benthem, etc.</p>
+                      <p><strong>Forty (40) plus International/National research grants/funds</strong> achieved as PI and Co-PI</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">13.</span>
-                      <p><strong>Seven hundred (700) plus research publications</strong> internationally.</p>
+                      <p><strong>Eighty (80) plus edited/authored research books</strong> with highly reputed publishers, including Springer, Elsevier, IGI Global USA, Willeys, Taylor's & Frances, Intech Open, Eliva Press, IET, Benthem, etc.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">14.</span>
-                      <p><strong>Four hundred (400) plus SCIE high-indexed Impact Factor (Q1-Q3) journal publications</strong>.</p>
+                      <p><strong>Seven hundred (700) plus research publications</strong> internationally.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">15.</span>
-                      <p><strong>One Thousand (1000) plus cumulative impact factor points</strong> to date</p>
+                      <p><strong>Four hundred (450) plus SCIE high-indexed Impact Factor (Q1-Q3) journal publications</strong>.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">16.</span>
-                      <p><strong>Five Hundred (500) plus Scopus and ESCI-indexed journal publications</strong></p>
+                      <p><strong>One Thousand (1000) plus cumulative impact factor points</strong> to date</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">17.</span>
-                      <p><strong>One hundred fifty (150) plus international Conferences (IEEE, ACM, Springer) publications</strong>.</p>
+                      <p><strong>Five Hundred (500) plus Scopus and ESCI-indexed journal publications</strong></p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">18.</span>
-                      <p><strong>One Hundred (100) plus Research Book Chapters</strong> (Springer, Elsevier, Willeys, Taylor's & Frances, IGI Global USA, Intech Open, Benthem, etc.)</p>
+                      <p><strong>One hundred fifty (150) plus international Conferences (IEEE, ACM, Springer) publications</strong>.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">19.</span>
-                      <p><strong>Guest Editor and Series Editor</strong> for several reputed high-indexed SCIE journals and book series.</p>
+                      <p><strong>One Hundred (100) plus Research Book Chapters</strong> (Springer, Elsevier, Willeys, Taylor's & Frances, IGI Global USA, Intech Open, Benthem, etc.)</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <span className="font-medium text-primary min-w-fit">20.</span>
+                      <p><strong>Guest Editor and Series Editor</strong> for several reputed high-indexed SCIE journals and book series.</p>
+                    </div>
+
+                    <div className="flex items-start space-x-3">
+                      <span className="font-medium text-primary min-w-fit">21.</span>
                       <p><strong>Editorial Board</strong> for several reputed journals, including PEERJ Computer Science, Computers, Materials & Continua CMC, Computer Systems Science and Engineering CSSE, 
                       Intelligent Automation and Soft Computing IASC, Frontier in Artificial Intelligence, Frontiers in the Internet of Things, Frontiers in Communications and Networks, etc. 
                       <strong>Best Associate Editor award IEEE ACCESS for the year 2020</strong>.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">21.</span>
+                      <span className="font-medium text-primary min-w-fit">22.</span>
                       <p><strong>PhD. Examiner/Evaluator for (80) plus international Universities</strong> globally, including Finland, India, Malaysia, Pakistan, Australia, South Africa, Europe, etc.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">22.</span>
+                      <span className="font-medium text-primary min-w-fit">23.</span>
                       <p><strong>Five (5) Consultancy projects</strong> internationally.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">23.</span>
+                      <span className="font-medium text-primary min-w-fit">24.</span>
                       <p><strong>Expertise in curriculum program design and development</strong> as a head and member of academic and research committees.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">24.</span>
+                      <span className="font-medium text-primary min-w-fit">25.</span>
                       <p><strong>Forty-Five (45) plus PG supervision (28 PhD and 17 MSc)</strong> successfully completed and under supervision.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">25.</span>
+                      <span className="font-medium text-primary min-w-fit">26.</span>
                       <p><strong>Experience in academic planning and management</strong>, academic processes, policy implementation, and administration.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">26.</span>
+                      <span className="font-medium text-primary min-w-fit">27.</span>
                       <p><strong>Six (6) years (2019-2022) consecutive top performers</strong> at Taylor's University, Malaysia</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">27.</span>
+                      <span className="font-medium text-primary min-w-fit">28.</span>
                       <p><strong>Ten (10) years of Academic quality accreditation experience</strong> for ABET (Successfully achieved ABET accreditation for Three 3 programs twice) NCAAA, NCEAC, etc.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">28.</span>
+                      <span className="font-medium text-primary min-w-fit">29.</span>
                       <p><strong>Twenty Five (25) plus conference/session chairs</strong> internationally.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">29.</span>
+                      <span className="font-medium text-primary min-w-fit">30.</span>
                       <p><strong>One Hundred (100) plus Technical Program Committee (TPC) members</strong> for international IEEE conferences globally.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">30.</span>
+                      <span className="font-medium text-primary min-w-fit">31.</span>
                       <p><strong>Strong team-leading capabilities</strong> earned during supervision of several projects from inception to implementation in numerous capacities � Program Director for 
                       Postgraduate Research Degree Programmes, Acting Program Director MAC, Director of Center for Smart Society 5.0 (CSS5), Cluster Head for Cybersecurity Research Cluster, 
                       School Coordinator for the Industrial Revolution IR4.0, and United Nations Sustainable Development Goals (SDG), Deans Coordinator at CSSIT, KFU.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">31.</span>
+                      <span className="font-medium text-primary min-w-fit">32.</span>
                       <p><strong>Excellent public speaking and communication skills</strong> developed during industrial/ conference presentations - received the best paper and best speaker awards.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">32.</span>
+                      <span className="font-medium text-primary min-w-fit">33.</span>
                       <p><strong>Top 1% reviewer globally by Publons (Web of Science)</strong>, awarded in 2019.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">33.</span>
+                      <span className="font-medium text-primary min-w-fit">34.</span>
                       <p><strong>Research Grant and Academic Promotion evaluator</strong> for several universities globally.</p>
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">34.</span>
+                      <span className="font-medium text-primary min-w-fit">35.</span>
                       <p><strong>Reviewer for more than (100) top-ranked journals</strong>, including IEEE Transactions, IEEE ACCESS, IEEE Internet of Things Journal, Future Generation, 
                       IEEE Sensors Journal, MDPI Sensors, Electronics, Healthcare, Sustainability, Journal of Network and Computer Applications, Computers and Electronics, 
                       Wireless Personal Communications, Multimedia Systems, Multimedia Tools and Applications, IEEE Transaction on Industrial Informatics, Computer Communications, 
@@ -894,7 +889,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     </div>
 
                     <div className="flex items-start space-x-3">
-                      <span className="font-medium text-primary min-w-fit">35.</span>
+                      <span className="font-medium text-primary min-w-fit">36.</span>
                       <p><strong>Strong Research collaboration network with Fifty (50) plus Universities and industries</strong> globally.</p>
                     </div>
                   </div>
@@ -941,29 +936,23 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 <ScrollReveal delay={0.3}>
                   <div className="mt-12 space-y-6">
                     <h3 className="text-xl font-medium text-foreground">Research Statistics</h3>
-                    <div className="grid md:grid-cols-4 gap-4">
+                    <div className="grid md:grid-cols-3 gap-4 px-4">
                       <Card className="text-center p-6 bg-white/60 backdrop-blur-xl border border-white/30 hover:bg-white/70 hover:shadow-lg transition-all duration-300">
                         <CardContent className="space-y-2">
-                          <p className="text-3xl font-medium text-primary">26400+</p>
-                          <p className="text-sm text-muted-foreground">Total Citations</p>
+                            <p className="text-3xl font-medium text-primary">26902</p>
+                            <p className="text-sm text-muted-foreground">Total Citations</p>
                         </CardContent>
                       </Card>
                       <Card className="text-center p-6 bg-white/60 backdrop-blur-xl border border-white/30 hover:bg-white/70 hover:shadow-lg transition-all duration-300">
                         <CardContent className="space-y-2">
-                          <p className="text-3xl font-medium text-primary">40</p>
-                          <p className="text-sm text-muted-foreground">H-Index</p>
+                            <p className="text-3xl font-medium text-primary">100</p>
+                            <p className="text-sm text-muted-foreground">H-Index</p>
                         </CardContent>
                       </Card>
                       <Card className="text-center p-6 bg-white/60 backdrop-blur-xl border border-white/30 hover:bg-white/70 hover:shadow-lg transition-all duration-300">
                         <CardContent className="space-y-2">
-                          <p className="text-3xl font-medium text-primary">414+</p>
-                          <p className="text-sm text-muted-foreground">ResearchGate Score</p>
-                        </CardContent>
-                      </Card>
-                      <Card className="text-center p-6 bg-white/60 backdrop-blur-xl border border-white/30 hover:bg-white/70 hover:shadow-lg transition-all duration-300">
-                        <CardContent className="space-y-2">
-                          <p className="text-3xl font-medium text-primary">18</p>
-                          <p className="text-sm text-muted-foreground">Research Indices</p>
+                            <p className="text-3xl font-medium text-primary">462</p>
+                            <p className="text-sm text-muted-foreground">i10-Index</p>
                         </CardContent>
                       </Card>
                     </div>
@@ -2179,12 +2168,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             >
                               {/* Journal Cover */}
                               <div className="relative w-56 h-80 rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border-2 border-white/40 mb-4">
-                                {/* Article Title as Cover */}
-                                <div className="w-full h-full bg-gradient-to-br from-primary/90 via-primary to-primary/80 p-6 flex flex-col justify-center items-center text-center transition-transform duration-500 group-hover:scale-105">
-                                  <h3 className="text-white text-base font-semibold leading-tight">
-                                    {article.imageUrl}
-                                  </h3>
-                                </div>
+                                {/* Journal Article Cover Image */}
+                                <ImageWithFallback
+                                  src={article.imageUrl && article.imageUrl.endsWith('.png') ? article.imageUrl : '/assets/image/Journals/01.png'}
+                                  alt={article.title}
+                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                                 
                                 {/* Glossy overlay effect */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-black/30 pointer-events-none" />
@@ -2396,24 +2385,24 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 <div className="space-y-6">
                   {[
                     {
-                      degree: "Ph.D. in Computer Science",
-                      institution: "University of Science Malaysia (USM)",
-                      year: "2010",
+                      degree: "Ph.D. in IT",
+                      institution: "UNIVERSITY TEKNOLOGI PETRONAS (UTP)",
+                        year: "2014",
                       specialization: "Cybersecurity and Network Security",
                       location: "Malaysia"
                     },
                     {
-                      degree: "Master of Science in Computer Science",
-                      institution: "University of Karachi",
-                      year: "2005",
-                      specialization: "Software Engineering",
+                       degree: "MS in CS",
+                       institution: "UAF, Pakistan",
+                        year: "2000",
+                        specialization: "Computer Science",
                       location: "Pakistan"
                     },
                     {
-                      degree: "Bachelor of Science in Computer Science",
-                      institution: "University of Karachi",
-                      year: "2003",
-                      specialization: "Computer Science",
+                       degree: "BS in Engineering",
+                       institution: "UAF, Pakistan",
+                        year: "1998",
+                        specialization: "Engineering",
                       location: "Pakistan"
                     }
                   ].map((qualification, index) => (
@@ -4279,7 +4268,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                         </div>
                         <div>
                           <p className="text-sm font-medium text-foreground">Email</p>
-                          <p className="text-primary">noorzaman.jhanjhi@taylors.edu.my</p>
+                          <p className="text-primary">noorzaman.jhanjhi@taylors.edu.my | profjhanjhi@gmail.com</p>
                         </div>
                       </div>
                     </div>
@@ -4292,6 +4281,10 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                         <div>
                           <p className="text-sm font-medium text-foreground">Google Scholar</p>
                           <a href="https://scholar.google.com/citations?hl=en&user=J6QVIncAAAAJ&view_op=list_works" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">View Publications</a>
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-foreground">ResearchGate</p>
+                          <a href="https://www.researchgate.net/profile/Noor-Jhanjhi" target="_blank" rel="noopener noreferrer" className="text-primary text-sm hover:underline">View Profile</a>
                         </div>
                         <div>
                           <p className="text-sm font-medium text-foreground">LinkedIn</p>
@@ -4603,7 +4596,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                         ({bookChapters.filter(chapter => 
                           searchQuery === '' || 
                           chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          chapter.book.toLowerCase().includes(searchQuery.toLowerCase())
+                          chapter.book?.toLowerCase().includes(searchQuery.toLowerCase())
                         ).length})
                       </span>
                     </h3>
@@ -4613,7 +4606,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                       .filter(chapter => 
                         searchQuery === '' || 
                         chapter.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        chapter.book.toLowerCase().includes(searchQuery.toLowerCase())
+                        (chapter.book && chapter.book.toLowerCase().includes(searchQuery.toLowerCase()))
                       )
                       .map((chapter, index) => (
                         <motion.div

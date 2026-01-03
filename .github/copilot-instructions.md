@@ -9,7 +9,6 @@ This is a Vite-based React + TypeScript portfolio web app for Dr. Noor Zaman, fe
 - **Components:**
   - High-level: `components/Header.tsx`, `components/Sidebar.tsx`, `components/HeroSection.tsx`, `components/ContentSection.tsx`, `components/Footer.tsx`
   - UI primitives: `components/ui/` (Radix UI wrappers, custom controls, utility functions)
-  - Figma assets: `components/figma/`
 - **Styling:** Tailwind CSS with custom variables in `styles/globals.css`. Glassmorphism and blur effects are used for overlays and sidebars.
 - **Routing:** No client-side routing; navigation is managed by React state (`activeSection`).
 - **State Management:** Local React state only; no Redux/MobX.

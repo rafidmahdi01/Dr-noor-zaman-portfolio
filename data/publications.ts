@@ -1663,107 +1663,69 @@ export const books = [
     },
     // 2015
     {
-      title: "The Effectiveness of Big Data in Social Networks",
-      book: "Handbook of Research on Trends and Future Directions in Big Data and Web Intelligence",
-      publisher: "IGI Global",
+      title: "Handbook of Research on Trends and Future Directions in Big Data and Web Intelligence",
+      publisher: "IGI Global USA",
       year: "2015",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1706777373948-4a6cdce75975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwaGVhbHRoY2FyZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYyMjQ0OTA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      isbn: "",
+      impact: "Edited Book",
+      imageUrl: bigdataWebIntelligence
     },
     // 2013
     {
-      title: "Maintenance Management based on Signal Processing",
-      book: "Digital Filters and Signal Processing",
-      publisher: "INTECH Open Science Publishers",
+      title: "Information – Made easy",
+      publisher: "Self-Published",
       year: "2013",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1752802469747-bff685763f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyeSUyMGF1dG9tYXRpb258ZW58MXx8fHwxNzYyMzI5MDUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      isbn: "978-969-9152",
+      impact: "Authored Book",
+      imageUrl: informationMadeEasyCover
     },
     {
-      title: "Spectral analysis of exon boundaries in DNA signals",
-      book: "Digital Filters and Signal Processing",
-      publisher: "INTECH Open Science Publishers",
+      title: "Digital Filters and Signal Processing",
+      publisher: "INTECH Open Science | Open Minds",
+      year: "2012",
+      isbn: "978-953-307-645-9",
+      impact: "Edited Book",
+      imageUrl: digitalFiltersSignal,
+      pdfUrl: "http://www.intechopen.com/books/digital-filters-and-signal-processing"
+    },
+    {
+      title: "Software Development Techniques for Constructive Information Systems Design",
+      publisher: "IGI Global USA",
       year: "2013",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1748194449456-a6a59f63dcc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwbGVhcm5pbmclMjBtZWRpY2FsfGVufDF8fHx8MTc2MjMyOTA1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      isbn: "978-1466636793",
+      impact: "Edited Book - Indexed in ACM Digital Library & Scopus",
+      imageUrl: softwareDevInfoSystems,
+      pdfUrl: "http://www.igi-global.com/book/software-development-techniques-constructive-information/72159"
     },
     // 2012
     {
-      title: "A Software Engineering Approach for Access Control to Multi-Level-Security Documents",
-      book: "Software Development Techniques for Constructive Information Design",
-      publisher: "IGI Global",
+      title: "Wireless Sensor Networks and Energy Efficiency: Protocols, Routing and Management",
+      publisher: "IGI Global USA",
       year: "2012",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1724219616919-aab943e7b00d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwc2hpZWxkfGVufDF8fHx8MTc2MjMyOTA1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      title: "A Comparative Analysis of Software Engineering Approaches for Sequence Analysis",
-      book: "Software Development Techniques for Constructive Information Design",
-      publisher: "IGI Global",
-      year: "2012",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1748194449456-a6a59f63dcc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwbGVhcm5pbmclMjBtZWRpY2FsfGVufDF8fHx8MTc2MjMyOTA1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      title: "FTA Via BDD for Information Systems Design",
-      book: "Software Development Techniques for Constructive Information Design",
-      publisher: "IGI Global",
-      year: "2012",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1724219616919-aab943e7b00d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwc2hpZWxkfGVufDF8fHx8MTc2MjMyOTA1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      title: "Wireless Sensor Network: QoS Issue and Challenges",
-      book: "Wireless Sensor Network and Energy Efficiency: Protocols, Routing and Management",
-      publisher: "IGI Global",
-      year: "2012",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1706777373948-4a6cdce75975?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwaGVhbHRoY2FyZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYyMjQ0OTA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      title: "Node Localization: Issues, Challenges and future perspectives in Wireless Sensor Networks (WSNs)",
-      book: "Wireless Sensor Network and Energy Efficiency: Protocols, Routing and Management",
-      publisher: "IGI Global",
-      year: "2012",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1752802469747-bff685763f3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyeSUyMGF1dG9tYXRpb258ZW58MXx8fHwxNzYyMzI5MDUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-    },
-    {
-      title: "An Optimization to Protein Coding Regions Identification in Eukaryotes",
-      book: "Pharmacoinformatics and Drug Discovery Technologies: Theories and Applications",
-      publisher: "IGI Global",
-      year: "2012",
-      pages: "",
-      impact: "Chapter",
-      imageUrl: "https://images.unsplash.com/photo-1748194449456-a6a59f63dcc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZWVwJTIwbGVhcm5pbmclMjBtZWRpY2FsfGVufDF8fHx8MTc2MjMyOTA1Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      isbn: "978-1466601019",
+      impact: "Edited Book",
+      imageUrl: book9781466601017,
+      pdfUrl: "http://www.igi-global.com/book/wireless-sensor-networks-energy-efficiency/56036"
     }
   ];
 
   // Journal Articles data
-  export const journalArticles = [
-    {
-      title: "Enhancing ECG Report Generation with Domain-Specific Tokenization for Improved Medical NLP Accuracy",
-      journal: "IEEE Access",
-      year: "2025",
-      impact: "ISI-Indexed",
-      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15676_1.pdf",
-      imageUrl: "Enhancing ECG Report Generation with Domain-Specific Tokenization for Improved Medical NLP Accuracy"
-    },
+export const journalArticles = [
+  {
+    title: "Enhancing ECG Report Generation with Domain-Specific Tokenization for Improved Medical NLP Accuracy",
+    journal: "IEEE Access",
+    year: "2025",
+    impact: "ISI-Indexed",
+    pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15676_1.pdf",
+    imageUrl: '/assets/image/Journals/01.png'
+  },
     {
       title: "Integrating Sentiment Analysis With Machine Learning for Cyberbullying Detection on Social Media",
       journal: "IEEE Access",
       year: "2025",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15675_1.pdf",
-      imageUrl: "Integrating Sentiment Analysis With Machine Learning for Cyberbullying Detection on Social Media"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "BERT ensemble based MBR framework for android malware detection",
@@ -1771,7 +1733,7 @@ export const books = [
       year: "2025",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15677_1.pdf",
-      imageUrl: "BERT ensemble based MBR framework for android malware detection"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Identification of Spambots and Fake Followers on Social Network via Interpretable AI-Based Machine Learning",
@@ -1779,7 +1741,7 @@ export const books = [
       year: "2025",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15741_1.pdf",
-      imageUrl: "Identification of Spambots and Fake Followers on Social Network via Interpretable AI-Based Machine Learning"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Data-Driven Spatial Analysis of Reforestation in Pakistan: Identifying Optimal Locations for Sustainable Forest Growth and Climate Change Mitigation",
@@ -1787,7 +1749,7 @@ export const books = [
       year: "2025",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15747_1.pdf",
-      imageUrl: "Data-Driven Spatial Analysis of Reforestation in Pakistan: Identifying Optimal Locations for Sustainable Forest Growth and Climate Change Mitigation"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Enhancing Stock Market Predictions for Classifying Unlabelled Celebrities' Twitter Data",
@@ -1795,7 +1757,7 @@ export const books = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_15941_1.pdf",
-      imageUrl: "Enhancing Stock Market Predictions for Classifying Unlabelled Celebrities' Twitter Data"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Optimized and interpretable machine learning framework for early breast cancer detection",
@@ -1803,7 +1765,7 @@ export const books = [
       year: "2025",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_16116_1.pdf",
-      imageUrl: "Optimized and interpretable machine learning framework for early breast cancer detection"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Adaptive malware identification via integrated SimCLR and GRU networks",
@@ -1811,7 +1773,7 @@ export const books = [
       year: "2025",
       impact: "ISI-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_16117_1.pdf",
-      imageUrl: "Adaptive malware identification via integrated SimCLR and GRU networks"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Empirical Performance Analysis of Hyperledger Fabric Blockchain Network for Healthcare",
@@ -1819,7 +1781,7 @@ export const books = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_16118_1.pdf",
-      imageUrl: "Empirical Performance Analysis of Hyperledger Fabric Blockchain Network for Healthcare"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "AI-Driven Framework for Location-Aware Sentiment Analysis and Topic Classification of Public Social Media Data in West Malaysia",
@@ -1827,7 +1789,7 @@ export const books = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_16119_1.pdf",
-      imageUrl: "AI-Driven Framework for Location-Aware Sentiment Analysis and Topic Classification of Public Social Media Data in West Malaysia"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     {
       title: "Proposed Model for Navigating Digital Learning and Examining the Stress of EdTech",
@@ -1835,7 +1797,7 @@ export const books = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_16120_1.pdf",
-      imageUrl: "Proposed Model for Navigating Digital Learning and Examining the Stress of EdTech"
+      imageUrl: '/assets/image/Journals/01.png'
     },
     // 2024
     {
@@ -2894,6 +2856,45 @@ export const books = [
       journal: "Journal of Engineering Science and Technology",
       year: "2021",
       impact: "ISI-Indexed",
+      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10837_1.pdf",
+      imageUrl: "A Watermark-Based Secure Model For Data Security Against Security Attacks For Machine Learning Algorithms"
+    },
+    {
+      title: "Multimatcher Model to Enhance Ontology Matching Using Background Knowledge",
+      journal: "Information",
+      year: "2021",
+      impact: "ISI-Indexed",
+      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10839_1.pdf",
+      imageUrl: "Multimatcher Model to Enhance Ontology Matching Using Background Knowledge"
+    },
+    {
+      title: "Test Case Prioritization Techniques in Software Regression Testing: An Overview",
+      journal: "International Journal of Advanced and Applied Sciences",
+      year: "2021",
+      impact: "ISI-Indexed",
+      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10840_1.pdf",
+      imageUrl: "Test Case Prioritization Techniques in Software Regression Testing: An Overview"
+    },
+    {
+      title: "Load Balancing Algorithm for Migrating Switches in Software-defined Vehicular Networks",
+      journal: "Computers, Materials & Continua",
+      year: "2021",
+      impact: "ISI-Indexed",
+      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10841_1.pdf",
+      imageUrl: "Load Balancing Algorithm for Migrating Switches in Software-defined Vehicular Networks"
+    },
+    {
+      title: "A Design of IoT-Based Medicine Case For The Multi-User Medication Management Using Drone In Elderly Centre",
+      journal: "Journal of Engineering Science & Technology",
+      year: "2021",
+      impact: "ISI-Indexed",
+      pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10842_1.pdf",
+      imageUrl: "A Design of IoT-Based Medicine Case For The Multi-User Medication Management Using Drone In Elderly Centre"
+    },
+    {
+      title: "An Attention Based Deep Learning Model For Traffic Flow Prediction Using Spatio Temporal Features Towards Sustainable Smart City",
+      journal: "International Journal of Communication Systems",
+      year: "2021",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_10837_1.pdf",
       imageUrl: "A Watermark-Based Secure Model For Data Security Against Security Attacks For Machine Learning Algorithms"
     },
