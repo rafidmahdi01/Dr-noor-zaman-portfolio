@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react';
+import { useState, useEffect, lazy, Suspense, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
@@ -22,6 +22,23 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [hoveredSection, setHoveredSection] = useState<{id: string, name: string, summary: string} | null>(null);
   const [sidebarHovered, setSidebarHovered] = useState(false);
+
+  // Memoize callbacks for better performance
+  const handleSidebarToggle = useCallback(() => {
+    setSidebarOpen(prev => !prev);
+  }, []);
+
+  const handleSectionChange = useCallback((section: string) => {
+    setActiveSection(section);
+    // Auto-close on mobile after selection
+    if (window.innerWidth < 1024) {
+      setTimeout(() => setSidebarOpen(false), 300);
+    }
+  }, []);
+
+  const handleSectionHover = useCallback((section: {id: string, name: string, summary: string} | null) => {
+    setHoveredSection(section);
+  }, []);
 
   useEffect(() => {
     // Simulate loading delay for smooth animations
@@ -122,7 +139,7 @@ if (isLoading) {
           }}
         >
           <motion.button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
+            onClick={handleSidebarToggle}
             className="group relative bg-white/20 backdrop-blur-lg border border-white/30 text-primary shadow-2xl shadow-black/10 rounded-r-2xl p-4 focus:outline-none focus:ring-2 focus:ring-primary/20 overflow-hidden"
             whileHover={{ 
               scale: 1.05,
@@ -231,14 +248,8 @@ if (isLoading) {
           >
             <Sidebar 
               activeSection={activeSection} 
-              onSectionChange={(section) => {
-                setActiveSection(section);
-                // Auto-close on mobile after selection
-                if (window.innerWidth < 1024) {
-                  setTimeout(() => setSidebarOpen(false), 300);
-                }
-              }}
-              onSectionHover={setHoveredSection}
+              onSectionChange={handleSectionChange}
+              onSectionHover={handleSectionHover}
             />
           </motion.div>
 
@@ -296,7 +307,7 @@ if (isLoading) {
         )}
 
         {/* Large Black Box Overlay - FIXED POSITION (always visible in viewport) */}
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           {hoveredSection && sidebarOpen && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -380,7 +391,7 @@ if (isLoading) {
         >
           {/* Header Section - Hero/Profile Area */}
           <div className="relative">
-            <Header activeSection={activeSection} onSectionChange={setActiveSection} />
+            <Header activeSection={activeSection} onSectionChange={handleSectionChange} />
             <HeroSection />
             
             {/* Separation Divider */}
@@ -411,7 +422,7 @@ if (isLoading) {
                   />
                 </div>
               }>
-                <ContentSection activeSection={activeSection} onSectionChange={setActiveSection} />
+                <ContentSection activeSection={activeSection} onSectionChange={handleSectionChange} />
               </Suspense>
             </motion.div>
           </main>

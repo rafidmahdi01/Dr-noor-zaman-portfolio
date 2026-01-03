@@ -341,6 +341,25 @@ html {
   [style*="perspective"] {
     perspective: 500px !important;
   }
+  
+  /* Disable hover animations on mobile for better performance */
+  @media (hover: none) and (pointer: coarse) {
+    * {
+      transition: none !important;
+    }
+    
+    [class*="hover:"]:hover {
+      transform: none !important;
+      scale: 1 !important;
+    }
+  }
+}
+
+/* Optimize hover animations - only on devices with hover capability */
+@media (hover: hover) and (pointer: fine) {
+  [class*="hover:"] {
+    will-change: transform;
+  }
 }
 
 /* Tablet optimizations */

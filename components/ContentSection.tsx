@@ -141,6 +141,8 @@ function CertificatePreview({ image, awardName }: { image: string; awardName: st
                       src={image} 
                       alt={`${awardName} certificate`}
                       className="w-full h-auto object-contain max-h-[60vh]"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -2170,7 +2172,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               <div className="relative w-56 h-80 rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border-2 border-white/40 mb-4">
                                 {/* Journal Article Cover Image */}
                                 <ImageWithFallback
-                                  src={article.imageUrl && article.imageUrl.endsWith('.png') ? article.imageUrl : '/assets/image/Journals/01.png'}
+                                  src={article.imageUrl && (article.imageUrl.startsWith('/') || article.imageUrl.startsWith('http')) ? article.imageUrl : '/assets/image/Journals/01.png'}
                                   alt={article.title}
                                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
@@ -2463,6 +2465,8 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                   src={org.logo} 
                                   alt={org.alt}
                                   className="max-w-full max-h-full object-contain"
+                                  loading="lazy"
+                                  decoding="async"
                                   onError={(e) => {
                                     const target = e.target as HTMLImageElement;
                                     target.style.display = 'none';
@@ -4548,7 +4552,10 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.01, duration: 0.2 }}
                         >
-                          <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+                          <Card 
+                            className={`hover:shadow-lg transition-shadow overflow-hidden ${book.pdfUrl ? 'cursor-pointer hover:border-primary/50' : ''}`}
+                            onClick={() => book.pdfUrl && window.open(book.pdfUrl, '_blank')}
+                          >
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 shadow-sm">
                                 <ImageWithFallback
@@ -4559,7 +4566,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
                               <div className="flex-1 min-w-0 flex flex-col justify-between py-0.5">
                                 <div className="space-y-1">
-                                  <h4 className="text-sm text-foreground line-clamp-2 leading-snug" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+                                  <h4 className={`text-sm text-foreground line-clamp-2 leading-snug ${book.pdfUrl ? 'group-hover:text-primary' : ''}` } style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
                                     {book.title}
                                   </h4>
                                   <p className="text-xs text-muted-foreground truncate" style={{ fontFamily: 'Open Sans, sans-serif' }}>
@@ -4569,6 +4576,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
                                   <Badge variant="secondary" className="text-xs shrink-0">{book.year}</Badge>
                                   <Badge variant="outline" className="text-xs shrink-0 truncate max-w-[120px]">{book.impact}</Badge>
+                                  {book.pdfUrl && (
+                                    <Badge className="bg-primary/10 text-primary hover:bg-primary/20 text-xs shrink-0">View</Badge>
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -4615,7 +4625,10 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.01, duration: 0.2 }}
                         >
-                          <Card className="hover:shadow-lg transition-shadow overflow-hidden border-gray-200/60">
+                          <Card 
+                            className={`hover:shadow-lg transition-shadow overflow-hidden border-gray-200/60 ${(chapter as any).pdfUrl ? 'cursor-pointer hover:border-primary/50' : ''}`}
+                            onClick={() => (chapter as any).pdfUrl && window.open((chapter as any).pdfUrl, '_blank')}
+                          >
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 shadow-sm">
                                 <ImageWithFallback
@@ -4626,7 +4639,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
                               <div className="flex-1 min-w-0 flex flex-col justify-between py-0.5">
                                 <div className="space-y-1">
-                                  <h4 className="text-sm text-foreground line-clamp-2 leading-snug" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+                                  <h4 className={`text-sm text-foreground line-clamp-2 leading-snug ${(chapter as any).pdfUrl ? 'group-hover:text-primary' : ''}` } style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
                                     {chapter.title}
                                   </h4>
                                   <p className="text-xs text-muted-foreground truncate" style={{ fontFamily: 'Open Sans, sans-serif' }}>
@@ -4638,6 +4651,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 </div>
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
                                   <Badge variant="secondary" className="text-xs shrink-0">{chapter.year}</Badge>
+                                  {(chapter as any).pdfUrl && (
+                                    <Badge className="bg-primary/10 text-primary hover:bg-primary/20 text-xs shrink-0">View</Badge>
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -4684,18 +4700,21 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.01, duration: 0.2 }}
                         >
-                          <Card className="hover:shadow-lg transition-shadow overflow-hidden border-gray-200/60">
+                          <Card 
+                            className={`hover:shadow-lg transition-shadow overflow-hidden border-gray-200/60 ${article.pdfUrl ? 'cursor-pointer hover:border-primary/50' : ''}`}
+                            onClick={() => article.pdfUrl && window.open(article.pdfUrl, '_blank')}
+                          >
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 shadow-sm">
                                 <ImageWithFallback
-                                  src={article.imageUrl}
+                                  src={article.imageUrl && (article.imageUrl.startsWith('/') || article.imageUrl.startsWith('http')) ? article.imageUrl : '/assets/image/Journals/01.png'}
                                   alt={article.title}
                                   className="w-full h-full object-cover"
                                 />
                               </div>
                               <div className="flex-1 min-w-0 flex flex-col justify-between py-0.5">
                                 <div className="space-y-1">
-                                  <h4 className="text-sm text-foreground line-clamp-2 leading-snug" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+                                  <h4 className={`text-sm text-foreground line-clamp-2 leading-snug ${article.pdfUrl ? 'group-hover:text-primary' : ''}` } style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
                                     {article.title}
                                   </h4>
                                   <p className="text-xs text-muted-foreground truncate" style={{ fontFamily: 'Open Sans, sans-serif' }}>
@@ -4704,6 +4723,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 </div>
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
                                   <Badge variant="secondary" className="text-xs shrink-0">{article.year}</Badge>
+                                  {article.pdfUrl && (
+                                    <Badge className="bg-primary/10 text-primary hover:bg-primary/20 text-xs shrink-0">View</Badge>
+                                  )}
                                 </div>
                               </div>
                             </div>
@@ -4750,7 +4772,10 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.01, duration: 0.2 }}
                         >
-                          <Card className="hover:shadow-lg transition-shadow overflow-hidden border-gray-200/60">
+                          <Card 
+                            className={`hover:shadow-lg transition-shadow overflow-hidden border-gray-200/60 ${article.pdfUrl ? 'cursor-pointer hover:border-blue-500/50' : ''}`}
+                            onClick={() => article.pdfUrl && window.open(article.pdfUrl, '_blank')}
+                          >
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-blue-600/10 to-blue-500/5 shadow-sm">
                                 <ImageWithFallback
@@ -4761,7 +4786,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
                               <div className="flex-1 min-w-0 flex flex-col justify-between py-0.5">
                                 <div className="space-y-1">
-                                  <h4 className="text-sm text-foreground line-clamp-2 leading-snug" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
+                                  <h4 className={`text-sm text-foreground line-clamp-2 leading-snug ${article.pdfUrl ? 'group-hover:text-blue-600' : ''}` } style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
                                     {article.title}
                                   </h4>
                                   <p className="text-xs text-muted-foreground truncate" style={{ fontFamily: 'Open Sans, sans-serif' }}>
@@ -4771,6 +4796,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
                                   <Badge variant="secondary" className="text-xs shrink-0">{article.year}</Badge>
                                   <Badge variant="outline" className="text-xs shrink-0">{article.impact}</Badge>
+                                  {article.pdfUrl && (
+                                    <Badge className="bg-blue-600/10 text-blue-600 hover:bg-blue-600/20 text-xs shrink-0">View</Badge>
+                                  )}
                                 </div>
                               </div>
                             </div>

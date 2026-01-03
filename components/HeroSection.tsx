@@ -199,6 +199,8 @@ export function HeroSection() {
                   src={professorImg}
                   alt="Professor Dr. Noor Zaman Jhanjhi"
                   className="w-48 h-56 sm:w-60 sm:h-72 lg:w-72 lg:h-80 object-cover rounded-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
                 </div>
             </motion.div>
