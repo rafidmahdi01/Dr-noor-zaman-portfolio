@@ -192,7 +192,7 @@ if (isLoading) {
           onMouseEnter={() => setSidebarHovered(true)}
           onMouseLeave={() => setSidebarHovered(false)}
           animate={{ 
-            x: sidebarOpen ? 0 : -320,
+            x: sidebarOpen ? 0 : (window.innerWidth < 640 ? -288 : -320),
             boxShadow: sidebarOpen 
               ? '0 50px 100px rgba(0,0,0,0.2)' 
               : '0 0 0 rgba(0,0,0,0)'
@@ -303,7 +303,7 @@ if (isLoading) {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-[60] flex items-center justify-center pointer-events-none"
+              className="fixed inset-0 z-[60] items-center justify-center pointer-events-none hidden lg:flex"
               style={{
                 left: '320px', // Start after sidebar width
               }}

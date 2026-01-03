@@ -124,7 +124,7 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
   ];
 
   return (
-    <div className="w-80 bg-white/80 backdrop-blur-xl border-r border-white/20 h-screen flex flex-col shadow-2xl shadow-black/5 relative">
+    <div className="w-72 sm:w-80 bg-white/80 backdrop-blur-xl border-r border-white/20 h-screen flex flex-col shadow-2xl shadow-black/5 relative">
       {/* Background Blur Overlay - Enhanced */}
       <AnimatePresence>
         {(hoveredGroup || hoveredSection) && (
@@ -141,9 +141,9 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
         )}
       </AnimatePresence>
 
-      <div className="p-6 border-b border-white/20 bg-white/30 backdrop-blur-lg flex-shrink-0 relative z-10">
-        <h2 className="text-lg font-medium text-foreground">Curriculum Vitae</h2>
-        <p className="text-sm text-muted-foreground mt-1">Navigate through sections</p>
+      <div className="p-4 sm:p-6 border-b border-white/20 bg-white/30 backdrop-blur-lg flex-shrink-0 relative z-10">
+        <h2 className="text-base sm:text-lg font-medium text-foreground">Curriculum Vitae</h2>
+        <p className="text-xs sm:text-sm text-muted-foreground mt-1">Navigate through sections</p>
       </div>
       
       <ScrollArea className="flex-1 overflow-y-auto relative z-10">
@@ -192,7 +192,7 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
                         ease: [0.34, 1.56, 0.64, 1],
                         scale: { type: "spring", stiffness: 280, damping: 18 }
                       }}
-                      className="absolute left-full ml-6 top-0 w-80 bg-primary backdrop-blur-2xl border border-white/30 rounded-2xl p-5 shadow-[0_20px_60px_rgba(220,38,38,0.6)] z-[100] pointer-events-none"
+                      className="hidden lg:block absolute left-full ml-6 top-0 w-80 bg-primary backdrop-blur-2xl border border-white/30 rounded-2xl p-5 shadow-[0_20px_60px_rgba(220,38,38,0.6)] z-[100] pointer-events-none"
                       style={{
                         transformStyle: 'preserve-3d',
                         perspective: 1200,
@@ -385,7 +385,7 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
                                         ease: [0.34, 1.56, 0.64, 1],
                                         scale: { type: "spring", stiffness: 300, damping: 20 }
                                       }}
-                                      className="absolute left-full ml-6 top-0 w-72 bg-primary backdrop-blur-2xl border border-white/30 rounded-xl p-4 shadow-[0_15px_45px_rgba(220,38,38,0.5)] z-[100] pointer-events-none"
+                                      className="hidden lg:block absolute left-full ml-6 top-0 w-72 bg-primary backdrop-blur-2xl border border-white/30 rounded-xl p-4 shadow-[0_15px_45px_rgba(220,38,38,0.5)] z-[100] pointer-events-none"
                                       style={{
                                         transformStyle: 'preserve-3d',
                                         perspective: 1000,

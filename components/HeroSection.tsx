@@ -30,7 +30,7 @@ export function HeroSection() {
         style={{ y, scale }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
       >
-        <div className="grid lg:grid-cols-2 gap-12 items-center px-[-11px py-[0px]] p-[0px] mt-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mt-8 sm:mt-12 lg:mt-20">
           {/* Text Content */}
           <motion.div
             initial={{ x: -50, opacity: 0 }}
@@ -39,9 +39,9 @@ export function HeroSection() {
               duration: 0.8, 
               ease: [0.25, 0.1, 0.25, 1] // Apple's cubic-bezier
             }}
-            className="space-y-6"
+            className="space-y-4 sm:space-y-6"
           >
-            <div className="space-y-6 p-[0px] mt-[0px] mr-[0px] mb-[28px] ml-[0px]">
+            <div className="space-y-4 sm:space-y-6">
               <motion.div
                 initial={{ y: 30, opacity: 0, scale: 0.95 }}
                 animate={{ y: 0, opacity: 1, scale: 1 }}
@@ -52,7 +52,7 @@ export function HeroSection() {
                 }}
                 className="text-center lg:text-left"
               >
-                <h2 className="text-2xl text-primary font-medium mb-4">Curriculum Vitae</h2>
+                <h2 className="text-xl sm:text-2xl text-primary font-medium mb-3 sm:mb-4">Curriculum Vitae</h2>
               </motion.div>
               
               <motion.h1
@@ -63,7 +63,7 @@ export function HeroSection() {
                   duration: 0.8,
                   ease: [0.25, 0.1, 0.25, 1]
                 }}
-                className="text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight whitespace-nowrap"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight"
               >
                 Professor Dr. Noor Zaman Jhanjhi
               </motion.h1>
@@ -78,8 +78,8 @@ export function HeroSection() {
                 }}
                 className="space-y-2"
               >
-                <p className="text-lg text-muted-foreground font-medium" style={{ height: '80px', width: '757px' }}>Professor | Director for Research Center (CII) | Program Director for PG Research Degree Programmes</p>
-                <p className="text-lg text-muted-foreground">School of Computer Science</p>
+                <p className="text-base sm:text-lg text-muted-foreground font-medium">Professor | Director for Research Center (CII) | Program Director for PG Research Degree Programmes</p>
+                <p className="text-base sm:text-lg text-muted-foreground">School of Computer Science</p>
                 <p className="text-lg text-muted-foreground">Faculty of Innovation & Technology</p>
               </motion.div>
             </div>
@@ -96,65 +96,65 @@ export function HeroSection() {
             >
               <div className="space-y-4 text-muted-foreground">
                 <div className="flex items-center space-x-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  <span className="text-red-600">profjhanjhi@gmail.com</span>
+                  <span className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
+                  <span className="text-red-600 text-sm sm:text-base break-all">profjhanjhi@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span className="w-2 h-2 bg-primary rounded-full"></span>
-                  <span className="text-primary">noorzaman.jhanjhi@taylors.edu.my</span>
+                  <span className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
+                  <span className="text-primary text-sm sm:text-base break-all">noorzaman.jhanjhi@taylors.edu.my</span>
                 </div>
               </div>
               
               <div className="space-y-3">
-                <h3 className="text-lg font-medium text-foreground">Areas of Expertise</h3>
-                <div className="flex flex-wrap gap-3">
+                <h3 className="text-base sm:text-lg font-medium text-foreground">Areas of Expertise</h3>
+                <div className="flex flex-wrap gap-2 sm:gap-3">
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <Shield className="w-4 h-4" />
+                    <Shield className="w-3 h-3 sm:w-4 sm:h-4" />
                     Cybersecurity
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <Brain className="w-4 h-4" />
+                    <Brain className="w-3 h-3 sm:w-4 sm:h-4" />
                     AI
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <ShieldCheck className="w-4 h-4" />
+                    <ShieldCheck className="w-3 h-3 sm:w-4 sm:h-4" />
                     Security and Privacy
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <Brain className="w-4 h-4" />
+                    <Brain className="w-3 h-3 sm:w-4 sm:h-4" />
                     Agentic AI
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <Code className="w-4 h-4" />
+                    <Code className="w-3 h-3 sm:w-4 sm:h-4" />
                     Software Engineering
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <Cloud className="w-4 h-4" />
+                    <Cloud className="w-3 h-3 sm:w-4 sm:h-4" />
                     Cloud Computing
                   </motion.span>
                   <motion.span
                     whileHover={{ scale: 1.02, y: -2 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-lg text-primary text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
+                    className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-white/50 backdrop-blur-lg text-primary text-xs sm:text-sm border border-white/30 rounded-xl shadow-lg shadow-black/5"
                   >
-                    <Lock className="w-4 h-4" />
+                    <Lock className="w-3 h-3 sm:w-4 sm:h-4" />
                     Data Security
                   </motion.span>
                 </div>
@@ -194,11 +194,11 @@ export function HeroSection() {
                   ease: "easeInOut"
                 }}
               />
-                <div className="relative bg-white/70 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-white/30">
+                <div className="relative bg-white/70 backdrop-blur-xl rounded-2xl p-4 sm:p-6 shadow-2xl border border-white/30">
                 <img
                   src={professorImg}
                   alt="Professor Dr. Noor Zaman Jhanjhi"
-                  className="w-72 h-80 object-cover rounded-2xl"
+                  className="w-48 h-56 sm:w-60 sm:h-72 lg:w-72 lg:h-80 object-cover rounded-2xl"
                 />
                 </div>
             </motion.div>

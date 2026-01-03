@@ -968,25 +968,25 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 transition={{ duration: 0.6 }}
                 className="max-w-6xl mx-auto"
               >
-                <h2 className="text-2xl font-medium text-primary mb-8 border-b border-border pb-4">RESEARCH PROJECTS</h2>
+                <h2 className="text-xl sm:text-2xl font-medium text-primary mb-6 sm:mb-8 border-b border-border pb-4">RESEARCH PROJECTS</h2>
                 
-                <div className="grid md:grid-cols-3 gap-6 mb-8">
-                  <Card className="text-center p-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+                  <Card className="text-center p-4 sm:p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">36+</p>
-                      <p className="text-sm text-muted-foreground">Total Projects</p>
+                      <p className="text-2xl sm:text-3xl font-medium text-primary">36+</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Total Projects</p>
                     </CardContent>
                   </Card>
-                  <Card className="text-center p-6">
+                  <Card className="text-center p-4 sm:p-6">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">~5M</p>
-                      <p className="text-sm text-muted-foreground">Total Funding (SAR)</p>
+                      <p className="text-2xl sm:text-3xl font-medium text-primary">~5M</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Total Funding (SAR)</p>
                     </CardContent>
                   </Card>
-                  <Card className="text-center p-6">
+                  <Card className="text-center p-4 sm:p-6 col-span-2 sm:col-span-1">
                     <CardContent className="space-y-2">
-                      <p className="text-3xl font-medium text-primary">15+</p>
-                      <p className="text-sm text-muted-foreground">Years of Research</p>
+                      <p className="text-2xl sm:text-3xl font-medium text-primary">15+</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">Years of Research</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -994,15 +994,15 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 <div className="space-y-4">
                   {researchProjects.map((project, index) => (
                     <ScrollReveal key={project.id} delay={0.05 * (index + 1)}>
-                      <Card className="p-5 hover:shadow-md transition-all">
-                        <div className="flex justify-between items-start">
+                      <Card className="p-4 sm:p-5 hover:shadow-md transition-all">
+                        <div className="flex flex-col sm:flex-row justify-between sm:items-start gap-3">
                           <div className="flex-1">
-                            <h4 className="font-medium text-foreground">{project.title}</h4>
+                            <h4 className="text-sm sm:text-base font-medium text-foreground">{project.title}</h4>
                             {project.description && (
-                              <p className="text-sm text-muted-foreground mt-1">{project.description}</p>
+                              <p className="text-xs sm:text-sm text-muted-foreground mt-1">{project.description}</p>
                             )}
-                            <div className="flex items-center text-sm text-muted-foreground mt-2">
-                              <Calendar className="w-4 h-4 text-primary mr-2" />
+                            <div className="flex items-center text-xs sm:text-sm text-muted-foreground mt-2">
+                              <Calendar className="w-3 h-3 sm:w-4 sm:h-4 text-primary mr-2 flex-shrink-0" />
                               <span>{project.period}</span>
                             </div>
                             {project.grantNumber && (
@@ -1011,17 +1011,17 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             {project.funding && (
                               <p className="text-xs text-muted-foreground">Funding: {project.funding}</p>
                             )}
-                            <div className="flex items-center space-x-2 mt-3">
-                              <Badge variant={project.role === 'Project Leader' ? 'default' : 'outline'}>
+                            <div className="flex flex-wrap items-center gap-2 mt-3">
+                              <Badge variant={project.role === 'Project Leader' ? 'default' : 'outline'} className="text-xs">
                                 {project.role}
                               </Badge>
-                              <Badge variant={project.type === 'International' ? 'default' : 'secondary'}>
+                              <Badge variant={project.type === 'International' ? 'default' : 'secondary'} className="text-xs">
                                 {project.type}
                               </Badge>
-                              <Badge variant="secondary">{project.institution}</Badge>
+                              <Badge variant="secondary" className="text-xs">{project.institution}</Badge>
                             </div>
                           </div>
-                          <Search className="w-5 h-5 text-primary ml-4" />
+                          <Search className="w-4 h-4 sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                         </div>
                       </Card>
                     </ScrollReveal>
@@ -1787,7 +1787,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                 
                 {/* Filter Buttons */}
                 <motion.div 
-                  className="flex flex-wrap gap-4 mb-8 justify-center"
+                  className="flex flex-wrap gap-2 sm:gap-4 mb-8 justify-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
@@ -1796,15 +1796,15 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     onClick={() => setPublicationFilter('books')}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group relative px-8 py-4 rounded-2xl font-medium transition-all duration-300 overflow-hidden ${
+                    className={`group relative px-4 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base font-medium transition-all duration-300 overflow-hidden ${
                       publicationFilter === 'books'
                         ? 'bg-primary text-white shadow-xl shadow-primary/30'
                         : 'bg-white/60 backdrop-blur-xl border-2 border-white/40 text-foreground hover:border-primary/30'
                     }`}
                   >
-                    <div className="relative z-10 flex items-center space-x-3">
-                      <Book className="w-5 h-5" />
-                      <span>BOOKS</span>
+                    <div className="relative z-10 flex items-center space-x-2 sm:space-x-3">
+                      <Book className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="whitespace-nowrap">BOOKS</span>
                     </div>
                     {publicationFilter !== 'books' && (
                       <motion.div 
@@ -1820,15 +1820,15 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     onClick={() => setPublicationFilter('chapters')}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group relative px-8 py-4 rounded-2xl font-medium transition-all duration-300 overflow-hidden ${
+                    className={`group relative px-4 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base font-medium transition-all duration-300 overflow-hidden ${
                       publicationFilter === 'chapters'
                         ? 'bg-primary text-white shadow-xl shadow-primary/30'
                         : 'bg-white/60 backdrop-blur-xl border-2 border-white/40 text-foreground hover:border-primary/30'
                     }`}
                   >
-                    <div className="relative z-10 flex items-center space-x-3">
-                      <FileText className="w-5 h-5" />
-                      <span>BOOK CHAPTERS</span>
+                    <div className="relative z-10 flex items-center space-x-2 sm:space-x-3">
+                      <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="whitespace-nowrap">BOOK CHAPTERS</span>
                     </div>
                     {publicationFilter !== 'chapters' && (
                       <motion.div 
@@ -1844,15 +1844,15 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     onClick={() => setPublicationFilter('journals')}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group relative px-8 py-4 rounded-2xl font-medium transition-all duration-300 overflow-hidden ${
+                    className={`group relative px-4 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base font-medium transition-all duration-300 overflow-hidden ${
                       publicationFilter === 'journals'
                         ? 'bg-primary text-white shadow-xl shadow-primary/30'
                         : 'bg-white/60 backdrop-blur-xl border-2 border-white/40 text-foreground hover:border-primary/30'
                     }`}
                   >
-                    <div className="relative z-10 flex items-center space-x-3">
-                      <Newspaper className="w-5 h-5" />
-                      <span>ARTICLES IN JOURNALS</span>
+                    <div className="relative z-10 flex items-center space-x-2 sm:space-x-3">
+                      <Newspaper className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="whitespace-nowrap">JOURNALS</span>
                     </div>
                     {publicationFilter !== 'journals' && (
                       <motion.div 
@@ -1868,15 +1868,15 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     onClick={() => setPublicationFilter('proceedings')}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group relative px-8 py-4 rounded-2xl font-medium transition-all duration-300 overflow-hidden ${
+                    className={`group relative px-4 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-sm sm:text-base font-medium transition-all duration-300 overflow-hidden ${
                       publicationFilter === 'proceedings'
                         ? 'bg-primary text-white shadow-xl shadow-primary/30'
                         : 'bg-white/60 backdrop-blur-xl border-2 border-white/40 text-foreground hover:border-primary/30'
                     }`}
                   >
-                    <div className="relative z-10 flex items-center space-x-3">
-                      <Presentation className="w-5 h-5" />
-                      <span>ARTICLES IN PROCEEDINGS</span>
+                    <div className="relative z-10 flex items-center space-x-2 sm:space-x-3">
+                      <Presentation className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="whitespace-nowrap">PROCEEDINGS</span>
                     </div>
                     {publicationFilter !== 'proceedings' && (
                       <motion.div 
@@ -1900,22 +1900,22 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     className="relative"
                   >
                     {/* Carousel Navigation Buttons */}
-                    <div className="absolute -top-20 right-0 flex items-center gap-2 z-10 py-[0px] mx-[32px] my-[0px] px-[44px] py-[46px]">
+                    <div className="flex items-center justify-end gap-2 mb-4 sm:absolute sm:-top-16 sm:right-0 z-10">
                       <motion.button
                         onClick={() => scrollBooks('left')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(220, 38, 38, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
                       >
-                        <ChevronLeft className="w-5 h-5 text-foreground" />
+                        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                       <motion.button
                         onClick={() => scrollBooks('right')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(220, 38, 38, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
                       >
-                        <ChevronRight className="w-5 h-5 text-foreground" />
+                        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                     </div>
 
@@ -1978,11 +1978,11 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
 
                               {/* Book Info Below Cover */}
-                              <div className="space-y-2 w-56">
-                                <h3 className="font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                              <div className="space-y-2 w-40 sm:w-56">
+                                <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
                                   {book.title}
                                 </h3>
-                                <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center justify-between text-xs sm:text-sm">
                                   <span className="text-muted-foreground">{book.publisher}</span>
                                   <span className="text-muted-foreground">({book.year})</span>
                                 </div>
@@ -2010,22 +2010,22 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     className="relative"
                   >
                     {/* Carousel Navigation Buttons */}
-                    <div className="absolute -top-20 right-0 flex items-center gap-2 z-10 py-[0px] mx-[32px] my-[0px] px-[44px] py-[46px]">
+                    <div className="flex items-center justify-end gap-2 mb-4 sm:absolute sm:-top-16 sm:right-0 z-10">
                       <motion.button
                         onClick={() => scrollChapters('left')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(220, 38, 38, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
                       >
-                        <ChevronLeft className="w-5 h-5 text-foreground" />
+                        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                       <motion.button
                         onClick={() => scrollChapters('right')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(220, 38, 38, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
                       >
-                        <ChevronRight className="w-5 h-5 text-foreground" />
+                        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                     </div>
 
@@ -2088,14 +2088,14 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
 
                               {/* Chapter Info Below Cover */}
-                              <div className="space-y-2 w-56">
-                                <h3 className="font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                              <div className="space-y-2 w-40 sm:w-56">
+                                <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
                                   {chapter.title}
                                 </h3>
-                                <p className="text-sm text-muted-foreground line-clamp-1">
+                                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1">
                                   In: {chapter.book}
                                 </p>
-                                <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center justify-between text-xs sm:text-sm">
                                   <span className="text-muted-foreground">{chapter.publisher}</span>
                                   <span className="text-muted-foreground">({chapter.year})</span>
                                 </div>
@@ -2123,22 +2123,22 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     className="relative"
                   >
                     {/* Carousel Navigation Buttons */}
-                    <div className="absolute -top-20 right-0 flex items-center gap-2 z-10 py-[0px] mx-[32px] my-[0px] px-[44px] py-[46px]">
+                    <div className="flex items-center justify-end gap-2 mb-4 sm:absolute sm:-top-16 sm:right-0 z-10">
                       <motion.button
                         onClick={() => scrollJournals('left')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(220, 38, 38, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
                       >
-                        <ChevronLeft className="w-5 h-5 text-foreground" />
+                        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                       <motion.button
                         onClick={() => scrollJournals('right')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(220, 38, 38, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-primary/30 transition-all duration-300"
                       >
-                        <ChevronRight className="w-5 h-5 text-foreground" />
+                        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                     </div>
 
@@ -2202,14 +2202,14 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
 
                               {/* Article Info Below Cover */}
-                              <div className="space-y-2 w-56">
-                                <h3 className="font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                              <div className="space-y-2 w-40 sm:w-56">
+                                <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
                                   {article.title}
                                 </h3>
-                                <p className="text-sm text-muted-foreground line-clamp-1">
+                                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1">
                                   {article.journal}
                                 </p>
-                                <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center justify-between text-xs sm:text-sm">
                                   <span className="text-muted-foreground">{article.impact}</span>
                                   <span className="text-muted-foreground">({article.year})</span>
                                 </div>
@@ -2237,22 +2237,22 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                     className="relative"
                   >
                     {/* Carousel Navigation Buttons */}
-                    <div className="absolute -top-20 right-0 flex items-center gap-2 z-10 py-[0px] mx-[32px] my-[0px] px-[44px] py-[46px]">
+                    <div className="flex items-center justify-end gap-2 mb-4 sm:absolute sm:-top-16 sm:right-0 z-10">
                       <motion.button
                         onClick={() => scrollProceedings('left')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(59, 130, 246, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-blue-500/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-blue-500/30 transition-all duration-300"
                       >
-                        <ChevronLeft className="w-5 h-5 text-foreground" />
+                        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                       <motion.button
                         onClick={() => scrollProceedings('right')}
                         whileHover={{ scale: 1.1, backgroundColor: 'rgba(59, 130, 246, 0.1)' }}
                         whileTap={{ scale: 0.9 }}
-                        className="p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-blue-500/30 transition-all duration-300"
+                        className="p-2 sm:p-3 rounded-full bg-white/80 backdrop-blur-xl border border-white/40 shadow-lg hover:border-blue-500/30 transition-all duration-300"
                       >
-                        <ChevronRight className="w-5 h-5 text-foreground" />
+                        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 text-foreground" />
                       </motion.button>
                     </div>
 
@@ -2265,7 +2265,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                         msOverflowStyle: 'none'
                       }}
                     >
-                      <div className="flex gap-8 px-4">
+                      <div className="flex gap-4 sm:gap-8 px-4">
                         {proceedingsArticles.map((article, index) => (
                           <motion.div
                             key={`${article.pdfUrl}-${index}`}
@@ -2281,10 +2281,10 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               onClick={() => article.pdfUrl && window.open(article.pdfUrl, '_blank')}
                             >
                               {/* Proceedings Cover - Landscape */}
-                              <div className="relative w-96 h-56 rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border-2 border-white/40 mb-4">
+                              <div className="relative w-72 h-44 sm:w-96 sm:h-56 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border-2 border-white/40 mb-4">
                                 {/* Article Title as Cover - Blue Gradient */}
-                                <div className="w-full h-full bg-gradient-to-br from-blue-600/90 via-blue-500 to-blue-700/80 p-6 flex flex-col justify-center items-center text-center transition-transform duration-500 group-hover:scale-105">
-                                  <h3 className="text-white text-base font-semibold leading-tight">
+                                <div className="w-full h-full bg-gradient-to-br from-blue-600/90 via-blue-500 to-blue-700/80 p-4 sm:p-6 flex flex-col justify-center items-center text-center transition-transform duration-500 group-hover:scale-105">
+                                  <h3 className="text-white text-sm sm:text-base font-semibold leading-tight">
                                     {article.imageUrl}
                                   </h3>
                                 </div>
@@ -2316,14 +2316,14 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               </div>
 
                               {/* Article Info Below Cover */}
-                              <div className="space-y-2 w-96">
-                                <h3 className="font-medium text-foreground leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
+                              <div className="space-y-2 w-72 sm:w-96">
+                                <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
                                   {article.title}
                                 </h3>
-                                <p className="text-sm text-muted-foreground line-clamp-1">
+                                <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1">
                                   {article.conference}
                                 </p>
-                                <div className="flex items-center justify-between text-sm">
+                                <div className="flex items-center justify-between text-xs sm:text-sm">
                                   <span className="text-muted-foreground">{article.impact}</span>
                                   <span className="text-muted-foreground">({article.year})</span>
                                 </div>
