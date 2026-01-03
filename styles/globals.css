@@ -206,6 +206,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Performance optimization - GPU acceleration for animations */
+.motion-safe\:transform {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* CSS Containment for better rendering performance */
+[class*="card"],
+[class*="Card"] {
+  contain: layout style paint;
+}
+
+/* Optimize backdrop-blur performance */
+[class*="backdrop-blur"] {
+  will-change: backdrop-filter;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 /* Smooth font rendering for better appearance */
 * {
   -webkit-font-smoothing: antialiased;
@@ -305,6 +326,20 @@ html {
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
+  }
+  
+  /* Reduce backdrop-blur on mobile for better performance */
+  [class*="backdrop-blur-3xl"] {
+    backdrop-filter: blur(12px) !important;
+  }
+  
+  [class*="backdrop-blur-2xl"] {
+    backdrop-filter: blur(8px) !important;
+  }
+  
+  /* Simplify 3D transforms on mobile */
+  [style*="perspective"] {
+    perspective: 500px !important;
   }
 }
 

@@ -192,10 +192,11 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
                         ease: [0.34, 1.56, 0.64, 1],
                         scale: { type: "spring", stiffness: 280, damping: 18 }
                       }}
-                      className="hidden lg:block absolute left-full ml-6 top-0 w-80 bg-primary backdrop-blur-2xl border border-white/30 rounded-2xl p-5 shadow-[0_20px_60px_rgba(220,38,38,0.6)] z-[100] pointer-events-none"
+                      className="hidden lg:block absolute left-full ml-6 top-0 w-80 bg-primary backdrop-blur-md border border-white/30 rounded-2xl p-5 shadow-[0_20px_60px_rgba(220,38,38,0.6)] z-[100] pointer-events-none"
                       style={{
                         transformStyle: 'preserve-3d',
-                        perspective: 1200,
+                        perspective: 800,
+                        willChange: 'transform, opacity'
                       }}
                     >
                       {/* Subtle darker red gradient */}
@@ -226,7 +227,7 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
                 <motion.div
                   className={`relative transition-all duration-500 border shadow-lg rounded-2xl ${
                     isExpanded 
-                      ? 'bg-white/30 backdrop-blur-xl border-white/40 shadow-2xl shadow-black/10' 
+                      ? 'bg-white/30 backdrop-blur-lg border-white/40 shadow-2xl shadow-black/10' 
                       : 'bg-white/15 backdrop-blur-sm border-white/20 shadow-lg shadow-black/5'
                   }`}
                   animate={{ 
@@ -243,7 +244,8 @@ export function Sidebar({ activeSection, onSectionChange, onSectionHover }: Side
                   transition={{ duration: 0.4, ease: "easeOut" }}
                   style={{
                     transformStyle: 'preserve-3d',
-                    perspective: 1000,
+                    perspective: 800,
+                    willChange: 'transform'
                   }}
                 >
                   {/* Animated gradient overlay */}

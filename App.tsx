@@ -123,7 +123,7 @@ if (isLoading) {
         >
           <motion.button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="group relative bg-white/20 backdrop-blur-xl border border-white/30 text-primary shadow-2xl shadow-black/10 rounded-r-2xl p-4 focus:outline-none focus:ring-2 focus:ring-primary/20 overflow-hidden"
+            className="group relative bg-white/20 backdrop-blur-lg border border-white/30 text-primary shadow-2xl shadow-black/10 rounded-r-2xl p-4 focus:outline-none focus:ring-2 focus:ring-primary/20 overflow-hidden"
             whileHover={{ 
               scale: 1.05,
               backgroundColor: 'rgba(255,255,255,0.3)',
@@ -205,9 +205,9 @@ if (isLoading) {
         >
           {/* Glass backdrop */}
           <motion.div
-            className="absolute inset-0 bg-white/10 backdrop-blur-2xl"
+            className="absolute inset-0 bg-white/10 backdrop-blur-lg"
             animate={{ 
-              backdropFilter: sidebarOpen ? 'blur(24px)' : 'blur(0px)',
+              backdropFilter: sidebarOpen ? 'blur(16px)' : 'blur(0px)',
               background: sidebarOpen 
                 ? 'linear-gradient(135deg, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.05) 100%)'
                 : 'rgba(255,255,255,0)'

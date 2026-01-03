@@ -23,11 +23,11 @@ export function HeroSection() {
       className="pt-24 pb-16 bg-gradient-to-b from-accent/30 to-white lg:pl-4 relative overflow-hidden"
     >
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white/50 to-primary/30 backdrop-blur-3xl"
-        style={{ filter: `blur(${blur}px)` }}
+        className="absolute inset-0 bg-gradient-to-br from-gray-50/80 via-white/50 to-primary/30 backdrop-blur-lg"
+        style={{ filter: `blur(${blur}px)`, willChange: 'filter' }}
       ></motion.div>
       <motion.div 
-        style={{ y, scale }}
+        style={{ y, scale, willChange: 'transform' }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mt-8 sm:mt-12 lg:mt-20">
@@ -181,7 +181,7 @@ export function HeroSection() {
                 damping: 20
               }}
               className="relative"
-              style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
+              style={{ transformStyle: "preserve-3d", perspective: "800px", willChange: "transform" }}
             >
               <motion.div 
                 className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/5 rounded-3xl blur-xl"
