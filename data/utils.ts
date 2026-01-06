@@ -25,7 +25,7 @@ export function mergeDataSources<T extends Record<string, any[]>>(
   
   for (const key in updateSources) {
     if (updateSources[key]) {
-      result[key] = mergeData(baseSources[key] || [], updateSources[key]!);
+      result[key] = mergeData(baseSources[key] || [], updateSources[key]!) as T[Extract<keyof T, string>];
     }
   }
   

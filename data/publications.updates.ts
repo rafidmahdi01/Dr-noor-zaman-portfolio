@@ -3,3 +3,7 @@
 // New entries added through the admin panel will appear here
 
 export const publicationsUpdates: any[] = [];
+export const booksUpdates: any[] = [];
+export const bookChaptersUpdates: any[] = [];
+export const journalArticlesUpdates: any[] = [];
+export const proceedingsArticlesUpdates: any[] = [];
