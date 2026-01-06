@@ -11,21 +11,9 @@
     <link rel="manifest" href="/manifest.json" />
     <title>Dr. Noor Zaman Jhanjhi - Academic Portfolio</title>
     <meta name="description" content="Academic portfolio of Professor Dr. Noor Zaman Jhanjhi at Taylor's University" />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
   </body>
 </html>
