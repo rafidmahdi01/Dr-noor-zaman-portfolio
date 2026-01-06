@@ -56,9 +56,16 @@ const oralPresenterData = mergeData(oralPresenterDataBase, oralPresenterDataUpda
 // Add status field to base data which doesn't have it
 const ongoingBase = ongoingSupervisionsBase.map(s => ({ ...s, status: 'ongoing' }));
 const completedBase = completedSupervisionsBase.map(s => ({ ...s, status: 'completed' }));
+// Normalize admin panel data to match base data field names
+const normalizedUpdates = supervisionsUpdates.map(s => ({
+  ...s,
+  name: s.studentName || s.name, // Admin uses studentName, base uses name
+  thesis: s.topic || s.thesis, // Admin uses topic, base uses thesis
+  role: s.role || 'Student', // Default role if not specified
+}));
 const allSupervisions = mergeData(
   [...ongoingBase, ...completedBase],
-  supervisionsUpdates
+  normalizedUpdates
 );
 const ongoingSupervisions = allSupervisions.filter(s => s.status === 'ongoing');
 const completedSupervisions = allSupervisions.filter(s => s.status === 'completed');
