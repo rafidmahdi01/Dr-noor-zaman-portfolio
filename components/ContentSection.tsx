@@ -3048,7 +3048,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                       <Card className="text-center p-6">
                         <CardContent className="space-y-2">
                           <p className="text-3xl font-medium text-primary">
-                            {(ongoingSupervisions || []).filter(s => s.role.includes("Co-supervisor")).length}
+                            {(ongoingSupervisions || []).filter(s => s.role && s.role.includes("Co-supervisor")).length}
                           </p>
                           <p className="text-sm text-muted-foreground">Co-Supervisor</p>
                         </CardContent>
