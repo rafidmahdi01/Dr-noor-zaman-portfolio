@@ -53,8 +53,11 @@ const eventOrganiserData = mergeData(eventOrganiserDataBase, eventOrganiserDataU
 const oralPresenterData = mergeData(oralPresenterDataBase, oralPresenterDataUpdates);
 
 // Merge supervision data and split by status
+// Add status field to base data which doesn't have it
+const ongoingBase = ongoingSupervisionsBase.map(s => ({ ...s, status: 'ongoing' }));
+const completedBase = completedSupervisionsBase.map(s => ({ ...s, status: 'completed' }));
 const allSupervisions = mergeData(
-  [...ongoingSupervisionsBase, ...completedSupervisionsBase],
+  [...ongoingBase, ...completedBase],
   supervisionsUpdates
 );
 const ongoingSupervisions = allSupervisions.filter(s => s.status === 'ongoing');
