@@ -11,26 +11,62 @@ import { ImageWithFallback } from './images/ImageWithFallback';
 
 // Import presentation data
 import {
-  keynoteData,
-  invitedSpeakerData,
-  eventOrganiserData,
-  oralPresenterData,
+  keynoteData as keynoteDataBase,
+  invitedSpeakerData as invitedSpeakerDataBase,
+  eventOrganiserData as eventOrganiserDataBase,
+  oralPresenterData as oralPresenterDataBase,
 } from '../data/presentations';
+import {
+  keynoteDataUpdates,
+  invitedSpeakerDataUpdates,
+  eventOrganiserDataUpdates,
+  oralPresenterDataUpdates,
+} from '../data/presentations.updates';
 
 // Import supervision data
-import { ongoingSupervisions, completedSupervisions } from '../data/supervision';
+import { ongoingSupervisions as ongoingSupervisionsBase, completedSupervisions as completedSupervisionsBase } from '../data/supervision';
+import { ongoingSupervisionsUpdates, completedSupervisionsUpdates } from '../data/supervision.updates';
 
 // Import evaluation data
-import { evaluationActivities } from '../data/evaluation';
+import { evaluationActivities as evaluationActivitiesBase } from '../data/evaluation';
+import { evaluationActivitiesUpdates } from '../data/evaluation.updates';
 
 // Import awards and memberships data
-import { partnerOrganizations, awardsData, membershipsData } from '../data/awards';
+import { partnerOrganizations as partnerOrganizationsBase, awardsData as awardsDataBase, membershipsData as membershipsDataBase } from '../data/awards';
+import { partnerOrganizationsUpdates, awardsDataUpdates, membershipsDataUpdates } from '../data/awards.updates';
 
 // Import publications data
-import { books, bookChapters, journalArticles, proceedingsArticles } from '../data/publications';
+import { books as booksBase, bookChapters as bookChaptersBase, journalArticles as journalArticlesBase, proceedingsArticles as proceedingsArticlesBase } from '../data/publications';
+import { booksUpdates, bookChaptersUpdates, journalArticlesUpdates, proceedingsArticlesUpdates } from '../data/publications.updates';
 
 // Import research projects data
-import { researchProjects } from '../data/research-projects';
+import { researchProjects as researchProjectsBase } from '../data/research-projects';
+import { researchProjectsUpdates } from '../data/research-projects.updates';
+
+// Import merge utility
+import { mergeData } from '../data/utils';
+
+// Merge base data with admin panel updates
+const keynoteData = mergeData(keynoteDataBase, keynoteDataUpdates);
+const invitedSpeakerData = mergeData(invitedSpeakerDataBase, invitedSpeakerDataUpdates);
+const eventOrganiserData = mergeData(eventOrganiserDataBase, eventOrganiserDataUpdates);
+const oralPresenterData = mergeData(oralPresenterDataBase, oralPresenterDataUpdates);
+
+const ongoingSupervisions = mergeData(ongoingSupervisionsBase, ongoingSupervisionsUpdates);
+const completedSupervisions = mergeData(completedSupervisionsBase, completedSupervisionsUpdates);
+
+const evaluationActivities = mergeData(evaluationActivitiesBase, evaluationActivitiesUpdates);
+
+const partnerOrganizations = mergeData(partnerOrganizationsBase, partnerOrganizationsUpdates);
+const awardsData = mergeData(awardsDataBase, awardsDataUpdates);
+const membershipsData = mergeData(membershipsDataBase, membershipsDataUpdates);
+
+const books = mergeData(booksBase, booksUpdates);
+const bookChapters = mergeData(bookChaptersBase, bookChaptersUpdates);
+const journalArticles = mergeData(journalArticlesBase, journalArticlesUpdates);
+const proceedingsArticles = mergeData(proceedingsArticlesBase, proceedingsArticlesUpdates);
+
+const researchProjects = mergeData(researchProjectsBase, researchProjectsUpdates);
 
 import { 
   Award, 
