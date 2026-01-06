@@ -25,7 +25,7 @@ import {
 
 // Import supervision data
 import { ongoingSupervisions as ongoingSupervisionsBase, completedSupervisions as completedSupervisionsBase } from '../data/supervision';
-import { ongoingSupervisionsUpdates, completedSupervisionsUpdates } from '../data/supervision.updates';
+import { supervisions as supervisionsUpdates } from '../data/supervision.updates';
 
 // Import evaluation data
 import { evaluationActivities as evaluationActivitiesBase } from '../data/evaluation';
@@ -52,8 +52,13 @@ const invitedSpeakerData = mergeData(invitedSpeakerDataBase, invitedSpeakerDataU
 const eventOrganiserData = mergeData(eventOrganiserDataBase, eventOrganiserDataUpdates);
 const oralPresenterData = mergeData(oralPresenterDataBase, oralPresenterDataUpdates);
 
-const ongoingSupervisions = mergeData(ongoingSupervisionsBase, ongoingSupervisionsUpdates);
-const completedSupervisions = mergeData(completedSupervisionsBase, completedSupervisionsUpdates);
+// Merge supervision data and split by status
+const allSupervisions = mergeData(
+  [...ongoingSupervisionsBase, ...completedSupervisionsBase],
+  supervisionsUpdates
+);
+const ongoingSupervisions = allSupervisions.filter(s => s.status === 'ongoing');
+const completedSupervisions = allSupervisions.filter(s => s.status === 'completed');
 
 const evaluationActivities = mergeData(evaluationActivitiesBase, evaluationActivitiesUpdates);
 
