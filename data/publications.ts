@@ -1,4 +1,4 @@
-﻿// Publications data extracted from ContentSection.tsx
+// Publications data extracted from ContentSection.tsx
 
 // Import local book cover images
 import commingSoonBookImage from '../src/assets/image/comming soon book image.png';
@@ -4137,7 +4137,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11006_1.pdf",
-      imageUrl: "An Intelligent Approach for Classification In-Band SQLi Attacks Using Machine Learning Techniques"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "A lightweight Federated Learning-based Intrusion detection model for Internet of Things",
@@ -4145,7 +4145,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11005_1.pdf",
-      imageUrl: "A lightweight Federated Learning-based Intrusion detection model for Internet of Things"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Benchmarking Performance Analysis of Optical Character Recognition Techniques",
@@ -4153,7 +4153,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11007_1.pdf",
-      imageUrl: "Benchmarking Performance Analysis of Optical Character Recognition Techniques"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "E2A Translate: An English to Arabic Rule-Based Translation Framework",
@@ -4161,7 +4161,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11008_1.pdf",
-      imageUrl: "E2A Translate: An English to Arabic Rule-Based Translation Framework"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "A Hybrid Approach Towards Data optimization for Cloud Based IoT Environment",
@@ -4169,7 +4169,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11009_1.pdf",
-      imageUrl: "A Hybrid Approach Towards Data optimization for Cloud Based IoT Environment"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Data Optimization in Cloud-IOT Environment with Enhanced SVM Technique",
@@ -4177,7 +4177,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11010_1.pdf",
-      imageUrl: "Data Optimization in Cloud-IOT Environment with Enhanced SVM Technique"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "CrimeScene2Graph: Generating Scene Graphs from Crime Scene Descriptions Using BERT NER",
@@ -4185,7 +4185,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11011_1.pdf",
-      imageUrl: "CrimeScene2Graph: Generating Scene Graphs from Crime Scene Descriptions Using BERT NER"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Efficient Detection of Fake Twitter Profiles on Social Media Through Hybrid Deep Learning Model",
@@ -4193,7 +4193,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11012_1.pdf",
-      imageUrl: "Efficient Detection of Fake Twitter Profiles on Social Media Through Hybrid Deep Learning Model"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Moving Object Detection Using Deep Learning Algorithms",
@@ -4201,7 +4201,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11013_1.pdf",
-      imageUrl: "Moving Object Detection Using Deep Learning Algorithms"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Secure model for credit card fraud detection using ML approaches",
@@ -4209,7 +4209,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11014_1.pdf",
-      imageUrl: "Secure model for credit card fraud detection using ML approaches"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "An Intelligent and Efficient Approach for a Weapon Detection System Using Computer Vision and Edge Computing",
@@ -4217,7 +4217,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11015_1.pdf",
-      imageUrl: "An Intelligent and Efficient Approach for a Weapon Detection System Using Computer Vision and Edge Computing"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "A digital signature based cybersecurity model",
@@ -4225,7 +4225,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11016_1.pdf",
-      imageUrl: "A digital signature based cybersecurity model"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Diabetes detection framework for imbalanced data via explainable machine learning",
@@ -4233,7 +4233,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11017_1.pdf",
-      imageUrl: "Diabetes detection framework for imbalanced data via explainable machine learning"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     {
       title: "Detection of ventricular late potential from electrocardiogram using machine learning approach",
@@ -4241,7 +4241,7 @@ export const journalArticles = [
       year: "2025",
       impact: "SCOPUS-Indexed",
       pdfUrl: "https://expert.taylors.edu.my/file/rems/publication/109566_11018_1.pdf",
-      imageUrl: "Detection of ventricular late potential from electrocardiogram using machine learning approach"
+      imageUrl: '/assets/image/proceddings/proceddings.png'
     },
     // 2024
     {

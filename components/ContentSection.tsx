@@ -2335,12 +2335,17 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             >
                               {/* Proceedings Cover - Landscape */}
                               <div className="relative w-72 h-44 sm:w-96 sm:h-56 rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border-2 border-white/40 mb-4">
-                                {/* Article Title as Cover - Blue Gradient */}
-                                <div className="w-full h-full bg-gradient-to-br from-blue-600/90 via-blue-500 to-blue-700/80 p-4 sm:p-6 flex flex-col justify-center items-center text-center transition-transform duration-500 group-hover:scale-105">
-                                  <h3 className="text-white text-sm sm:text-base font-semibold leading-tight">
-                                    {article.imageUrl}
-                                  </h3>
-                                </div>
+                                {/* Proceedings Cover Image */}
+                                <ImageWithFallback
+                                  src={
+                                    article.imageUrl &&
+                                    (article.imageUrl.startsWith('/') || article.imageUrl.startsWith('http'))
+                                      ? article.imageUrl
+                                      : '/assets/image/proceddings/proceddings.png'
+                                  }
+                                  alt={article.title}
+                                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                />
                                 
                                 {/* Glossy overlay effect */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-black/30 pointer-events-none" />
@@ -4610,7 +4615,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 shadow-sm">
                                 <ImageWithFallback
-                                  src={book.imageUrl}
+                                  src={
+                                    book.imageUrl &&
+                                    (book.imageUrl.startsWith('/') || book.imageUrl.startsWith('http'))
+                                      ? book.imageUrl
+                                      : '/assets/image/logo.png'
+                                  }
                                   alt={book.title}
                                   className="w-full h-full object-cover"
                                 />
@@ -4683,7 +4693,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 shadow-sm">
                                 <ImageWithFallback
-                                  src={chapter.imageUrl}
+                                  src={
+                                    chapter.imageUrl &&
+                                    (chapter.imageUrl.startsWith('/') || chapter.imageUrl.startsWith('http'))
+                                      ? chapter.imageUrl
+                                      : '/assets/image/logo.png'
+                                  }
                                   alt={chapter.title}
                                   className="w-full h-full object-cover"
                                 />
@@ -4830,7 +4845,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                             <div className="flex gap-4 p-5">
                               <div className="relative w-28 h-16 flex-shrink-0 rounded overflow-hidden bg-gradient-to-br from-blue-600/10 to-blue-500/5 shadow-sm">
                                 <ImageWithFallback
-                                  src={article.imageUrl}
+                                  src={
+                                    article.imageUrl &&
+                                    (article.imageUrl.startsWith('/') || article.imageUrl.startsWith('http'))
+                                      ? article.imageUrl
+                                      : '/assets/image/proceddings/proceddings.png'
+                                  }
                                   alt={article.title}
                                   className="w-full h-full object-cover"
                                 />
