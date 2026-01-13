@@ -1,8 +1,4 @@
-export const evaluation: any[] = [
-  {
-    "position": "rafid",
-    "organization": "ieee",
-    "period": "2023",
-    "description": "good job"
-  }
-];
+// Admin panel updates for evaluation
+// This file is managed by the admin panel - do not edit manually
+
+export const evaluationActivitiesUpdates: any[] = [];
