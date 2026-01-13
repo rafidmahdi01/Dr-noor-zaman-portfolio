@@ -2035,6 +2035,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
                                   {book.title}
                                 </h3>
+                                <div className="flex flex-wrap gap-2">
+                                  <Badge variant="outline">Book</Badge>
+                                </div>
                                 <div className="flex items-center justify-between text-xs sm:text-sm">
                                   <span className="text-muted-foreground">{book.publisher}</span>
                                   <span className="text-muted-foreground">({book.year})</span>
@@ -2145,6 +2148,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
                                   {chapter.title}
                                 </h3>
+                                <div className="flex flex-wrap gap-2">
+                                  <Badge variant="outline">Book Chapter</Badge>
+                                </div>
                                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1">
                                   In: {chapter.book}
                                 </p>
@@ -2259,6 +2265,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-primary transition-colors duration-300">
                                   {article.title}
                                 </h3>
+                                <div className="flex flex-wrap gap-2">
+                                  <Badge variant="outline">Journal</Badge>
+                                </div>
                                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1">
                                   {article.journal}
                                 </p>
@@ -2378,6 +2387,9 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <h3 className="text-sm sm:text-base font-medium text-foreground leading-tight line-clamp-2 group-hover:text-blue-600 transition-colors duration-300">
                                   {article.title}
                                 </h3>
+                                <div className="flex flex-wrap gap-2">
+                                  <Badge variant="outline">Proceedings</Badge>
+                                </div>
                                 <p className="text-xs sm:text-sm text-muted-foreground line-clamp-1">
                                   {article.conference}
                                 </p>
@@ -2934,9 +2946,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               <div className="flex justify-between items-start">
                                 <div className="flex-1">
                                   <h4 className="font-medium text-foreground">{evaluation.activity}</h4>
-                                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mt-2">
-                                    <Calendar className="w-4 h-4 text-primary" />
-                                    <span>{evaluation.duration}</span>
+                                  <div className="flex items-center space-x-4 mt-2">
+                                    <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                                      <Calendar className="w-4 h-4 text-primary" />
+                                      <span>{evaluation.duration}</span>
+                                    </div>
+                                    <Badge variant="outline">{evaluation.category}</Badge>
                                   </div>
                                 </div>
                               </div>
@@ -2959,9 +2974,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               <div className="flex justify-between items-start">
                                 <div className="flex-1">
                                   <h4 className="font-medium text-foreground">{evaluation.activity}</h4>
-                                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mt-2">
-                                    <Calendar className="w-4 h-4 text-primary" />
-                                    <span>{evaluation.duration}</span>
+                                  <div className="flex items-center space-x-4 mt-2">
+                                    <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                                      <Calendar className="w-4 h-4 text-primary" />
+                                      <span>{evaluation.duration}</span>
+                                    </div>
+                                    <Badge variant="outline">{evaluation.category}</Badge>
                                   </div>
                                 </div>
                               </div>
@@ -2984,9 +3002,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               <div className="flex justify-between items-start">
                                 <div className="flex-1">
                                   <h4 className="font-medium text-foreground">{evaluation.activity}</h4>
-                                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mt-2">
-                                    <Calendar className="w-4 h-4 text-primary" />
-                                    <span>{evaluation.duration}</span>
+                                  <div className="flex items-center space-x-4 mt-2">
+                                    <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                                      <Calendar className="w-4 h-4 text-primary" />
+                                      <span>{evaluation.duration}</span>
+                                    </div>
+                                    <Badge variant="outline">{evaluation.category}</Badge>
                                   </div>
                                 </div>
                               </div>
@@ -3010,9 +3031,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 <div className="flex justify-between items-start">
                                   <div className="flex-1">
                                     <h4 className="font-medium text-foreground">{evaluation.activity}</h4>
-                                    <div className="flex items-center space-x-2 text-sm text-muted-foreground mt-2">
-                                      <Calendar className="w-4 h-4 text-primary" />
-                                      <span>{evaluation.duration}</span>
+                                    <div className="flex items-center space-x-4 mt-2">
+                                      <div className="flex items-center space-x-2 text-sm text-muted-foreground">
+                                        <Calendar className="w-4 h-4 text-primary" />
+                                        <span>{evaluation.duration}</span>
+                                      </div>
+                                      <Badge variant="outline">{evaluation.category}</Badge>
                                     </div>
                                   </div>
                                 </div>
@@ -3124,9 +3148,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 )}
                               </div>
                               <div className="text-right ml-4">
-                                <Badge variant={student.role === "Main Supervisor" ? "default" : "secondary"}>
-                                  {student.role}
-                                </Badge>
+                                <div className="flex flex-col items-end gap-2">
+                                  <Badge variant="outline">Ongoing</Badge>
+                                  <Badge variant={student.role === "Main Supervisor" ? "default" : "secondary"}>
+                                    {student.role}
+                                  </Badge>
+                                </div>
                               </div>
                             </div>
                           </Card>
@@ -3174,9 +3201,12 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                 )}
                               </div>
                               <div className="text-right ml-4">
-                                <Badge variant={student.role === "Main Supervisor" ? "default" : "secondary"}>
-                                  {student.role}
-                                </Badge>
+                                <div className="flex flex-col items-end gap-2">
+                                  <Badge variant="outline">Completed</Badge>
+                                  <Badge variant={student.role === "Main Supervisor" ? "default" : "secondary"}>
+                                    {student.role}
+                                  </Badge>
+                                </div>
                               </div>
                             </div>
                           </Card>
@@ -3278,6 +3308,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               )}
                               <div className="flex items-center space-x-4 mt-2 text-sm text-muted-foreground">
                                 <span>{presentation.date}</span>
+                                <Badge variant="outline">Keynote</Badge>
                                 <Badge variant="secondary">{presentation.year}</Badge>
                                 <Badge variant={presentation.type === "International" ? "default" : "outline"}>
                                   {presentation.type}
@@ -3312,6 +3343,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               )}
                               <div className="flex items-center space-x-4 mt-2 text-sm text-muted-foreground">
                                 <span>{presentation.date}</span>
+                                <Badge variant="outline">Invited Speaker</Badge>
                                 <Badge variant="secondary">{presentation.year}</Badge>
                                 <Badge variant={presentation.type === "International" ? "default" : "outline"}>
                                   {presentation.type}
@@ -3343,6 +3375,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               <p className="text-sm text-primary mt-1">{presentation.event}</p>
                               <div className="flex items-center space-x-4 mt-2 text-sm text-muted-foreground">
                                 <span>{presentation.date}</span>
+                                <Badge variant="outline">Event Organiser</Badge>
                                 <Badge variant="secondary">{presentation.year}</Badge>
                                 <Badge variant={presentation.type === "International" ? "default" : "outline"}>
                                   {presentation.type}
@@ -3374,6 +3407,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                               )}
                               <div className="flex items-center space-x-4 mt-2 text-sm text-muted-foreground">
                                 <span>{presentation.date}</span>
+                                <Badge variant="outline">Oral Presenter</Badge>
                                 <Badge variant="secondary">{presentation.year}</Badge>
                                 <Badge variant={presentation.type === "International" ? "default" : "outline"}>
                                   {presentation.type}
@@ -4635,6 +4669,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                   </p>
                                 </div>
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
+                                  <Badge variant="outline" className="text-xs shrink-0">Book</Badge>
                                   <Badge variant="secondary" className="text-xs shrink-0">{book.year}</Badge>
                                   <Badge variant="outline" className="text-xs shrink-0 truncate max-w-[120px]">{book.impact}</Badge>
                                   {book.pdfUrl && (
@@ -4716,6 +4751,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                   </p>
                                 </div>
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
+                                  <Badge variant="outline" className="text-xs shrink-0">Book Chapter</Badge>
                                   <Badge variant="secondary" className="text-xs shrink-0">{chapter.year}</Badge>
                                   {(chapter as any).pdfUrl && (
                                     <Badge className="bg-primary/10 text-primary hover:bg-primary/20 text-xs shrink-0">View</Badge>
@@ -4788,6 +4824,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                   </p>
                                 </div>
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
+                                  <Badge variant="outline" className="text-xs shrink-0">Journal</Badge>
                                   <Badge variant="secondary" className="text-xs shrink-0">{article.year}</Badge>
                                   {article.pdfUrl && (
                                     <Badge className="bg-primary/10 text-primary hover:bg-primary/20 text-xs shrink-0">View</Badge>
@@ -4865,6 +4902,7 @@ export function ContentSection({ activeSection, onSectionChange }: ContentSectio
                                   </p>
                                 </div>
                                 <div className="flex items-center gap-2 mt-2 flex-wrap">
+                                  <Badge variant="outline" className="text-xs shrink-0">Proceedings</Badge>
                                   <Badge variant="secondary" className="text-xs shrink-0">{article.year}</Badge>
                                   <Badge variant="outline" className="text-xs shrink-0">{article.impact}</Badge>
                                   {article.pdfUrl && (
